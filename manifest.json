@@ -1,0 +1,106 @@
+{
+ "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders and services: all sales final.",
+ "defaultSeconds": 10,
+ "items": [
+  {
+   "type": "image",
+   "src": "slides/01-cash-for-baseballs-gloves.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/02-category-dog-section.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/03-taylormade-flextech.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/04-reviews-1100.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "video",
+   "src": "clips/surf.mp4",
+   "maxSeconds": 12
+  },
+  {
+   "type": "image",
+   "src": "slides/05-gerber-convoy.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/06-gerber-sumo.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/07-boysen-surfboard.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/08-yonex-vcore.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "video",
+   "src": "clips/golf.mp4",
+   "maxSeconds": 12
+  },
+  {
+   "type": "image",
+   "src": "slides/09-zflex-76.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/10-ramp-tumbleweed.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/11-tm-qi10-hybrid.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/12-zflex-fishtail.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "video",
+   "src": "clips/skate.mp4",
+   "maxSeconds": 12
+  },
+  {
+   "type": "image",
+   "src": "slides/13-category-gerber-knives.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/14-sell-wavestorm-8ft.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/15-sell2-micron-magic-120.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "image",
+   "src": "slides/16-wax-service.jpg",
+   "seconds": 10
+  },
+  {
+   "type": "video",
+   "src": "clips/basketball.mp4",
+   "maxSeconds": 12
+  }
+ ]
+}
