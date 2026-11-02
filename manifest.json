@@ -25,7 +25,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -55,7 +58,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -65,7 +71,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -85,7 +94,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -95,7 +107,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -105,7 +121,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -125,7 +144,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -135,7 +157,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -145,7 +170,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -175,7 +203,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -185,7 +220,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -225,7 +263,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -255,7 +296,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -265,7 +309,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -285,7 +332,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -295,7 +345,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -305,7 +359,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -325,7 +382,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -335,7 +395,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -345,7 +408,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -375,7 +441,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -385,7 +458,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -425,7 +501,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -455,7 +534,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -465,7 +547,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -485,7 +570,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -495,7 +583,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -505,7 +597,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -525,7 +620,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -535,7 +633,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -545,7 +646,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -575,7 +679,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -585,7 +696,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -625,7 +739,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -655,7 +772,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -665,7 +785,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -685,7 +808,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -695,7 +821,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -705,7 +835,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -725,7 +858,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -735,7 +871,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -745,7 +884,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -775,7 +917,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -785,7 +934,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -825,7 +977,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -855,7 +1010,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -865,7 +1023,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -885,7 +1046,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -895,7 +1059,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -905,7 +1073,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -925,7 +1096,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -935,7 +1109,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -945,7 +1122,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -975,7 +1155,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -985,7 +1172,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -1025,7 +1215,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -1055,7 +1248,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -1065,7 +1261,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -1085,7 +1284,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -1095,7 +1297,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -1105,7 +1311,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -1125,7 +1334,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -1135,7 +1347,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -1145,7 +1360,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -1175,7 +1393,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -1185,7 +1410,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -1225,7 +1453,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -1255,7 +1486,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -1265,7 +1499,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -1285,7 +1522,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -1295,7 +1535,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -1305,7 +1549,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -1325,7 +1572,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -1335,7 +1585,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -1345,7 +1598,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -1375,7 +1631,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -1385,7 +1648,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -1425,7 +1691,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -1455,7 +1724,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -1465,7 +1737,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -1485,7 +1760,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -1495,7 +1773,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -1505,7 +1787,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -1525,7 +1810,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -1535,7 +1823,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -1545,7 +1836,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -1575,7 +1869,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -1585,7 +1886,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
@@ -1625,7 +1929,10 @@
   {
    "type": "image",
    "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
   },
   {
    "type": "video",
@@ -1655,7 +1962,10 @@
   {
    "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
   },
   {
    "type": "video",
@@ -1665,7 +1975,10 @@
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
@@ -1685,7 +1998,10 @@
   {
    "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
   },
   {
    "type": "video",
@@ -1695,7 +2011,11 @@
   {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
   },
   {
    "type": "video",
@@ -1705,7 +2025,10 @@
   {
    "type": "image",
    "src": "slides/09-zflex-76.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
   },
   {
    "type": "video",
@@ -1725,7 +2048,10 @@
   {
    "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
   },
   {
    "type": "video",
@@ -1735,7 +2061,10 @@
   {
    "type": "image",
    "src": "slides/11-tm-qi10-hybrid.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
   },
   {
    "type": "video",
@@ -1745,7 +2074,10 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
   },
   {
    "type": "video",
@@ -1775,7 +2107,14 @@
   {
    "type": "image",
    "src": "slides/14-sell-wavestorm-8ft.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
   },
   {
    "type": "video",
@@ -1785,7 +2124,10 @@
   {
    "type": "image",
    "src": "slides/15-sell2-micron-magic-120.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
   },
   {
    "type": "video",
