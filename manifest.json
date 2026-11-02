@@ -1,1627 +1,1762 @@
 {
-  "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders and services: all sales final.",
-  "defaultSeconds": 20,
-  "items": [
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/bodyboarding_pixabay_130670.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2029.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1362.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_32620.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "We buy used|baseball gear",
-        "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1002.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_105372.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "L",
-        "headline": "Tennis gear|new & used",
-        "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44414.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_853.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2030.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1363.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/09-zflex-76.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204186"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_54597.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "Softball gear|for less",
-        "sub": "Bats \u2022 Gloves \u2022 Cleats \u2014 new & used"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1042.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/10-ramp-tumbleweed.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201762"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_108324.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/11-tm-qi10-hybrid.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204263"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44416.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/12-zflex-fishtail.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000199319"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_855.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2031.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/13-category-gerber-knives.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1365.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/14-sell-wavestorm-8ft.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000209045",
-        "S000209047",
-        "S000209049",
-        "S000209052",
-        "S000209053"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_54882.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/15-sell2-micron-magic-120.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000167739"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1044.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_14236.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44433.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_856.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2033.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1366.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_55230.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "We buy used|baseball gear",
-        "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1045.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_145976.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "Tennis gear|new & used",
-        "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44434.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_858.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2035.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/09-zflex-76.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204186"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1367.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1059.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/10-ramp-tumbleweed.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201762"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44442.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/11-tm-qi10-hybrid.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204263"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_871.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/12-zflex-fishtail.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000199319"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2036.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1368.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/13-category-gerber-knives.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1064.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/14-sell-wavestorm-8ft.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000209045",
-        "S000209047",
-        "S000209049",
-        "S000209052",
-        "S000209053"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_199833.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/15-sell2-micron-magic-120.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000167739"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_881.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2038.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1370.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1070.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_208386.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52100.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_133206.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2040.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1372.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1071.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_208388.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/09-zflex-76.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204186"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52106.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_14183.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/10-ramp-tumbleweed.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201762"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_mixkit_2044.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/11-tm-qi10-hybrid.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204263"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1375.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/12-zflex-fishtail.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000199319"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1074.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_218105.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/13-category-gerber-knives.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13356.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/14-sell-wavestorm-8ft.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000209045",
-        "S000209047",
-        "S000209049",
-        "S000209052",
-        "S000209053"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_184211.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/15-sell2-micron-magic-120.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000167739"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_pixabay_10803.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1376.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1076.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_259142.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "Tennis gear|new & used",
-        "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13360.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_219542.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1377.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1127.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_169590.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_24166.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_1529.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/09-zflex-76.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204186"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/snowboarding_pixabay_106942.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1128.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/10-ramp-tumbleweed.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201762"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_262282.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/11-tm-qi10-hybrid.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204263"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_pixabay_18080.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/12-zflex-fishtail.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000199319"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_2549.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1163.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/13-category-gerber-knives.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_32819.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/14-sell-wavestorm-8ft.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000209045",
-        "S000209047",
-        "S000209049",
-        "S000209052",
-        "S000209053"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_272008.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/15-sell2-micron-magic-120.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000167739"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_5062.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_323.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/snowboarding_pixabay_17600.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_275888.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_5077.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "L",
-        "headline": "Used baseballs|for sale",
-        "sub": "Game & practice balls \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_326.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_35265.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_289516.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_5091.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34381.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38927.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_50109.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/09-zflex-76.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204186"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_298898.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_54767.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/10-ramp-tumbleweed.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201762"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34382.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/11-tm-qi10-hybrid.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204263"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/snowboarding_pixabay_270535.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/12-zflex-fishtail.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000199319"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38933.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_5261.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/13-category-gerber-knives.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_55611.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/14-sell-wavestorm-8ft.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000209045",
-        "S000209047",
-        "S000209049",
-        "S000209052",
-        "S000209053"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34384.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/15-sell2-micron-magic-120.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000167739"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/snowboarding_pixabay_270592.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_5263.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_pixabay_83054.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_pixabay_41471.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "We buy used|golf clubs",
-        "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34385.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_54601.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_pixabay_45301.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34386.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_132846.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55235.mp4",
-      "maxSeconds": 16,
-      "overlay": {
-        "side": "R",
-        "headline": "Tennis gear|new & used",
-        "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
-      }
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_95899.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/golf_pixabay_5166.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/09-zflex-76.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204186"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34388.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55585.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/10-ramp-tumbleweed.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201762"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_34389.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/11-tm-qi10-hybrid.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000204263"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55588.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/12-zflex-fishtail.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000199319"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/skateboarding_mixkit_4568.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_189547.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/13-category-gerber-knives.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55636.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/14-sell-wavestorm-8ft.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000209045",
-        "S000209047",
-        "S000209049",
-        "S000209052",
-        "S000209053"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_74670.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/15-sell2-micron-magic-120.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000167739"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/snowboarding_pixabay_29948.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/19-svc-snow-menu.jpg",
-      "seconds": 20,
-      "wide": "slides/19-svc-snow-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_31517.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/01-cash-for-baseballs-gloves.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "clips/snowboarding_pixabay_29949.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/02-category-dog-section.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_88194.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/03-taylormade-flextech.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000202192"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_29951.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/17-svc-wax-price.jpg",
-      "seconds": 20,
-      "wide": "slides/17-svc-wax-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_32985.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/04-reviews-1100.jpg",
-      "seconds": 20
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_36609.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/05-gerber-convoy.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G1066484"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_50681.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/06-gerber-sumo.jpg",
-      "seconds": 20,
-      "sku": [
-        "42G31003928"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_5163.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/18-svc-regrip-price.jpg",
-      "seconds": 20,
-      "wide": "slides/18-svc-regrip-wide.jpg"
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_65918.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/07-boysen-surfboard.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000201162"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_8559.mp4",
-      "maxSeconds": 16
-    },
-    {
-      "type": "image",
-      "src": "slides/08-yonex-vcore.jpg",
-      "seconds": 20,
-      "sku": [
-        "S000200517",
-        "S000200518"
-      ]
-    },
-    {
-      "type": "video",
-      "src": "clips/baseball_mixkit_49607.mp4",
-      "maxSeconds": 16
-    }
-  ]
+ "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders and services: all sales final.",
+ "defaultSeconds": 20,
+ "items": [
+  {
+   "type": "image",
+   "src": "slides/100-item-S000206906.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206906"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/bodyboarding_pixabay_130670.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/101-item-S000202301.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000202301"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/102-item-S000188756.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000188756"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2029.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/01-cash-for-baseballs-gloves.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1362.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/200-ever-cash-surfboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_32620.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "We buy used|baseball gear",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/103-item-S000206808.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206808"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1002.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20,
+   "wide": "slides/17-svc-wax-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_105372.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "L",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/213-ever-cat-bodyboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44414.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/104-item-S000177519.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000177519"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/105-item-S000189215.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000189215"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_853.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/106-item-S000204223.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000204223"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2030.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/107-item-S000207000.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207000"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1363.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/108-item-S000207825.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207825"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_54597.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Softball gear|for less",
+    "sub": "Bats \u2022 Gloves \u2022 Cleats \u2014 new & used"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/02-category-dog-section.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1042.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/109-item-S000189769.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000189769"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_108324.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/201-ever-cash-soft-top.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44416.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/110-item-S000208032.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208032"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/214-ever-cat-bikes.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_855.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/229-ever-newused-golf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2031.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1365.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/225-ever-trade-surf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_54882.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/111-item-S000203467.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000203467"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1044.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/112-item-S000188757.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000188757"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_14236.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/113-item-S000183769.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000183769"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/03-taylormade-flextech.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000202192"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44433.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/114-item-S000203334.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000203334"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_856.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/233-ever-online-1.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2033.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/115-item-S000204665.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000204665"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1366.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/116-item-S000181112.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000181112"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_55230.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "We buy used|baseball gear",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/202-ever-cash-golfclubs.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1045.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/118-item-S000201759.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000201759"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_145976.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "seconds": 20,
+   "wide": "slides/19-svc-snow-wide.jpg"
+  },
+  {
+   "type": "image",
+   "src": "slides/215-ever-cat-tennis.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44434.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/119-item-S000185182.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000185182"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_858.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/120-item-S000207308.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207308"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2035.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/04-reviews-1100.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1367.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/121-item-S000204097.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000204097"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1059.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/122-item-S000208729.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208729"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44442.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/123-item-S000208662.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208662"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/203-ever-cash-ballgloves.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_871.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/124-item-S000206709.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206709"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2036.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/125-item-S000205009.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205009"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1368.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/216-ever-cat-pickleball.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1064.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/126-item-S000208542.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208542"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_199833.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20,
+   "wide": "slides/17-svc-wax-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/05-gerber-convoy.jpg",
+   "seconds": 20,
+   "sku": [
+    "42G1066484"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_881.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/127-item-S000207672.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207672"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/128-item-S000207755.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207755"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2038.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/129-item-S000208106.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208106"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1370.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/130-item-S000201811.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000201811"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1070.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/204-ever-cash-bikes.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_208386.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/131-item-S000189218.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000189218"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52100.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/132-item-S000177217.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000177217"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_133206.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/06-gerber-sumo.jpg",
+   "seconds": 20,
+   "sku": [
+    "42G31003928"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/133-item-S000209966.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209966"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2040.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/217-ever-cat-homegym.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1372.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1071.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/230-ever-newused-baseball.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_208388.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/226-ever-trade-golf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52106.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/134-item-S000189746.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000189746"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_14183.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/135-item-S000204336.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000204336"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2044.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/136-item-S000179909.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000179909"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/137-item-S000209107.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209107"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1375.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/205-ever-cash-snowboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1074.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/138-item-S000206482.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206482"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_218105.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/07-boysen-surfboard.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000201162"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13356.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/139-item-S000206703.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206703"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_184211.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/140-item-S000209732.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209732"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_10803.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/218-ever-cat-snowboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "seconds": 20,
+   "wide": "slides/19-svc-snow-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1376.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/141-item-S000208308.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208308"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1076.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/142-item-S000205759.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205759"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_259142.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/143-item-S000208730.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208730"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13360.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/08-yonex-vcore.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000200517",
+    "S000200518"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_219542.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/206-ever-cash-dumbbells.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1377.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/144-item-S000205758.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205758"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1127.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/234-ever-online-2.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/145-item-S000210194.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210194"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/146-item-S000207842.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207842"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_169590.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/147-item-S000208641.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208641"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_24166.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/219-ever-cat-wetsuits.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1529.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20,
+   "wide": "slides/17-svc-wax-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_106942.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/148-item-S000208948.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208948"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1128.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/149-item-S000207832.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207832"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/09-zflex-76.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000204186"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_262282.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/150-item-S000208743.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208743"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_18080.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/207-ever-cash-wetsuits.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_2549.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/151-item-S000156633.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000156633"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1163.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/152-item-S000167874.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000167874"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_32819.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/153-item-S000205194.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205194"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_272008.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/154-item-S000207630.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207630"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_5062.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/220-ever-cat-roller.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/231-ever-newused-fitness.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_323.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/227-ever-trade-snow.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_17600.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_275888.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/155-item-S000208500.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208500"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_5077.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "L",
+    "headline": "Used baseballs|for sale",
+    "sub": "Game & practice balls \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/10-ramp-tumbleweed.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000201762"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_326.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/156-item-S000205475.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205475"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_35265.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/157-item-S000208058.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208058"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/208-ever-cash-tennis.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_289516.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/158-item-S000209062.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209062"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_5091.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/159-item-S000209061.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209061"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34381.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/160-item-S000187587.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000187587"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38927.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/161-item-S000205763.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205763"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_50109.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/11-tm-qi10-hybrid.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000204263"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_298898.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/162-item-S000205754.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205754"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_54767.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "seconds": 20,
+   "wide": "slides/19-svc-snow-wide.jpg"
+  },
+  {
+   "type": "image",
+   "src": "slides/221-ever-cat-baseball.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34382.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/163-item-S000206843.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206843"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_270535.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/164-item-S000209761.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209761"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38933.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/209-ever-cash-bodyboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_5261.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/165-item-S000208756.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208756"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_55611.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/166-item-S000157240.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000157240"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34384.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/167-item-S000169749.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000169749"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/12-zflex-fishtail.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000199319"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_270592.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/168-item-S000191723.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000191723"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_5263.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/169-item-S000210028.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210028"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_83054.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/222-ever-cat-discgolf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_41471.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "We buy used|golf clubs",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/170-item-S000183697.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000183697"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34385.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20,
+   "wide": "slides/17-svc-wax-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_54601.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/210-ever-cash-skateboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_45301.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/171-item-S000205503.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205503"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/172-item-S000209039.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209039"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34386.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/13-category-gerber-knives.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_132846.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/173-item-S000209020.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209020"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55235.mp4",
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/235-ever-online-3.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_95899.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/174-item-S000205700.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205700"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_5166.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/175-item-S000209040.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209040"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34388.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/176-item-S000208509.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208509"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/223-ever-cat-skateboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55585.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/232-ever-newused-surf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34389.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55588.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/228-ever-trade-bike.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_4568.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/177-item-S000205690.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205690"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_189547.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/211-ever-cash-discgolf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55636.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/178-item-S000209718.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209718"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_74670.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/14-sell-wavestorm-8ft.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209045",
+    "S000209047",
+    "S000209049",
+    "S000209052",
+    "S000209053"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/179-item-S000194498.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000194498"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_29948.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/180-item-S000172339.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000172339"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_31517.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/181-item-S000184142.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000184142"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_29949.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/182-item-S000207083.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207083"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_88194.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/183-item-S000175348.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000175348"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_29951.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/224-ever-cat-swim.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_32985.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/184-item-S000179273.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000179273"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "seconds": 20,
+   "wide": "slides/19-svc-snow-wide.jpg"
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_36609.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/212-ever-cash-bodyboard.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_50681.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/15-sell2-micron-magic-120.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000167739"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_5163.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/185-item-S000179274.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000179274"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_65918.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/186-item-S000179275.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000179275"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_8559.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/187-item-S000187490.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000187490"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_49607.mp4",
+   "maxSeconds": 16
+  }
+ ]
 }
