@@ -88,15 +88,15 @@ body.vid #vlogo{display:none!important}
 body.vid #side{z-index:6;gap:0;background:none}
 body.vid #side #logo{display:flex!important;border-radius:0;box-shadow:none!important;padding:1.2vh 1.4vw;align-items:center}
 body.vid #policy{border-radius:0!important;box-shadow:none!important;padding:1.4vh 2vw!important;column-gap:1.8vw!important}
-body.vid #policy li{font-size:1.95vh!important;margin:.1vh 0!important;line-height:1.22!important}
+body.vid #policy li{font-size:1.85vh!important;margin:.1vh 0!important;line-height:1.22!important}
 body.vid #policy .ph{font-size:2.1vh!important}
 body.vid #policy ul{display:block!important;padding-left:2.2vh!important}
-body.vid.bT #side,body.vid.bB #side{left:0;right:0;height:23vh;flex-direction:row}
+body.vid.bT #side,body.vid.bB #side{left:0;right:0;height:26vh;flex-direction:row}
 body.vid.bB #side{top:auto;bottom:0}body.vid.bT #side{top:0;bottom:auto}
 body.vid.bT #policy{border-width:0 0 .6vh!important}body.vid.bB #policy{border-width:.6vh 0 0!important}
 body.vid.bT #side #logo img,body.vid.bB #side #logo img{max-height:19vh;width:auto;max-width:15vw}
 body.vid.bT #policy,body.vid.bB #policy{grid-template-columns:auto 1fr auto 1fr!important}
-body.vid.bT #policy .pd,body.vid.bB #policy .pd{height:17vh!important;width:.4vh!important}
+body.vid.bT #policy .pd,body.vid.bB #policy .pd{height:20vh!important;width:.4vh!important}
 body.vid.bL #side,body.vid.bR #side{top:0;bottom:0;height:auto;width:27vw;flex-direction:column}
 body.vid.bL #side{left:0;right:auto}body.vid.bR #side{right:0;left:auto}
 body.vid.bL #policy{border-width:0 .6vh 0 0!important}body.vid.bR #policy{border-width:0 0 0 .6vh!important}
@@ -123,10 +123,64 @@ body.W #policy li{font-size:1.9vh!important}body.W #policy .ph{font-size:2.1vh!i
 #wx .src,#wx .cr{flex:0 0 auto;max-width:100%;box-sizing:border-box;white-space:normal;overflow-wrap:anywhere;font-size:1.6vh!important;line-height:1.25;margin-top:.5vh}
 </style><style>#buy{display:none;flex:0 0 auto;background:linear-gradient(135deg,#ffd84d,#ffb400);border:.6vh solid #ff5a5f;border-radius:2vh;padding:2.2vh 2.4vh;text-align:center;font-family:"Arial Black",Impact,Arial,sans-serif;color:#12324a;box-shadow:0 1.2vh 3vh rgba(255,90,95,.25)}
 #buy .b1{font-size:6vh;line-height:1;color:#ff3d6e}#buy .b2{font-size:4.4vh;line-height:1.05;margin-top:.6vh;color:#007f8c}#buy .b3{display:inline-block;margin-top:1.4vh;font:900 2.8vh Arial,sans-serif;background:#00b3c4;color:#fff;border-radius:1vh;padding:.8vh 1.6vh}
-body:not(.vid):not(.W) #logo{display:none!important}body:not(.vid):not(.W) #buy{display:block}</style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
+body:not(.vid):not(.W) #logo{display:none!important}body:not(.vid):not(.W) #buy{display:block}</style><style>/* short approved policy + slimmer banner */
+#policy .pl{font:800 calc(var(--pf,1)*3.4vh) Arial,sans-serif;line-height:1.25;color:#12324a}#policy .pk{color:#007f8c;font-family:"Arial Black",Arial}
+body.vid.bT #side,body.vid.bB #side{height:16.5vh!important}
+body.vid.bT #policy,body.vid.bB #policy{grid-template-columns:auto 1.6fr auto 1fr!important;gap:1.5vw!important;align-items:center!important;padding:1vh 1.5vw!important}
+body.vid.bT #policy .pd,body.vid.bB #policy .pd{height:11vh!important}
+body.vid.bT #side #logo img,body.vid.bB #side #logo img{max-height:13vh!important;max-width:12vw}
+body.vid #policy .pl{font-size:3.3vh!important;line-height:1.15}body.vid #policy b.pt{font-size:3.2vh!important;width:auto!important}
+body.vid.bL #side,body.vid.bR #side{width:18vw!important}
+body.vid.bL #policy .pl,body.vid.bR #policy .pl{font-size:3.3vh!important}
+body.vid.bL #side #logo img,body.vid.bR #side #logo img{max-height:12vh!important}
+body.vid.bT #ov{top:19vh!important;height:78vh!important}body.vid.bB #ov{height:78vh!important}body.vid.bB #ov.B{bottom:19vh!important}
+body.vid.bL #ov.L,body.vid.bL #ov.B{left:21vw!important}body.vid.bR #ov.R{right:21vw!important}
+body.W #policy .pl{font-size:2.9vh!important}
+</style><style>/* calm palette */
+html,body{background:#eef0f2!important}#bg{background:#eef0f2!important;animation:none!important}#bg:after{display:none}
+#policy,#buy{background:#fff!important;color:#2b2f33!important;border:.3vh solid #d5d9dd!important;border-top:.6vh solid #e8641b!important;box-shadow:0 .6vh 2vh rgba(0,0,0,.08)!important}
+#policy b.pt{background:none!important;color:#e8641b!important;padding:0!important;font-family:"Arial Black",Arial}
+#policy .pl{color:#2b2f33!important}#policy .pk,#policy .ph{color:#0f7c86!important}#policy .pd{background:#d5d9dd!important;opacity:1}
+#buy .b1{color:#e8641b!important}#buy .b2{color:#0f7c86!important}#buy .b3{background:none!important;color:#2b2f33!important;border:.25vh solid #0f7c86;}
+#logo,#vlogo,#ov .ol{background:#0f7c86!important;box-shadow:none!important}
+#ov .ot,#ov .os{background:rgba(255,255,255,.95)!important;color:#2b2f33!important;border-color:#e8641b!important;text-shadow:none!important}#ov .ob{background:#e8641b!important}
+#wx{background-color:#f6f7f8!important;border:.3vh solid #d5d9dd!important;border-top:.6vh solid #e8641b!important}
+#wx .h{color:#2b2f33!important}#wx .h small{color:#0f7c86!important}#wx .g>div,#wx .g>*{background:rgba(255,255,255,.93)!important;color:#2b2f33!important}#wx .w{background:rgba(255,255,255,.93)!important}
+#wx .tag{background:#0f7c86!important;color:#fff!important}#wx .src,#wx .cr{color:#555b61!important}
+html body #side #logo,html body.vid #side #logo{background:#0f7c86!important;border-radius:1vh}</style><style>/* slim animated banner */
+body.vid #side{transition:transform .6s ease!important;will-change:transform}
+body.vid.bT #side,body.vid.bB #side{height:12.5vh!important}
+body.vid.bT #policy .pd,body.vid.bB #policy .pd{height:8vh!important}
+body.vid.bT #policy,body.vid.bB #policy{padding:.6vh 1.4vw!important}
+body.vid.bT #policy .pl,body.vid.bB #policy .pl{font-size:2.85vh!important;line-height:1.12!important}
+body.vid.bT #side #logo img,body.vid.bB #side #logo img{max-height:9.5vh!important;max-width:10vw!important}
+body.vid.bL #side,body.vid.bR #side{width:14vw!important}
+body.vid.bL #policy .pl,body.vid.bR #policy .pl{font-size:2.75vh!important}
+body.vid.bL #policy b.pt,body.vid.bR #policy b.pt{font-size:2.9vh!important}
+body.vid.bL #side #logo img,body.vid.bR #side #logo img{max-height:10vh!important;max-width:11vw!important}
+body.vid.bT #ov{top:14.5vh!important;height:82vh!important}body.vid.bB #ov.B{bottom:14.5vh!important}
+body.vid.bL #ov.L,body.vid.bL #ov.B{left:16.5vw!important}body.vid.bR #ov.R{right:16.5vw!important}
+body.vid.bh.bT #side{transform:translateY(-110%)}body.vid.bh.bB #side{transform:translateY(110%)}
+body.vid.bh.bL #side{transform:translateX(-110%)}body.vid.bh.bR #side{transform:translateX(110%)}
+</style><style>/* weather: photo is the hero */
+body.X:not(.vid) #wx{left:0!important;right:0!important;top:0!important;width:100vw!important;height:100vh!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:3vh 2.5vw!important;align-items:flex-start;gap:1vh}
+body.X.R:not(.vid) #wx{align-items:flex-end}
+body.X:not(.vid) #wx>*{max-width:27vw;box-sizing:border-box}
+body.X:not(.vid) #wx .h{font-size:2.8vh!important;padding:1vh 1.4vw!important;border-radius:1vh;border-top:.5vh solid #e8641b}body.X #wx .h small{font-size:1.8vh!important}
+body.X:not(.vid) #wx .m{margin:0!important;padding:1vh 1.4vw!important;gap:1.2vw;border-radius:1vh}body.X #wx .ic,body.X #wx .t{font-size:7.5vh!important}body.X #wx .c{font-size:2.4vh!important}
+body.X:not(.vid) #wx .g{margin:0!important;gap:.8vh;width:27vw}body.X #wx .g div{padding:.8vh 1vw!important;font-size:1.7vh!important;border-radius:1vh}body.X #wx .g b{font-size:2.8vh!important}
+body.X:not(.vid) #wx .tag{font-size:2.2vh!important;padding:.8vh 1.2vw!important;margin-bottom:0!important}
+body.X:not(.vid) #wx .src,body.X:not(.vid) #wx .cr{font-size:1.5vh!important;max-width:40vw}
+body.X:not(.vid) #side{top:auto!important;bottom:4vh!important;height:auto!important;left:auto!important;right:2.5vw!important;width:23vw!important;gap:1.5vh!important;z-index:7;animation:sinR .7s ease 1.2s both}
+body.X.R:not(.vid) #side{right:auto!important;left:2.5vw!important;animation-name:sinL}
+body.X:not(.vid) #buy{padding:1.2vh 1.2vw!important}body.X #buy .b1{font-size:3.6vh!important}body.X #buy .b2{font-size:2.6vh!important}body.X #buy .b3{font-size:1.8vh!important}
+body.X:not(.vid) #policy{padding:1.4vh 1.3vw!important;--pf:1!important}body.X #policy b.pt{font-size:2.6vh!important}body.X #policy .pl{font-size:2.1vh!important}body.X #policy .pd{margin:1vh 0!important}
+@keyframes sinR{from{transform:translateX(120%);opacity:0}to{transform:none;opacity:1}}@keyframes sinL{from{transform:translateX(-120%);opacity:0}to{transform:none;opacity:1}}
+body.X.fr #policy,body.X.fr #buy,body.X.fr #wx .h,body.X.fr #wx .m,body.X.fr #wx .g div,body.X.fr #wx .src,body.X.fr #wx .cr{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border-color:rgba(255,255,255,.7)!important}
+</style><style>#ov.up{justify-content:flex-start!important}#ov.dn{justify-content:flex-end!important}#ov.sm{transform:scale(.7)!important;transform-origin:left center}#ov.R.sm{transform-origin:right center}#ov.B.sm{transform-origin:center bottom}#ov.up.sm{transform-origin-y:top}#ov.L.up.sm{transform-origin:left top}#ov.R.up.sm{transform-origin:right top}#ov.L.dn.sm{transform-origin:left bottom}#ov.R.dn.sm{transform-origin:right bottom}</style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="buy"><div class="b1">WE BUY USED</div><div class="b2">SPORTS GEAR</div><div class="b3">Bring it in for cash or trade!</div></div><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
-<div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><ul><li>Returns accepted within 14 days of purchase</li><li>Must be in original packaging, in original condition, with all parts included</li><li>Original sales receipt required</li><li>Returns may be subject to a restocking fee of up to 15%</li></ul></div><div class="pd"></div><div class="ps"><div class="ph">USED, MARKED DOWN, SPECIAL ORDERS, AND SERVICES</div><ul><li>All sales are final</li><li>Used items may be purchased back at a reduced value based on condition, demand, and inventory needs</li><li>Refunds/exchanges allowed only if a supervisor documents approval on the original sales receipt at the time of sale</li></ul></div></div></div>
+<div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="pl"><span class="pk">New items:</span> returns within 14 days with receipt and original packaging (up to 15% restocking fee).</div></div><div class="pd"></div><div class="ps"><div class="pl"><span class="pk">Used, marked down, special orders and services:</span> all sales final.</div></div></div></div>
 <div id="vbar"><b style="color:#ffd400">NEW ITEMS:</b> returns within 14 days w/ receipt &amp; original packaging, up to 15% restocking fee &nbsp;|&nbsp; <b style="color:#ffd400">ALL SALES FINAL:</b> used, marked-down, special orders, services</div>
 <div id="ov"></div><video id="vid" muted playsinline preload="auto"></video>
 <script>
@@ -165,17 +219,18 @@ function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now
  <div class="tag">Perfect day to grab a board</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%WXB.length][1]?`<div class="cr">${WXB[wxN%WXB.length][1]}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
- side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%WXB.length][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
+ side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%WXB.length][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X');document.body.classList.toggle('fr',wxN%2==1)};
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
-const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':o.side==='B'?'B':'R';ovEl.innerHTML=o.text?`<div class="ot">${o.text}</div><div class="ob"></div><div class="os ow">${o.sub}</div>`:`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
+const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':o.side==='B'?'B':'R';if(o.v)ovEl.classList.add(o.v);if(o.sm)ovEl.classList.add('sm');ovEl.innerHTML=o.text?`<div class="ot">${o.text}</div><div class="ob"></div><div class="os ow">${o.sub}</div>`:`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
+let bTm=[];function bannerCycle(d,W){bTm.forEach(clearTimeout);bTm=[];const b=document.body.classList,at=(ms,f)=>bTm.push(setTimeout(f,ms));b.add('bh');W=W||(d>=26?[2,d-9]:[2]);for(const s of W){at(s*1000,()=>b.remove('bh'));at((s+7.5)*1000,()=>b.add('bh'))}}
 async function next(){clearTimeout(t);if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
   try{await vid.play()}catch(e){fromVid=false;t=setTimeout(next,100);return}
-  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));showOv(it.overlay);document.body.classList.remove('X');vid.style.display='block';fromVid=true;
+  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));showOv(it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),it.bAt);document.body.classList.remove('X');vid.style.display='block';fromVid=true;
   const done=()=>{if(d)return;d=true;clearTimeout(t);vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
  else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}}if(!L){side=side==='L'?'R':'L';L=side}
