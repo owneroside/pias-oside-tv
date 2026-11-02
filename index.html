@@ -36,9 +36,16 @@ body.W #policy b.pt{margin:0;font-size:3.4vh;line-height:1.1;width:12vw}
 body.W #policy .pd{width:.4vh;height:14vh;margin:0}
 body.W #policy .ph{font-size:2.8vh;margin-bottom:.4vh}
 body.W #policy ul{display:flex;flex-wrap:wrap;column-gap:2.4vw;padding-left:2.4vh;margin:0}body.W #policy li{font-size:2.5vh;margin:.2vh 0}
+#wx{position:fixed;left:3.5vw;top:5vh;height:90vh;width:90vh;display:none;box-sizing:border-box;background:linear-gradient(160deg,#0b1d3a,#0a4b7a 60%,#0aa0c8);border:.7vh solid #ffd400;border-radius:2vh;box-shadow:0 2vh 6vh rgba(0,0,0,.45);color:#fff;font-family:Arial,sans-serif;font-weight:900;padding:4vh 4vh;flex-direction:column;transition:opacity .6s}
+body.R #wx{left:auto;right:3.5vw}body.X #wx{display:flex}body.X #stage{visibility:hidden}
+#wx .h{font-family:"Arial Black",Arial;color:#ffd400;font-size:4.6vh;letter-spacing:.2vh}#wx .h small{display:block;color:#fff;font-size:2.6vh;letter-spacing:.1vh;margin-top:.5vh}
+#wx .m{display:flex;align-items:center;gap:3vh;margin:3vh 0 1vh}#wx .ic{font-size:17vh;line-height:1}#wx .t{font-family:"Arial Black",Arial;font-size:17vh;line-height:1}
+#wx .c{font-size:4.6vh}#wx .g{display:grid;grid-template-columns:1fr 1fr;gap:2vh;margin-top:3vh}
+#wx .g div{background:rgba(255,255,255,.12);border-radius:1.5vh;padding:1.6vh 2vh;font-size:2.6vh;color:#cfe8ff}#wx .g b{display:block;color:#fff;font-family:"Arial Black",Arial;font-size:5vh}
+#wx .w{grid-column:1/3;background:rgba(255,212,0,.18)!important}#wx .tag{margin-top:auto;font-family:"Arial Black",Arial;font-size:3.3vh;color:#ffd400}#wx .src{font-size:1.5vh;color:#9cc;font-weight:400;margin-top:.8vh}
 </style></head><body class="L">
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
-<div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
+<div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
 <div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><ul><li>Returns within 14 days</li><li>Receipt &amp; original packaging required</li><li>Up to 15% restocking fee</li></ul></div><div class="pd"></div><div class="ps"><div class="ph">ALL SALES FINAL</div><ul><li>Used items</li><li>Marked-down items</li><li>Special orders</li><li>Services</li></ul></div></div></div>
 <div id="vbar"><b style="color:#ffd400">NEW ITEMS:</b> returns within 14 days w/ receipt &amp; original packaging, up to 15% restocking fee &nbsp;|&nbsp; <b style="color:#ffd400">ALL SALES FINAL:</b> used, marked-down, special orders, services</div>
 <video id="vid" muted playsinline preload="auto"></video>
@@ -56,21 +63,46 @@ async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
 let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
-async function next(){clearTimeout(t);if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
+const WXK='pias-wx',WXI=12*60000;let lastWx=Date.now()-WXI+60000;const wxEl=document.getElementById('wx');
+const WC=c=>c==0?['☀️','Sunny']:c<=2?['🌤️','Partly Cloudy']:c==3?['☁️','Overcast']:c<=48?['🌫️','Foggy']:c<=57?['🌦️','Drizzle']:c<=67||(c>=80&&c<=82)?['🌧️','Rain']:c<=77?['🌨️','Snow']:['⛈️','Thunderstorms'];
+async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
+ try{const j=await (await fetch('https://api.open-meteo.com/v1/forecast?latitude=33.183&longitude=-117.37&current=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,is_day&daily=temperature_2m_max,temperature_2m_min&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles&forecast_days=1')).json();
+  if(j.current){d.air={t:j.current.temperature_2m,c:j.current.weather_code,ws:j.current.wind_speed_10m,wd:j.current.wind_direction_10m,day:j.current.is_day,hi:j.daily.temperature_2m_max[0],lo:j.daily.temperature_2m_min[0],at:Date.now()}}}catch(e){}
+ try{const j=await (await fetch('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=9410230&product=water_temperature&units=english&time_zone=lst_ldt&format=json&date=latest&application=PIAS_Oceanside_TV')).json();
+  const v=j.data&&parseFloat(j.data[0].v);if(v>40&&v<90)d.water={t:v,src:'NOAA La Jolla',at:Date.now()}}catch(e){}
+ try{const j=await (await fetch('https://marine-api.open-meteo.com/v1/marine?latitude=33.18&longitude=-117.40&current=wave_height,sea_surface_temperature&length_unit=imperial&timezone=America%2FLos_Angeles')).json();
+  if(j.current){if(j.current.wave_height!=null)d.surf={h:j.current.wave_height,at:Date.now()};const sst=j.current.sea_surface_temperature;
+   if(sst!=null&&!(d.water&&Date.now()-d.water.at<3*3600e3&&d.water.src.startsWith('NOAA')))d.water={t:sst*9/5+32,src:'Open-Meteo Marine',at:Date.now()}}}catch(e){}
+ localStorage.setItem(WXK,JSON.stringify(d))}
+function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now(),a=d.air,w=d.water;
+ if(!a||n-a.at>3*3600e3||!w||n-w.at>6*3600e3)return null;let[ic,cn]=WC(a.c);if(!a.day&&a.c<=2)ic='🌙';
+ const dir=['N','NE','E','SE','S','SW','W','NW'][Math.round(a.wd/45)%8],s=d.surf&&n-d.surf.at<6*3600e3?d.surf.h:null,r=Math.round;
+ return `<div class="h">OCEANSIDE RIGHT NOW<small>${new Date().toLocaleString('en-US',{weekday:'long',hour:'numeric',minute:'2-digit'})}</small></div>
+ <div class="m"><div class="ic">${ic}</div><div><div class="t">${r(a.t)}°</div><div class="c">${cn}</div></div></div>
+ <div class="g"><div>Wind<b>${r(a.ws)} mph ${dir}</b></div><div>Today<b>H ${r(a.hi)}° / L ${r(a.lo)}°</b></div>
+ <div class="w">🌊 Water Temp<b>${r(w.t)}°F${s!=null?` &nbsp;·&nbsp; Surf ~${s.toFixed(1)} ft`:''}</b></div></div>
+ <div class="tag">Perfect day to grab a board — 1220 S Coast Hwy</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>`}
+wxFetch();setInterval(wxFetch,15*60000);
+function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
+ side=side==='L'?'R':'L';const L=side,apply=()=>{wxEl.innerHTML=h;document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
+ if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
+ else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
+ t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
+async function next(){clearTimeout(t);if(M&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
   try{await vid.play()}catch(e){fromVid=false;t=setTimeout(next,100);return}
-  document.body.classList.add('vid');vid.style.display='block';fromVid=true;
+  document.body.classList.add('vid');document.body.classList.remove('X');vid.style.display='block';fromVid=true;
   const done=()=>{if(d)return;d=true;clearTimeout(t);vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
  else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}}if(!L){side=side==='L'?'R':'L';L=side}
   const n=new Image();n.src=u;try{await n.decode()}catch(e){}
-  const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W');document.body.classList.add(L)};
+  const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W','X');document.body.classList.add(L)};
   if(fromVid){tgt.src=u;try{await tgt.decode()}catch(e){}apply();
    requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
   else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
-if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
+if(location.hash==='#wx'){lastWx=0;wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
 </script></body></html>
