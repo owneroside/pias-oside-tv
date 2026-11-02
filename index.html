@@ -104,7 +104,7 @@ async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
 function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now(),a=d.air,w=d.water;
  if(!a||n-a.at>3*3600e3||!w||n-w.at>6*3600e3)return null;let[ic,cn]=WC(a.c);if(!a.day&&a.c<=2)ic='🌙';
  const dir=['N','NE','E','SE','S','SW','W','NW'][Math.round(a.wd/45)%8],s=d.surf&&n-d.surf.at<6*3600e3?d.surf.h:null,r=Math.round;
- return `<div class="h">OCEANSIDE RIGHT NOW<small>${new Date().toLocaleString('en-US',{weekday:'long',hour:'numeric',minute:'2-digit'})}</small></div>
+ return `<div class="h">OCEANSIDE RIGHT NOW<small>${new Date().toLocaleString('en-US',{timeZone:'America/Los_Angeles',weekday:'long',hour:'numeric',minute:'2-digit'})}</small></div>
  <div class="m"><div class="ic">${ic}</div><div><div class="t">${r(a.t)}°</div><div class="c">${cn}</div></div></div>
  <div class="g"><div>Wind<b>${r(a.ws)} mph ${dir}</b></div><div>Today<b>H ${r(a.hi)}° / L ${r(a.lo)}°</b></div>
  <div class="w">🌊 Water Temp<b>${r(w.t)}°F${s!=null?` &nbsp;·&nbsp; Surf ~${s.toFixed(1)} ft`:''}</b></div></div>
