@@ -57,4 +57,5 @@ async function next(){clearTimeout(t);if(!M){t=setTimeout(async()=>{await load()
   else{st.style.opacity=0;pol.style.opacity=0;setTimeout(()=>{img.src=u;pol.className='p'+pos;st.style.opacity=1;pol.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
 load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
+let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
 </script></body></html>
