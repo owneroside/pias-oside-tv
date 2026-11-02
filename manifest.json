@@ -119,17 +119,17 @@
    "seconds": 20
   },
   {
+   "type": "video",
+   "src": "clips/baseball_mixkit_853.mp4",
+   "maxSeconds": 16
+  },
+  {
    "type": "image",
    "src": "slides/105-item-S000189215.jpg",
    "seconds": 20,
    "sku": [
     "S000189215"
    ]
-  },
-  {
-   "type": "video",
-   "src": "clips/baseball_mixkit_853.mp4",
-   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -227,14 +227,14 @@
    "seconds": 20
   },
   {
-   "type": "image",
-   "src": "slides/229-ever-newused-golf.jpg",
-   "seconds": 20
-  },
-  {
    "type": "video",
    "src": "clips/baseball_mixkit_855.mp4",
    "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/229-ever-newused-golf.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -298,10 +298,10 @@
   },
   {
    "type": "image",
-   "src": "slides/114-item-S000203334.jpg",
+   "src": "slides/03-taylormade-flextech.jpg",
    "seconds": 20,
    "sku": [
-    "S000203334"
+    "S000202192"
    ]
   },
   {
@@ -311,10 +311,10 @@
   },
   {
    "type": "image",
-   "src": "slides/03-taylormade-flextech.jpg",
+   "src": "slides/114-item-S000203334.jpg",
    "seconds": 20,
    "sku": [
-    "S000202192"
+    "S000203334"
    ]
   },
   {
@@ -328,17 +328,17 @@
    "seconds": 20
   },
   {
+   "type": "video",
+   "src": "clips/baseball_mixkit_856.mp4",
+   "maxSeconds": 16
+  },
+  {
    "type": "image",
    "src": "slides/115-item-S000204665.jpg",
    "seconds": 20,
    "sku": [
     "S000204665"
    ]
-  },
-  {
-   "type": "video",
-   "src": "clips/baseball_mixkit_856.mp4",
-   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -370,10 +370,10 @@
   },
   {
    "type": "image",
-   "src": "slides/117-item-S000208550.jpg",
+   "src": "slides/118-item-S000201759.jpg",
    "seconds": 20,
    "sku": [
-    "S000208550"
+    "S000201759"
    ]
   },
   {
@@ -404,10 +404,10 @@
   },
   {
    "type": "image",
-   "src": "slides/118-item-S000201759.jpg",
+   "src": "slides/119-item-S000185182.jpg",
    "seconds": 20,
    "sku": [
-    "S000201759"
+    "S000185182"
    ]
   },
   {
@@ -422,10 +422,10 @@
   },
   {
    "type": "image",
-   "src": "slides/119-item-S000185182.jpg",
+   "src": "slides/120-item-S000207308.jpg",
    "seconds": 20,
    "sku": [
-    "S000185182"
+    "S000207308"
    ]
   },
   {
@@ -439,14 +439,6 @@
    "seconds": 20
   },
   {
-   "type": "image",
-   "src": "slides/120-item-S000207308.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000207308"
-   ]
-  },
-  {
    "type": "video",
    "src": "clips/baseball_mixkit_858.mp4",
    "maxSeconds": 16
@@ -457,17 +449,17 @@
    "seconds": 20
   },
   {
-   "type": "video",
-   "src": "clips/golf_mixkit_2035.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/121-item-S000204097.jpg",
    "seconds": 20,
    "sku": [
     "S000204097"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_mixkit_2035.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -491,14 +483,22 @@
    ]
   },
   {
+   "type": "image",
+   "src": "slides/203-ever-cash-ballgloves.jpg",
+   "seconds": 20
+  },
+  {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1059.mp4",
    "maxSeconds": 16
   },
   {
    "type": "image",
-   "src": "slides/203-ever-cash-ballgloves.jpg",
-   "seconds": 20
+   "src": "slides/124-item-S000206709.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206709"
+   ]
   },
   {
    "type": "video",
@@ -512,10 +512,10 @@
   },
   {
    "type": "image",
-   "src": "slides/124-item-S000206709.jpg",
+   "src": "slides/125-item-S000205009.jpg",
    "seconds": 20,
    "sku": [
-    "S000206709"
+    "S000205009"
    ]
   },
   {
@@ -525,11 +525,8 @@
   },
   {
    "type": "image",
-   "src": "slides/125-item-S000205009.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000205009"
-   ]
+   "src": "slides/216-ever-cat-pickleball.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -538,19 +535,22 @@
   },
   {
    "type": "image",
-   "src": "slides/216-ever-cat-pickleball.jpg",
-   "seconds": 20
+   "src": "slides/126-item-S000208542.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208542"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1368.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
    "src": "slides/17-svc-wax-price.jpg",
    "seconds": 20,
    "wide": "slides/17-svc-wax-wide.jpg"
-  },
-  {
-   "type": "video",
-   "src": "clips/skateboarding_mixkit_1368.mp4",
-   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -567,24 +567,6 @@
   },
   {
    "type": "image",
-   "src": "slides/126-item-S000208542.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000208542"
-   ]
-  },
-  {
-   "type": "image",
-   "src": "slides/308-ever-corp-softball-team.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_199833.mp4",
-   "maxSeconds": 16
-  },
-  {
-   "type": "image",
    "src": "slides/127-item-S000207672.jpg",
    "seconds": 20,
    "sku": [
@@ -593,8 +575,13 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_199833.mp4",
    "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/308-ever-corp-softball-team.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -606,7 +593,7 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_mixkit_881.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
    "maxSeconds": 16
   },
   {
@@ -615,6 +602,19 @@
    "seconds": 20,
    "sku": [
     "S000208106"
+   ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_mixkit_881.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/130-item-S000201811.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000201811"
    ]
   },
   {
@@ -629,10 +629,10 @@
   },
   {
    "type": "image",
-   "src": "slides/130-item-S000201811.jpg",
+   "src": "slides/131-item-S000189218.jpg",
    "seconds": 20,
    "sku": [
-    "S000201811"
+    "S000189218"
    ]
   },
   {
@@ -646,17 +646,17 @@
    "seconds": 20
   },
   {
-   "type": "image",
-   "src": "slides/131-item-S000189218.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000189218"
-   ]
-  },
-  {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1070.mp4",
    "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/132-item-S000177217.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000177217"
+   ]
   },
   {
    "type": "image",
@@ -673,16 +673,11 @@
   },
   {
    "type": "image",
-   "src": "slides/132-item-S000177217.jpg",
+   "src": "slides/133-item-S000209966.jpg",
    "seconds": 20,
    "sku": [
-    "S000177217"
+    "S000209966"
    ]
-  },
-  {
-   "type": "image",
-   "src": "slides/217-ever-cat-homegym.jpg",
-   "seconds": 20
   },
   {
    "type": "video",
@@ -691,8 +686,14 @@
   },
   {
    "type": "image",
-   "src": "slides/230-ever-newused-baseball.jpg",
+   "src": "slides/217-ever-cat-homegym.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
   },
   {
    "type": "video",
@@ -701,9 +702,8 @@
   },
   {
    "type": "image",
-   "src": "slides/18-svc-regrip-price.jpg",
-   "seconds": 20,
-   "wide": "slides/18-svc-regrip-wide.jpg"
+   "src": "slides/230-ever-newused-baseball.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -717,10 +717,10 @@
   },
   {
    "type": "image",
-   "src": "slides/133-item-S000209966.jpg",
+   "src": "slides/134-item-S000189746.jpg",
    "seconds": 20,
    "sku": [
-    "S000209966"
+    "S000189746"
    ]
   },
   {
@@ -730,21 +730,13 @@
   },
   {
    "type": "image",
-   "src": "slides/134-item-S000189746.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000189746"
-   ]
+   "src": "slides/310-ever-corp-golf-bag.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1071.mp4",
    "maxSeconds": 16
-  },
-  {
-   "type": "image",
-   "src": "slides/310-ever-corp-golf-bag.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -768,6 +760,14 @@
    ]
   },
   {
+   "type": "image",
+   "src": "slides/137-item-S000209107.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209107"
+   ]
+  },
+  {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52106.mp4",
    "maxSeconds": 16
@@ -778,17 +778,17 @@
    "seconds": 20
   },
   {
-   "type": "image",
-   "src": "slides/137-item-S000209107.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000209107"
-   ]
-  },
-  {
    "type": "video",
    "src": "clips/baseball_pixabay_14183.mp4",
    "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/138-item-S000206482.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000206482"
+   ]
   },
   {
    "type": "image",
@@ -809,14 +809,6 @@
    "seconds": 20
   },
   {
-   "type": "image",
-   "src": "slides/138-item-S000206482.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000206482"
-   ]
-  },
-  {
    "type": "video",
    "src": "clips/skateboarding_mixkit_1375.mp4",
    "maxSeconds": 16
@@ -827,6 +819,14 @@
    "seconds": 20,
    "sku": [
     "S000206703"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/140-item-S000209732.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209732"
    ]
   },
   {
@@ -851,14 +851,6 @@
    "wide": "slides/19-svc-snow-wide.jpg"
   },
   {
-   "type": "image",
-   "src": "slides/140-item-S000209732.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000209732"
-   ]
-  },
-  {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13356.mp4",
    "maxSeconds": 16
@@ -872,6 +864,14 @@
    ]
   },
   {
+   "type": "image",
+   "src": "slides/142-item-S000205759.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205759"
+   ]
+  },
+  {
    "type": "video",
    "src": "clips/baseball_pixabay_184211.mp4",
    "maxSeconds": 16
@@ -880,14 +880,6 @@
    "type": "image",
    "src": "slides/312-ever-corp-pickleball.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/142-item-S000205759.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000205759"
-   ]
   },
   {
    "type": "video",
@@ -903,11 +895,6 @@
    ]
   },
   {
-   "type": "video",
-   "src": "clips/skateboarding_mixkit_1376.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/08-yonex-vcore.jpg",
    "seconds": 20,
@@ -915,6 +902,11 @@
     "S000200517",
     "S000200518"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1376.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -928,8 +920,11 @@
   },
   {
    "type": "image",
-   "src": "slides/234-ever-online-2.jpg",
-   "seconds": 20
+   "src": "slides/144-item-S000205758.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205758"
+   ]
   },
   {
    "type": "video",
@@ -943,16 +938,8 @@
   },
   {
    "type": "image",
-   "src": "slides/144-item-S000205758.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000205758"
-   ]
-  },
-  {
-   "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13360.mp4",
-   "maxSeconds": 16
+   "src": "slides/234-ever-online-2.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -961,6 +948,11 @@
    "sku": [
     "S000210194"
    ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13360.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -981,17 +973,17 @@
    ]
   },
   {
-   "type": "video",
-   "src": "clips/skateboarding_mixkit_1377.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/147-item-S000208641.jpg",
    "seconds": 20,
    "sku": [
     "S000208641"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1377.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1010,11 +1002,6 @@
    "wide": "slides/17-svc-wax-wide.jpg"
   },
   {
-   "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/148-item-S000208948.jpg",
    "seconds": 20,
@@ -1023,13 +1010,8 @@
    ]
   },
   {
-   "type": "image",
-   "src": "slides/314-ever-corp-golf-recycle.jpg",
-   "seconds": 20
-  },
-  {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_169590.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
    "maxSeconds": 16
   },
   {
@@ -1039,6 +1021,16 @@
    "sku": [
     "S000207832"
    ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_169590.mp4",
+   "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/314-ever-corp-golf-recycle.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1054,17 +1046,17 @@
    ]
   },
   {
-   "type": "video",
-   "src": "clips/skateboarding_mixkit_1529.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/150-item-S000208743.jpg",
    "seconds": 20,
    "sku": [
     "S000208743"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_1529.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1085,11 +1077,6 @@
    ]
   },
   {
-   "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1128.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/152-item-S000167874.jpg",
    "seconds": 20,
@@ -1098,13 +1085,8 @@
    ]
   },
   {
-   "type": "image",
-   "src": "slides/315-ever-corp-local-sports.jpg",
-   "seconds": 20
-  },
-  {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_262282.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1128.mp4",
    "maxSeconds": 16
   },
   {
@@ -1117,8 +1099,13 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_pixabay_18080.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_262282.mp4",
    "maxSeconds": 16
+  },
+  {
+   "type": "image",
+   "src": "slides/315-ever-corp-local-sports.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1127,6 +1114,11 @@
    "sku": [
     "S000207630"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_18080.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1150,14 +1142,14 @@
   },
   {
    "type": "image",
-   "src": "slides/18-svc-regrip-price.jpg",
-   "seconds": 20,
-   "wide": "slides/18-svc-regrip-wide.jpg"
+   "src": "slides/227-ever-trade-snow.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/227-ever-trade-snow.jpg",
-   "seconds": 20
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
   },
   {
    "type": "video",
@@ -1186,17 +1178,17 @@
    ]
   },
   {
-   "type": "video",
-   "src": "clips/baseball_pixabay_5062.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/156-item-S000205475.jpg",
    "seconds": 20,
    "sku": [
     "S000205475"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_5062.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1217,14 +1209,14 @@
    ]
   },
   {
-   "type": "video",
-   "src": "clips/snowboarding_pixabay_17600.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/208-ever-cash-tennis.jpg",
    "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboarding_pixabay_17600.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1259,16 +1251,16 @@
   },
   {
    "type": "image",
-   "src": "slides/317-ever-corp-soccer.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/160-item-S000187587.jpg",
    "seconds": 20,
    "sku": [
     "S000187587"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/317-ever-corp-soccer.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1297,14 +1289,17 @@
    ]
   },
   {
+   "type": "image",
+   "src": "slides/162-item-S000205754.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205754"
+   ]
+  },
+  {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_289516.mp4",
    "maxSeconds": 16
-  },
-  {
-   "type": "image",
-   "src": "slides/221-ever-cat-baseball.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -1319,16 +1314,8 @@
   },
   {
    "type": "image",
-   "src": "slides/162-item-S000205754.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000205754"
-   ]
-  },
-  {
-   "type": "video",
-   "src": "clips/skateboarding_mixkit_34381.mp4",
-   "maxSeconds": 16
+   "src": "slides/221-ever-cat-baseball.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1337,6 +1324,11 @@
    "sku": [
     "S000206843"
    ]
+  },
+  {
+   "type": "video",
+   "src": "clips/skateboarding_mixkit_34381.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1350,8 +1342,11 @@
   },
   {
    "type": "image",
-   "src": "slides/209-ever-cash-bodyboards.jpg",
-   "seconds": 20
+   "src": "slides/164-item-S000209761.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209761"
+   ]
   },
   {
    "type": "video",
@@ -1360,11 +1355,8 @@
   },
   {
    "type": "image",
-   "src": "slides/164-item-S000209761.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000209761"
-   ]
+   "src": "slides/209-ever-cash-bodyboards.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1394,6 +1386,14 @@
   },
   {
    "type": "image",
+   "src": "slides/167-item-S000169749.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000169749"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
    "seconds": 20,
    "sku": [
@@ -1404,14 +1404,6 @@
    "type": "video",
    "src": "clips/skateboarding_mixkit_34382.mp4",
    "maxSeconds": 16
-  },
-  {
-   "type": "image",
-   "src": "slides/167-item-S000169749.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000169749"
-   ]
   },
   {
    "type": "image",
@@ -1432,17 +1424,17 @@
    ]
   },
   {
-   "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38933.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/169-item-S000210028.jpg",
    "seconds": 20,
    "sku": [
     "S000210028"
    ]
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38933.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1485,8 +1477,11 @@
   },
   {
    "type": "image",
-   "src": "slides/320-ever-corp-golf-yellow.jpg",
-   "seconds": 20
+   "src": "slides/171-item-S000205503.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000205503"
+   ]
   },
   {
    "type": "video",
@@ -1495,11 +1490,8 @@
   },
   {
    "type": "image",
-   "src": "slides/171-item-S000205503.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000205503"
-   ]
+   "src": "slides/320-ever-corp-golf-yellow.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1526,6 +1518,14 @@
   },
   {
    "type": "image",
+   "src": "slides/173-item-S000209020.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000209020"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/235-ever-online-3.jpg",
    "seconds": 20
   },
@@ -1538,14 +1538,6 @@
     "headline": "We buy used|golf clubs",
     "sub": "Cash or trade credit"
    }
-  },
-  {
-   "type": "image",
-   "src": "slides/173-item-S000209020.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000209020"
-   ]
   },
   {
    "type": "image",
@@ -1641,14 +1633,14 @@
    ]
   },
   {
-   "type": "video",
-   "src": "clips/golf_pixabay_5166.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/211-ever-cash-discgolf.jpg",
    "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pixabay_5166.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
@@ -1721,8 +1713,11 @@
   },
   {
    "type": "image",
-   "src": "slides/324-ever-corp-discgolf-pack.jpg",
-   "seconds": 20
+   "src": "slides/182-item-S000207083.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000207083"
+   ]
   },
   {
    "type": "video",
@@ -1731,11 +1726,8 @@
   },
   {
    "type": "image",
-   "src": "slides/182-item-S000207083.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000207083"
-   ]
+   "src": "slides/324-ever-corp-discgolf-pack.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1751,14 +1743,14 @@
    ]
   },
   {
-   "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55636.mp4",
-   "maxSeconds": 16
-  },
-  {
    "type": "image",
    "src": "slides/224-ever-cat-swim.jpg",
    "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55636.mp4",
+   "maxSeconds": 16
   },
   {
    "type": "image",
