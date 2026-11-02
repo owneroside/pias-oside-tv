@@ -36,13 +36,13 @@ body.W #policy b.pt{margin:0;font-size:3.4vh;line-height:1.1;width:12vw}
 body.W #policy .pd{width:.4vh;height:14vh;margin:0}
 body.W #policy .ph{font-size:2.8vh;margin-bottom:.4vh}
 body.W #policy ul{display:flex;flex-wrap:wrap;column-gap:2.4vw;padding-left:2.4vh;margin:0}body.W #policy li{font-size:2.5vh;margin:.2vh 0}
-#wx{position:fixed;left:3.5vw;top:5vh;height:90vh;width:90vh;display:none;box-sizing:border-box;background:linear-gradient(160deg,#0b1d3a,#0a4b7a 60%,#0aa0c8);border:.7vh solid #ffd400;border-radius:2vh;box-shadow:0 2vh 6vh rgba(0,0,0,.45);color:#fff;font-family:Arial,sans-serif;font-weight:900;padding:4vh 4vh;flex-direction:column;transition:opacity .6s}
+#wx{position:fixed;left:3.5vw;top:5vh;height:90vh;width:90vh;display:none;box-sizing:border-box;background:linear-gradient(160deg,#0b1d3a,#0a4b7a 60%,#0aa0c8);background-size:cover;background-position:center;border:.7vh solid #ffd400;border-radius:2vh;box-shadow:0 2vh 6vh rgba(0,0,0,.45);color:#fff;font-family:Arial,sans-serif;font-weight:900;padding:4vh 4vh;flex-direction:column;transition:opacity .6s}
 body.R #wx{left:auto;right:3.5vw}body.X #wx{display:flex}body.X #stage{visibility:hidden}
 #wx .h{font-family:"Arial Black",Arial;color:#ffd400;font-size:4.6vh;letter-spacing:.2vh}#wx .h small{display:block;color:#fff;font-size:2.6vh;letter-spacing:.1vh;margin-top:.5vh}
 #wx .m{display:flex;align-items:center;gap:3vh;margin:3vh 0 1vh}#wx .ic{font-size:17vh;line-height:1}#wx .t{font-family:"Arial Black",Arial;font-size:17vh;line-height:1}
 #wx .c{font-size:4.6vh}#wx .g{display:grid;grid-template-columns:1fr 1fr;gap:2vh;margin-top:3vh}
 #wx .g div{background:rgba(255,255,255,.12);border-radius:1.5vh;padding:1.6vh 2vh;font-size:2.6vh;color:#cfe8ff}#wx .g b{display:block;color:#fff;font-family:"Arial Black",Arial;font-size:5vh}
-#wx .w{grid-column:1/3;background:rgba(255,212,0,.18)!important}#wx .tag{margin-top:auto;font-family:"Arial Black",Arial;font-size:3.3vh;color:#ffd400}#wx .src{font-size:1.5vh;color:#9cc;font-weight:400;margin-top:.8vh}
+#wx .w{grid-column:1/3;background:rgba(255,212,0,.18)!important}#wx .tag{margin-top:auto;font-family:"Arial Black",Arial;font-size:3.3vh;color:#ffd400}#wx .cr{font-size:1.4vh;color:#bcd;font-weight:400;margin-top:.4vh}#wx .src{font-size:1.5vh;color:#9cc;font-weight:400;margin-top:.8vh}
 </style></head><body class="L">
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
@@ -63,6 +63,7 @@ async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
 let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
+const WXB=[['wx-bg/bg1.jpg',''],['wx-bg/bg2.jpg','Photo: “A surfer at the wave” by Brocken Inaglory, CC BY-SA 4.0'],['wx-bg/bg3.jpg','Photo: “Oceanside Pier-2” by Visitor7, CC BY-SA 3.0'],['wx-bg/bg4.jpg','Photo: “Sunset and Storm, Oceanside, CA 2016” by inkknife_2000, CC BY-SA 2.0']];let wxN=+(localStorage.getItem('pias-wxn')||0);
 const WXK='pias-wx',WXI=12*60000;let lastWx=Date.now()-WXI+60000;const wxEl=document.getElementById('wx');
 const WC=c=>c==0?['☀️','Sunny']:c<=2?['🌤️','Partly Cloudy']:c==3?['☁️','Overcast']:c<=48?['🌫️','Foggy']:c<=57?['🌦️','Drizzle']:c<=67||(c>=80&&c<=82)?['🌧️','Rain']:c<=77?['🌨️','Snow']:['⛈️','Thunderstorms'];
 async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
@@ -81,10 +82,10 @@ function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now
  <div class="m"><div class="ic">${ic}</div><div><div class="t">${r(a.t)}°</div><div class="c">${cn}</div></div></div>
  <div class="g"><div>Wind<b>${r(a.ws)} mph ${dir}</b></div><div>Today<b>H ${r(a.hi)}° / L ${r(a.lo)}°</b></div>
  <div class="w">🌊 Water Temp<b>${r(w.t)}°F${s!=null?` &nbsp;·&nbsp; Surf ~${s.toFixed(1)} ft`:''}</b></div></div>
- <div class="tag">Perfect day to grab a board — 1220 S Coast Hwy</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>`}
+ <div class="tag">Perfect day to grab a board — 1220 S Coast Hwy</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%4][1]?`<div class="cr">${WXB[wxN%4][1]}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
- side=side==='L'?'R':'L';const L=side,apply=()=>{wxEl.innerHTML=h;document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
+ side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%4][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(5,15,35,.78),rgba(5,15,35,.35) 45%,rgba(5,15,35,.85)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
@@ -103,6 +104,6 @@ async function next(){clearTimeout(t);if(M&&tryWx())return;if(!M){t=setTimeout(a
    requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
   else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
-if(location.hash==='#wx'){lastWx=0;wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
+if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=+location.hash[3];wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
 </script></body></html>
