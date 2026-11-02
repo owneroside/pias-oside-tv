@@ -48,6 +48,7 @@ body.R #wx{left:auto;right:3.5vw}body.X #wx{display:flex}body.X #stage{visibilit
 #ov .oh{font-family:"Arial Black",Impact,Arial,sans-serif;font-weight:900;color:#fff;font-size:7vh;line-height:1.02;text-transform:uppercase;text-shadow:0 .5vh 1.2vh rgba(0,0,0,.75)}
 #ov .ob{height:.9vh;width:14vw;background:#ffd400;border-radius:.4vh;margin:2.2vh 0}#ov.R .ob{margin-left:auto}
 #ov .os{display:inline-block;align-self:flex-start;background:rgba(11,29,58,.88);color:#fff;border-left:.8vh solid #ffd400;padding:1.3vh 2vh;font:900 2.6vh Arial,sans-serif;border-radius:1vh;white-space:nowrap}#ov.R .os{align-self:flex-end;border-left:0;border-right:.8vh solid #ffd400}
+#ov .ot{background:rgba(11,29,58,.82);padding:2.2vh 2.6vh;border-radius:1.2vh;border-top:.8vh solid #ffd400;font-family:"Arial Black",Impact,Arial,sans-serif;font-weight:900;color:#fff;font-size:4.6vh;line-height:1.12;text-shadow:0 .3vh .6vh rgba(0,0,0,.6)}#ov .ot+.ob{display:none}#ov .ot+.ob+.os{margin-top:1.6vh}#ov .os.ow{white-space:normal;font-size:3vh;line-height:1.2}
 #ov .ol{margin-top:2.2vh;height:9vh;align-self:flex-start;background:rgba(11,29,58,.88);padding:1vh 1.5vh;border-radius:1vh}#ov.R .ol{align-self:flex-end}
 #side{overflow:hidden}#logo{flex:0 0 auto}#logo img{max-height:20vh}
 body:not(.W) #policy{min-height:0;overflow:hidden;padding:2.2vh 2.4vh}
@@ -116,7 +117,7 @@ function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)re
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
-const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':'R';ovEl.innerHTML=`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
+const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':'R';ovEl.innerHTML=o.text?`<div class="ot">${o.text}</div><div class="ob"></div><div class="os ow">${o.sub}</div>`:`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
 async function next(){clearTimeout(t);if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
