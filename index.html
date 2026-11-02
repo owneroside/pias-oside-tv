@@ -89,7 +89,7 @@ async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
 let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
-const WXB=[['wx-bg/bg1.jpg',''],['wx-bg/bg2.jpg','Photo: “A surfer at the wave” by Brocken Inaglory, CC BY-SA 4.0'],['wx-bg/bg3.jpg','Photo: “Oceanside Pier-2” by Visitor7, CC BY-SA 3.0'],['wx-bg/bg4.jpg','Photo: “Sunset and Storm, Oceanside, CA 2016” by inkknife_2000, CC BY-SA 2.0']];let wxN=+(localStorage.getItem('pias-wxn')||0);
+const WXB=[['wx-bg/bg1.jpg',''],['wx-bg/bg2.jpg','Photo: “A surfer at the wave” by Brocken Inaglory, CC BY-SA 4.0'],['wx-bg/bg3.jpg','Photo: “Oceanside Pier-2” by Visitor7, CC BY-SA 3.0'],['wx-bg/bg4.jpg','Photo: “Sunset and Storm, Oceanside, CA 2016” by inkknife_2000, CC BY-SA 2.0'],["wx-bg/bg5.jpg", ""],["wx-bg/bg6.jpg", ""],["wx-bg/bg7.jpg", "Photo: “Oceansidepier” by Alessandriana, CC BY-SA 3.0"],["wx-bg/bg8.jpg", "Photo: “Sunset Oceanside Harbor” by John D. from Pasadena, USA, CC BY 2.0"],["wx-bg/bg9.jpg", "Photo: “Oceanside Pier Aerial” by Wingtipvortex, CC BY-SA 3.0"],["wx-bg/bg10.jpg", "Photo: “Oceanside, California 01” by Tgormanbrown, CC BY-SA 4.0"],["wx-bg/bg11.jpg", "Photo: “Under the Oceanside Pier” by Visitor7, CC BY-SA 3.0"],["wx-bg/bg12.jpg", "Photo: “Buena Vista Lagoon” by Visitor7, CC BY-SA 3.0"],["wx-bg/bg13.jpg", "Photo: “Mission San Luis Rey de Francia” by Saltytog, CC BY 4.0"],["wx-bg/bg14.jpg", "Photo: “Oceanside 1” by Visitor7, CC BY-SA 3.0"],["wx-bg/bg15.jpg", "Photo: “Oceanside Wharf” by Ramesh lalwani, CC BY-SA 4.0"],["wx-bg/bg16.jpg", "Photo: “Cassidy Street Beach” by Bobsd, CC BY-SA 4.0"]];let wxN=+(localStorage.getItem('pias-wxn')||0);
 const WXK='pias-wx',WXI=110000;let lastWx=Date.now()-WXI+60000;const wxEl=document.getElementById('wx');
 const WC=c=>c==0?['☀️','Sunny']:c<=2?['🌤️','Partly Cloudy']:c==3?['☁️','Overcast']:c<=48?['🌫️','Foggy']:c<=57?['🌦️','Drizzle']:c<=67||(c>=80&&c<=82)?['🌧️','Rain']:c<=77?['🌨️','Snow']:['⛈️','Thunderstorms'];
 async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
@@ -108,10 +108,10 @@ function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now
  <div class="m"><div class="ic">${ic}</div><div><div class="t">${r(a.t)}°</div><div class="c">${cn}</div></div></div>
  <div class="g"><div>Wind<b>${r(a.ws)} mph ${dir}</b></div><div>Today<b>H ${r(a.hi)}° / L ${r(a.lo)}°</b></div>
  <div class="w">🌊 Water Temp<b>${r(w.t)}°F${s!=null?` &nbsp;·&nbsp; Surf ~${s.toFixed(1)} ft`:''}</b></div></div>
- <div class="tag">Perfect day to grab a board</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%4][1]?`<div class="cr">${WXB[wxN%4][1]}</div>`:''}`}
+ <div class="tag">Perfect day to grab a board</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%WXB.length][1]?`<div class="cr">${WXB[wxN%WXB.length][1]}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
- side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%4][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(5,15,35,.78),rgba(5,15,35,.35) 45%,rgba(5,15,35,.85)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
+ side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%WXB.length][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(5,15,35,.78),rgba(5,15,35,.35) 45%,rgba(5,15,35,.85)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
@@ -131,7 +131,7 @@ async function next(){clearTimeout(t);if(M&&!(M.items[i]&&M.items[i].type==='vid
    requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
   else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
-if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=+location.hash[3];wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
+if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
 </script><script>
 function fitPolicy(){const p=document.getElementById('policy');if(!p||document.body.classList.contains('W')){if(p)p.style.removeProperty('--pf');return}
