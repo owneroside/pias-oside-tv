@@ -34,7 +34,7 @@
   },
   {
    "type": "image",
-   "src": "slides/04-reviews-1100.jpg",
+   "src": "slides/17-svc-wax-price.jpg",
    "seconds": 20
   },
   {
@@ -44,12 +44,22 @@
   },
   {
    "type": "image",
+   "src": "slides/04-reviews-1100.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/05-gerber-convoy.jpg",
    "seconds": 20
   },
   {
    "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20
   },
   {
@@ -69,6 +79,11 @@
   },
   {
    "type": "image",
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/10-ramp-tumbleweed.jpg",
    "seconds": 20
   },
@@ -80,6 +95,11 @@
   {
    "type": "image",
    "src": "slides/12-zflex-fishtail.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20
   },
   {
@@ -99,7 +119,7 @@
   },
   {
    "type": "image",
-   "src": "slides/16-wax-service.jpg",
+   "src": "slides/17-svc-wax-price.jpg",
    "seconds": 20
   }
  ]
