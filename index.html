@@ -5,27 +5,34 @@ html,body{margin:0;height:100%;overflow:hidden;background:#111;cursor:none;font-
 @keyframes g{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
 #bg:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,rgba(255,255,255,.07) 0 40px,transparent 40px 80px)}
 #stage{position:fixed;left:3.5vw;top:5vh;height:90vh;width:90vh;transition:opacity .6s}
+body.R #stage{left:auto;right:3.5vw}
+#side{position:fixed;top:5vh;bottom:5vh;right:3.5vw;left:calc(3.5vw + 90vh + 3vw);display:flex;flex-direction:column;align-items:stretch;gap:3vh;transition:opacity .6s}
+body.R #side{left:3.5vw;right:calc(3.5vw + 90vh + 3vw)}
+#wide{position:fixed;left:0;right:0;top:0;height:79.6vh;display:none;transition:opacity .6s}#wide img{width:100%;height:100%;object-fit:contain;display:block}
+body.W #wide{display:block}body.W #stage,body.W #logo{display:none}
+body.W #side{left:0;right:0;top:auto;bottom:0;height:20.4vh;gap:0}
+body.W #policy{border-radius:0;border-width:.6vh 0 0;padding:1.4vh 3vw;flex:1}
+body.W #policy b{display:inline;margin-right:2vw;font-size:3.4vh}body.W #policy ul{display:flex;flex-wrap:wrap;column-gap:3vw;padding-left:2.6vh}body.W #policy li{font-size:2.9vh;margin:.3vh 0;margin-right:1vw}
 #stage img{width:100%;height:100%;object-fit:contain;border-radius:1.5vh;box-shadow:0 2vh 6vh rgba(0,0,0,.45)}
-#side{position:fixed;left:calc(3.5vw + 90vh + 3vw);right:3.5vw;top:5vh;bottom:5vh;display:flex;flex-direction:column;justify-content:space-between}
 #brand{color:#fff;text-shadow:0 .6vh 0 rgba(0,0,0,.35);font-size:6.2vh;line-height:1.05;text-transform:uppercase}
 #brand small{display:block;font-size:3.4vh;margin-top:1.5vh;font-family:Arial,sans-serif;font-weight:900}
 #policy{background:#0b1d3a;color:#fff;border:.7vh solid #ffd400;border-radius:2vh;padding:3vh 3vh;font-family:Arial,Helvetica,sans-serif;font-weight:700;font-size:3.5vh;line-height:1.3;box-shadow:0 1.5vh 4vh rgba(0,0,0,.4)}
 #policy b{display:block;color:#ffd400;font-family:"Arial Black",Arial;font-size:3.6vh;margin-bottom:1.2vh;letter-spacing:.1vh}
 video{position:fixed;top:0;left:0;right:0;bottom:7vh;width:100%;height:93vh;object-fit:cover;background:#000;display:none}
 body.vid #policy,body.vid #stage{visibility:hidden}
-#logo{position:fixed;top:4vh;right:3.5vw;height:17vh;background:#0b1d3a;border-radius:2vh;padding:1.6vh 2.4vh;box-shadow:0 1.5vh 4vh rgba(0,0,0,.4)}
-#logo img{height:100%;display:block}
-#policy{position:fixed;left:calc(3.5vw + 90vh + 4vw);right:3.5vw;transition:top .8s ease,opacity .5s}
-#policy.p0{top:25vh}#policy.p1{top:36vh}#policy.p2{top:47vh}
-body.vid #logo{visibility:hidden}
-#policy ul{margin:0;padding-left:3.2vh}#policy li{margin:.4vh 0;font-size:3.4vh;line-height:1.22}
+#logo{background:#0b1d3a;border-radius:2vh;padding:2vh;box-shadow:0 1.5vh 4vh rgba(0,0,0,.4);display:flex;justify-content:center}
+#logo img{width:100%;max-height:24vh;object-fit:contain;display:block}
+#policy{flex:1;display:flex;flex-direction:column;justify-content:center}
+body.vid #side,body.vid #wide{visibility:hidden}
+#policy ul{margin:0;padding-left:3.6vh}#policy li{margin:.7vh 0;font-size:3.8vh;line-height:1.18}
+#policy b{font-size:4.4vh}
 #vbar{position:fixed;left:0;right:0;bottom:0;z-index:5;display:none;background:rgba(11,29,58,.88);border-top:.5vh solid #ffd400;color:#fff;font:700 1.9vh Arial,sans-serif;text-align:center;padding:1.1vh 1.5vw;white-space:normal;line-height:1.25}
 body.vid #vbar{display:block}
-</style></head><body>
+</style></head><body class="L">
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
-<div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
-<div id="policy" class="p2"><b>RETURN POLICY</b><ul>
-<li>New items: returns within 14 days</li><li>Receipt and original packaging required</li><li>Up to 15% restocking fee</li><li>Used, marked down, special orders and services: all sales final</li></ul></div>
+<div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
+<div id="policy"><b>RETURN POLICY</b><ul>
+<li>New items: returns within 14 days</li><li>Receipt and original packaging required</li><li>Up to 15% restocking fee</li><li>Used, marked down, special orders and services: all sales final</li></ul></div></div>
 <div id="vbar">RETURNS: New items within 14 days w/ receipt &amp; original packaging (up to 15% restocking fee) &bull; Used, marked down, special orders &amp; services: all sales final</div>
 <video id="vid" muted playsinline preload="auto"></video>
 <script>
@@ -37,11 +44,11 @@ async function getBlob(src){const k=abs(src);if(blobs[k])return blobs[k];
  const u=URL.createObjectURL(await r.blob());blobs[k]=u;return u}
 function release(keep){for(const k in blobs)if(!keep.includes(k)){URL.revokeObjectURL(blobs[k]);delete blobs[k]}}
 let warming=false;async function warmAll(){if(warming||!M)return;warming=true;const c=await caches.open(C);
- for(const it of M.items){const k=abs(it.src);try{if(!await c.match(k)){const r=await fetch(k);if(r.ok)await c.put(k,r)}}catch(e){}}warming=false}
+ for(const it of M.items)for(const q of [it.src,it.wide].filter(Boolean)){const k=abs(q);try{if(!await c.match(k)){const r=await fetch(k);if(r.ok)await c.put(k,r)}}catch(e){}}warming=false}
 async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});const j=await r.json();if(j.items&&j.items.length){M=j;(await caches.open(C)).put(abs('manifest.json'),new Response(JSON.stringify(j)))}}catch(e){try{const r=await (await caches.open(C)).match(abs('manifest.json'));if(r&&!M)M=await r.json()}catch(_){}}
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
-let fromVid=false,pos=0;const pol=document.getElementById('policy');
+let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
 async function next(){clearTimeout(t);if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
@@ -50,12 +57,13 @@ async function next(){clearTimeout(t);if(!M){t=setTimeout(async()=>{await load()
   document.body.classList.add('vid');vid.style.display='block';fromVid=true;
   const done=()=>{if(d)return;d=true;clearTimeout(t);vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
- else{const n=new Image();n.src=u;try{await n.decode()}catch(e){}
-  pos=(pos+1)%3;
-  if(fromVid){st.style.transition='none';img.src=u;try{await img.decode()}catch(e){}pol.className='p'+pos;
-   requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load();requestAnimationFrame(()=>st.style.transition='')});fromVid=false}
-  else{st.style.opacity=0;pol.style.opacity=0;setTimeout(()=>{img.src=u;pol.className='p'+pos;st.style.opacity=1;pol.style.opacity=1},600)}
+ else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}}if(!L){side=side==='L'?'R':'L';L=side}
+  const n=new Image();n.src=u;try{await n.decode()}catch(e){}
+  const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W');document.body.classList.add(L)};
+  if(fromVid){tgt.src=u;try{await tgt.decode()}catch(e){}apply();
+   requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
+  else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
-load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
+if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
 </script></body></html>
