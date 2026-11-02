@@ -1799,5 +1799,20 @@
     "40S107200"
    ]
   }
+ ],
+ "datedEvery": 7,
+ "dated": [
+  {
+   "src": "slides/dated/PIAS_HolidayHours_Thanksgiving_BlackFriday_2026_dated_TV_1920x1080.png",
+   "start": "2026-11-02",
+   "end": "2026-11-27",
+   "seconds": 15
+  },
+  {
+   "src": "slides/dated/PIAS_HolidayHours_Christmas_NewYear_2026_dated_TV_1920x1080.png",
+   "start": "2026-12-07",
+   "end": "2027-01-01",
+   "seconds": 15
+  }
  ]
 }

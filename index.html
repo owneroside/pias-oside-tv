@@ -192,7 +192,7 @@ async function getBlob(src){const k=abs(src);if(blobs[k])return blobs[k];
  const u=URL.createObjectURL(await r.blob());blobs[k]=u;return u}
 function release(keep){for(const k in blobs)if(!keep.includes(k)){URL.revokeObjectURL(blobs[k]);delete blobs[k]}}
 let warming=false;async function warmAll(){if(warming||!M)return;warming=true;const c=await caches.open(C);
- for(const it of M.items)for(const q of [it.src,it.wide].filter(Boolean)){const k=abs(q);try{if(!await c.match(k)){const r=await fetch(k);if(r.ok)await c.put(k,r)}}catch(e){}}warming=false}
+ for(const it of [...M.items,...(M.dated||[])])for(const q of [it.src,it.wide].filter(Boolean)){const k=abs(q);try{if(!await c.match(k)){const r=await fetch(k);if(r.ok)await c.put(k,r)}}catch(e){}}warming=false}
 async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});const j=await r.json();if(j.items&&j.items.length){M=j;(await caches.open(C)).put(abs('manifest.json'),new Response(JSON.stringify(j)))}}catch(e){try{const r=await (await caches.open(C)).match(abs('manifest.json'));if(r&&!M)M=await r.json()}catch(_){}}
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
@@ -225,7 +225,10 @@ function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)re
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
 const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':o.side==='B'?'B':'R';if(o.v)ovEl.classList.add(o.v);if(o.sm)ovEl.classList.add('sm');ovEl.innerHTML=o.text?`<div class="ot">${o.text}</div><div class="ob"></div><div class="os ow">${o.sub}</div>`:`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
 let bTm=[];function bannerCycle(d,W){bTm.forEach(clearTimeout);bTm=[];const b=document.body.classList,at=(ms,f)=>bTm.push(setTimeout(f,ms));b.add('bh');W=W||(d>=26?[2,d-9]:[2]);for(const s of W){at(s*1000,()=>b.remove('bh'));at((s+7.5)*1000,()=>b.add('bh'))}}
-async function next(){clearTimeout(t);if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
+let holN=0,holI=0;function ptDay(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date())}
+function activeDated(){if(!M||!M.dated)return[];const d=ptDay();return M.dated.filter(x=>x.start<=d&&d<=x.end)}
+async function next(){clearTimeout(t);const H=document.getElementById('hol');H.style.display='none';
+ const A=activeDated();if(A.length&&++holN>(M.datedEvery||7)){holN=0;const it=A[holI++%A.length];try{const u=await getBlob(it.src);H.firstChild.src=u;try{await H.firstChild.decode()}catch(e){}if(fromVid){vid.pause()}H.style.display='block';t=setTimeout(next,(it.seconds||15)*1000);return}catch(e){}}if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
@@ -249,4 +252,4 @@ function fitPolicy(){const p=document.getElementById('policy');if(!p||document.b
  let lo=.5,hi=3;for(let k=0;k<18;k++){const m=(lo+hi)/2;p.style.setProperty('--pf',m);(ch()<=H*.97&&p.scrollWidth<=p.clientWidth)?lo=m:hi=m}p.style.setProperty('--pf',lo)}
 addEventListener('resize',fitPolicy);addEventListener('load',fitPolicy);if(document.fonts)document.fonts.ready.then(fitPolicy);
 new MutationObserver(()=>requestAnimationFrame(fitPolicy)).observe(document.body,{attributes:true,attributeFilter:['class']});fitPolicy();
-</script></body></html>
+</script><div id="hol" style="position:fixed;inset:0;z-index:99999;background:#000;display:none"><img style="width:100%;height:100%;object-fit:contain"></div></body></html>
