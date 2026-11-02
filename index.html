@@ -60,7 +60,7 @@ body:not(.W) #policy b{font-size:calc(var(--pf)*3.8vh);margin-bottom:calc(var(--
 body:not(.W) #policy .ph{font-size:calc(var(--pf)*3vh);margin-bottom:calc(var(--pf)*.6vh)}
 body:not(.W) #policy li{font-size:calc(var(--pf)*2.8vh)!important;margin:calc(var(--pf)*.35vh) 0;line-height:1.2}
 body:not(.W) #policy .pd{margin:calc(var(--pf)*1.4vh) 0}
-</style></head><body class="L">
+</style><style>/* logo on every video */#vlogo{display:none;position:fixed;top:3vh;right:2.5vw;width:13vw;padding:1vw 1.2vw;background:rgba(8,20,45,.55);border-radius:1vw;z-index:50}#vlogo img{width:100%;display:block}body.vid #vlogo{display:block}#vlogo.L{right:auto;left:2.5vw}</style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
 <div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><ul><li>Returns within 14 days</li><li>Receipt &amp; original packaging required</li><li>Up to 15% restocking fee</li></ul></div><div class="pd"></div><div class="ps"><div class="ph">ALL SALES FINAL</div><ul><li>Used items</li><li>Marked-down items</li><li>Special orders</li><li>Services</li></ul></div></div></div>
@@ -81,7 +81,7 @@ async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
 let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
 const WXB=[['wx-bg/bg1.jpg',''],['wx-bg/bg2.jpg','Photo: “A surfer at the wave” by Brocken Inaglory, CC BY-SA 4.0'],['wx-bg/bg3.jpg','Photo: “Oceanside Pier-2” by Visitor7, CC BY-SA 3.0'],['wx-bg/bg4.jpg','Photo: “Sunset and Storm, Oceanside, CA 2016” by inkknife_2000, CC BY-SA 2.0']];let wxN=+(localStorage.getItem('pias-wxn')||0);
-const WXK='pias-wx',WXI=12*60000;let lastWx=Date.now()-WXI+60000;const wxEl=document.getElementById('wx');
+const WXK='pias-wx',WXI=110000;let lastWx=Date.now()-WXI+60000;const wxEl=document.getElementById('wx');
 const WC=c=>c==0?['☀️','Sunny']:c<=2?['🌤️','Partly Cloudy']:c==3?['☁️','Overcast']:c<=48?['🌫️','Foggy']:c<=57?['🌦️','Drizzle']:c<=67||(c>=80&&c<=82)?['🌧️','Rain']:c<=77?['🌨️','Snow']:['⛈️','Thunderstorms'];
 async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
  try{const j=await (await fetch('https://api.open-meteo.com/v1/forecast?latitude=33.183&longitude=-117.37&current=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m,is_day&daily=temperature_2m_max,temperature_2m_min&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles&forecast_days=1')).json();
@@ -106,8 +106,8 @@ function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)re
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
-const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':'R';ovEl.innerHTML=`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
-async function next(){clearTimeout(t);if(M&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
+const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':'R';ovEl.innerHTML=`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
+async function next(){clearTimeout(t);if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
