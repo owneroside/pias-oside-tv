@@ -99,7 +99,7 @@ function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now
  <div class="m"><div class="ic">${ic}</div><div><div class="t">${r(a.t)}°</div><div class="c">${cn}</div></div></div>
  <div class="g"><div>Wind<b>${r(a.ws)} mph ${dir}</b></div><div>Today<b>H ${r(a.hi)}° / L ${r(a.lo)}°</b></div>
  <div class="w">🌊 Water Temp<b>${r(w.t)}°F${s!=null?` &nbsp;·&nbsp; Surf ~${s.toFixed(1)} ft`:''}</b></div></div>
- <div class="tag">Perfect day to grab a board — 1220 S Coast Hwy</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%4][1]?`<div class="cr">${WXB[wxN%4][1]}</div>`:''}`}
+ <div class="tag">Perfect day to grab a board</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%4][1]?`<div class="cr">${WXB[wxN%4][1]}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
  side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%4][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(5,15,35,.78),rgba(5,15,35,.35) 45%,rgba(5,15,35,.85)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
