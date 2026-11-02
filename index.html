@@ -55,6 +55,11 @@ body:not(.W) #policy b{font-size:3.8vh;margin-bottom:.8vh}
 body:not(.W) #policy .ph{font-size:3vh}
 body:not(.W) #policy li{font-size:2.8vh;margin:.3vh 0}
 body:not(.W) #policy .pd{margin:1.4vh 0}
+body:not(.W) #policy{--pf:1;justify-content:center;padding:1.6vh 2.4vh}
+body:not(.W) #policy b{font-size:calc(var(--pf)*3.8vh);margin-bottom:calc(var(--pf)*.8vh)}
+body:not(.W) #policy .ph{font-size:calc(var(--pf)*3vh);margin-bottom:calc(var(--pf)*.6vh)}
+body:not(.W) #policy li{font-size:calc(var(--pf)*2.8vh)!important;margin:calc(var(--pf)*.35vh) 0;line-height:1.2}
+body:not(.W) #policy .pd{margin:calc(var(--pf)*1.4vh) 0}
 </style></head><body class="L">
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
@@ -119,4 +124,11 @@ async function next(){clearTimeout(t);if(M&&tryWx())return;if(!M){t=setTimeout(a
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
 if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=+location.hash[3];wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
+</script><script>
+function fitPolicy(){const p=document.getElementById('policy');if(!p||document.body.classList.contains('W')){if(p)p.style.removeProperty('--pf');return}
+ const cs=getComputedStyle(p),H=p.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);if(H<=0)return;
+ const ch=()=>{let h=0;for(const c of p.children){const m=getComputedStyle(c);h+=c.offsetHeight+parseFloat(m.marginTop)+parseFloat(m.marginBottom)}return h};
+ let lo=.5,hi=3;for(let k=0;k<18;k++){const m=(lo+hi)/2;p.style.setProperty('--pf',m);(ch()<=H*.97&&p.scrollWidth<=p.clientWidth)?lo=m:hi=m}p.style.setProperty('--pf',lo)}
+addEventListener('resize',fitPolicy);addEventListener('load',fitPolicy);if(document.fonts)document.fonts.ready.then(fitPolicy);
+new MutationObserver(()=>requestAnimationFrame(fitPolicy)).observe(document.body,{attributes:true,attributeFilter:['class']});fitPolicy();
 </script></body></html>
