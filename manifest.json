@@ -44,7 +44,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_32620.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "We buy used|baseball gear",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -67,7 +72,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_105372.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "L",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -131,7 +141,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_54597.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Softball gear|for less",
+    "sub": "Bats \u2022 Gloves \u2022 Cleats \u2014 new & used"
+   }
   },
   {
    "type": "image",
@@ -297,7 +312,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/softball_pixabay_55230.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "We buy used|baseball gear",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -323,7 +343,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_145976.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -749,7 +774,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_259142.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -1005,7 +1035,12 @@
   {
    "type": "video",
    "src": "clips/baseball_pixabay_5077.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "L",
+    "headline": "We buy used|baseball gear",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -1235,7 +1270,12 @@
   {
    "type": "video",
    "src": "clips/golf_pixabay_41471.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "We buy used|golf clubs",
+    "sub": "Cash or trade credit \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",
@@ -1306,7 +1346,12 @@
   {
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_55235.mp4",
-   "maxSeconds": 16
+   "maxSeconds": 16,
+   "overlay": {
+    "side": "R",
+    "headline": "Tennis gear|new & used",
+    "sub": "Rackets \u2022 Balls \u2022 Shoes \u2022 1220 S Coast Hwy"
+   }
   },
   {
    "type": "image",

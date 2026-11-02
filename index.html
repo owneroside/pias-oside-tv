@@ -43,12 +43,18 @@ body.R #wx{left:auto;right:3.5vw}body.X #wx{display:flex}body.X #stage{visibilit
 #wx .c{font-size:4.6vh}#wx .g{display:grid;grid-template-columns:1fr 1fr;gap:2vh;margin-top:3vh}
 #wx .g div{background:rgba(255,255,255,.12);border-radius:1.5vh;padding:1.6vh 2vh;font-size:2.6vh;color:#cfe8ff}#wx .g b{display:block;color:#fff;font-family:"Arial Black",Arial;font-size:5vh}
 #wx .w{grid-column:1/3;background:rgba(255,212,0,.18)!important}#wx .tag{margin-top:auto;font-family:"Arial Black",Arial;font-size:3.3vh;color:#ffd400}#wx .cr{font-size:1.4vh;color:#bcd;font-weight:400;margin-top:.4vh}#wx .src{font-size:1.5vh;color:#9cc;font-weight:400;margin-top:.8vh}
+#ov{position:fixed;top:0;height:93vh;width:34vw;z-index:4;display:flex;flex-direction:column;justify-content:center;opacity:0;transition:opacity .9s;pointer-events:none;visibility:hidden}
+#ov.L{left:4vw}#ov.R{right:4vw;text-align:right}#ov.on{opacity:1}body.vid #ov{visibility:visible}
+#ov .oh{font-family:"Arial Black",Impact,Arial,sans-serif;font-weight:900;color:#fff;font-size:7vh;line-height:1.02;text-transform:uppercase;text-shadow:0 .5vh 1.2vh rgba(0,0,0,.75)}
+#ov .ob{height:.9vh;width:14vw;background:#ffd400;border-radius:.4vh;margin:2.2vh 0}#ov.R .ob{margin-left:auto}
+#ov .os{display:inline-block;align-self:flex-start;background:rgba(11,29,58,.88);color:#fff;border-left:.8vh solid #ffd400;padding:1.3vh 2vh;font:900 2.6vh Arial,sans-serif;border-radius:1vh;white-space:nowrap}#ov.R .os{align-self:flex-end;border-left:0;border-right:.8vh solid #ffd400}
+#ov .ol{margin-top:2.2vh;height:9vh;align-self:flex-start;background:rgba(11,29,58,.88);padding:1vh 1.5vh;border-radius:1vh}#ov.R .ol{align-self:flex-end}
 </style></head><body class="L">
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
 <div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><ul><li>Returns within 14 days</li><li>Receipt &amp; original packaging required</li><li>Up to 15% restocking fee</li></ul></div><div class="pd"></div><div class="ps"><div class="ph">ALL SALES FINAL</div><ul><li>Used items</li><li>Marked-down items</li><li>Special orders</li><li>Services</li></ul></div></div></div>
 <div id="vbar"><b style="color:#ffd400">NEW ITEMS:</b> returns within 14 days w/ receipt &amp; original packaging, up to 15% restocking fee &nbsp;|&nbsp; <b style="color:#ffd400">ALL SALES FINAL:</b> used, marked-down, special orders, services</div>
-<video id="vid" muted playsinline preload="auto"></video>
+<div id="ov"></div><video id="vid" muted playsinline preload="auto"></video>
 <script>
 const C='pias-media-v1';let M=null,i=0,t=null,blobs={};const img=document.getElementById('img'),vid=document.getElementById('vid'),st=document.getElementById('stage');
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();
@@ -86,22 +92,23 @@ function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now
 wxFetch();setInterval(wxFetch,15*60000);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
  side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%4][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(5,15,35,.78),rgba(5,15,35,.35) 45%,rgba(5,15,35,.85)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X')};
- if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
+ if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
+const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':'R';ovEl.innerHTML=`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
 async function next(){clearTimeout(t);if(M&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load()}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
   try{await vid.play()}catch(e){fromVid=false;t=setTimeout(next,100);return}
-  document.body.classList.add('vid');document.body.classList.remove('X');vid.style.display='block';fromVid=true;
+  document.body.classList.add('vid');showOv(it.overlay);document.body.classList.remove('X');vid.style.display='block';fromVid=true;
   const done=()=>{if(d)return;d=true;clearTimeout(t);vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
  else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}}if(!L){side=side==='L'?'R':'L';L=side}
   const n=new Image();n.src=u;try{await n.decode()}catch(e){}
   const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W','X');document.body.classList.add(L)};
   if(fromVid){tgt.src=u;try{await tgt.decode()}catch(e){}apply();
-   requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';vid.removeAttribute('src');vid.load()});fromVid=false}
+   requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
   else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
 if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=+location.hash[3];wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
