@@ -862,11 +862,6 @@
   },
   {
    "type": "image",
-   "src": "slides/231-ever-newused-fitness.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20,
    "wide": "slides/18-svc-regrip-wide.jpg"
