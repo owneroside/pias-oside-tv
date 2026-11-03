@@ -200,6 +200,8 @@ body.vid.fv #fcap{display:flex;position:fixed;z-index:9001;box-sizing:border-box
 #fcap.TL{left:3vw;top:5vh}#fcap.TR{right:3vw;top:5vh}#fcap.BL{left:3vw;bottom:5vh}#fcap.BR{right:3vw;bottom:5vh}
 body.vid.fv #flogo{display:block;position:fixed;z-index:9001;width:12vw;height:auto;filter:drop-shadow(0 0 .5vw rgba(0,0,0,.55))}
 #flogo.TL{left:2vw;top:3vh}#flogo.TR{right:2vw;top:3vh}#flogo.BL{left:2vw;bottom:3vh}#flogo.BR{right:2vw;bottom:3vh}
+/* weather: PIAS logo badge on the photo */
+#wx .wlogo{position:absolute;top:4vh;right:3vw;width:16vw;padding:1.2vh 1.2vw;background:#0f7c86;border-radius:1vh;box-shadow:0 1vh 3vh rgba(0,0,0,.25);display:block}body.R #wx .wlogo{right:auto;left:3vw}
 </style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="buy"><div class="b1">WE BUY USED</div><div class="b2">SPORTS GEAR</div><div class="b3">Bring it in for cash or trade!</div></div><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
@@ -235,7 +237,7 @@ async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
 function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now(),a=d.air,w=d.water;
  if(!a||n-a.at>3*3600e3||!w||n-w.at>6*3600e3)return null;let[ic,cn]=WC(a.c);if(!a.day&&a.c<=2)ic='🌙';
  const dir=['N','NE','E','SE','S','SW','W','NW'][Math.round(a.wd/45)%8],s=d.surf&&n-d.surf.at<6*3600e3?d.surf.h:null,r=Math.round;
- const cr='%%CR%%';return `<div class="wc"><div class="wh">OCEANSIDE NOW</div><div class="wm"><span class="ic">${ic}</span><span class="t">${r(a.t)}°</span><span class="c">${cn}</span></div><div class="wr"><span>Wind <b>${r(a.ws)} mph ${dir}</b></span><span>Water <b>${r(w.t)}°F</b></span></div></div>${cr?`<div class="cr">${cr}</div>`:''}`}
+ const cr='%%CR%%';return `<img class="wlogo" src="logo.png" alt="Play It Again Sports Oceanside"><div class="wc"><div class="wh">OCEANSIDE NOW</div><div class="wm"><span class="ic">${ic}</span><span class="t">${r(a.t)}°</span><span class="c">${cn}</span></div><div class="wr"><span>Wind <b>${r(a.ws)} mph ${dir}</b></span><span>Water <b>${r(w.t)}°F</b></span></div></div>${cr?`<div class="cr">${cr}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
 const WXF='wx-bg/bg3.jpg',wxImg={};function wxPre(u){if(!wxImg[u]){const im=new Image();im.onerror=()=>{delete wxImg[u]};im.src=u;wxImg[u]=im}return wxImg[u]}
 function wxOk(u){const im=wxImg[u];return !!(im&&im.complete&&im.naturalWidth>0)}
