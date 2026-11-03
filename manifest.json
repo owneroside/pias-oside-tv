@@ -1219,11 +1219,6 @@
   },
   {
    "type": "image",
-   "src": "slides/232-ever-newused-surf.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20,
    "wide": "slides/18-svc-regrip-wide.jpg"
