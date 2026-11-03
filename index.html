@@ -307,7 +307,9 @@ let gen=0;async function next(){clearTimeout(t);t=null;const g=++gen;const stale
   const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W','X');document.body.classList.add(L);st.style.visibility=wd.style.visibility=''};
   if(fromVid){tgt.src=u;try{await tgt.decode()}catch(e){}if(stale())return;apply();
    requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
-  else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
+  else{const fw=document.body.classList.contains('X'),F=fw?[st,sd,wd,wxEl]:[st,sd,wd];for(const e of F)e.style.opacity=0;
+   await new Promise(r=>setTimeout(r,600));if(stale())return;tgt.src=u;try{await tgt.decode()}catch(e){}if(stale())return;
+   apply();await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));if(stale())return;for(const e of F)e.style.opacity=1}
   peek();clearTimeout(t);t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
 if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));const pu=WXB[wxN%WXB.length][0];wxPre(pu);wxFetch().then(()=>new Promise(r=>{const k=()=>wxOk(pu)||wxOk(WXF)?r():setTimeout(k,100);k()})).then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
