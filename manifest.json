@@ -343,7 +343,7 @@
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44416.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "T",
    "bAt": []
   },
   {
@@ -559,7 +559,7 @@
    "type": "video",
    "src": "clips/golf_mixkit_2033.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "T",
    "overlay": {
     "side": "R",
     "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
@@ -1015,7 +1015,7 @@
    "type": "video",
    "src": "clips/baseball_mixkit_881.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "T",
    "bAt": [
     4
    ],

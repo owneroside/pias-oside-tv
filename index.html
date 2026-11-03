@@ -227,6 +227,16 @@ body:not(.vid):not(.W):not(.X) #policy b.pt{font-size:3vh!important;margin-botto
 body:not(.vid):not(.W):not(.X) #policy .ph{font-size:4.4vh!important}
 body:not(.vid):not(.W):not(.X) #policy .pl{font-size:3.4vh!important;line-height:1.38!important}
 body:not(.vid):not(.W):not(.X) #policy .pd{margin:3.2vh 0!important}
+/* top/bottom strip v2: taller, nothing clipped */
+body.vid.bT #side,body.vid.bB #side{height:17vh!important;display:flex!important;flex-direction:row!important;align-items:stretch!important;box-shadow:0 0 2vh rgba(0,0,0,.3)}
+body.vid.bT #side #logo,body.vid.bB #side #logo{padding:1.6vh 2vw!important;align-items:center!important}
+body.vid.bT #side #logo img,body.vid.bB #side #logo img{max-height:12.5vh!important;max-width:14vw!important;width:auto}
+body.vid.bT #policy,body.vid.bB #policy{display:grid!important;grid-template-columns:auto 1.5fr auto 1fr!important;column-gap:2vw!important;align-items:center!important;padding:1.4vh 2.4vw 1.4vh 1vw!important;overflow:visible!important}
+body.vid.bT #policy .pl,body.vid.bB #policy .pl{font-size:2.6vh!important;line-height:1.3!important}
+body.vid.bT #policy .ph,body.vid.bB #policy .ph{font-size:2.9vh!important;margin-bottom:.5vh!important}
+body.vid.bT #policy b.pt,body.vid.bB #policy b.pt{font-size:2.4vh!important;width:8vw!important;line-height:1.3!important;margin:0!important}
+body.vid.bT #policy .pd,body.vid.bB #policy .pd{height:10vh!important;width:.25vh!important;margin:0!important}
+body.vid.bT #ov{top:20vh!important;height:77vh!important}body.vid.bB #ov{top:3vh!important;height:77vh!important}body.vid.bB #ov.B{bottom:20vh!important}
 body.vid #policy b.pt,body.W #policy b.pt{color:#9fd3dc!important}
 body.vid #policy .pl,body.W #policy .pl{color:#f4f1ea!important}
 body.vid #policy .ph,body.W #policy .ph{color:#f39a5b!important}
