@@ -208,17 +208,18 @@ body.vid.fv #flogo{display:block;position:fixed;z-index:9001;width:12vw;height:a
 <div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><div class="pl">Returns within 14 days with receipt and original packaging (up to 15% restocking fee).</div></div><div class="pd"></div><div class="ps"><div class="ph">ALL SALES FINAL</div><div class="pl">Used, marked down, special orders and services.</div></div></div></div>
 <div id="vbar"><b style="color:#ffd400">NEW ITEMS:</b> returns within 14 days w/ receipt &amp; original packaging, up to 15% restocking fee &nbsp;|&nbsp; <b style="color:#ffd400">ALL SALES FINAL:</b> used, marked-down, special orders, services</div>
 <div id="fcap"><div class="h"></div><div class="s"></div></div><img id="flogo" src="logo-white.png" alt=""><div id="ov"></div><video id="vid" muted playsinline preload="auto"></video>
+<div id="mst" style="position:fixed;left:4px;bottom:2px;z-index:99999;font:10px/1 sans-serif;color:rgba(255,255,255,.35);pointer-events:none"></div><script>let mOk=0,mOff=0;function mAge(t,off){if(t)mOk=t;mOff=off;mDraw()}function mDraw(){const e=document.getElementById('mst');if(!e)return;const a=mOk?Math.round((Date.now()-mOk)/60000):-1;e.textContent=(mOff?'OFFLINE ':'')+(a<0?'m?':'m'+a);e.style.color=mOff||a>120?'rgba(255,80,80,.8)':'rgba(255,255,255,.35)'}setInterval(mDraw,60000)</script>
 <script>
-const C='pias-media-v1';let M=null,i=0,t=null,blobs={};const img=document.getElementById('img'),vid=document.getElementById('vid'),st=document.getElementById('stage');
+const C='pias-media-v2';let M=null,i=0,t=null,blobs={};const img=document.getElementById('img'),vid=document.getElementById('vid'),st=document.getElementById('stage');
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();
 const abs=s=>new URL(s,location.href).href.split('?')[0];
 async function getBlob(src){const k=abs(src);if(blobs[k])return blobs[k];
- const c=await caches.open(C);let r=await c.match(k);if(!r){const n=await fetch(k);if(!n.ok)throw 0;await c.put(k,n.clone());r=n}
+ const c=await caches.open(C);let r=null;if(/\/slides\//.test(k)){try{const n=await fetch(k,{cache:'no-cache'});if(n.ok){await c.put(k,n.clone());r=n}}catch(e){}}if(!r)r=await c.match(k);if(!r){const n=await fetch(k);if(!n.ok)throw 0;await c.put(k,n.clone());r=n}
  const u=URL.createObjectURL(await r.blob());blobs[k]=u;return u}
 function release(keep){for(const k in blobs)if(!keep.includes(k)){URL.revokeObjectURL(blobs[k]);delete blobs[k]}}
 let warming=false;async function warmAll(){if(warming||!M)return;warming=true;const c=await caches.open(C);
  for(const it of [...M.items,...(M.dated||[])])for(const q of [it.src,it.wide].filter(Boolean)){const k=abs(q);try{if(!await c.match(k)){const r=await fetch(k);if(r.ok)await c.put(k,r)}}catch(e){}}warming=false}
-async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});const j=await r.json();if(j.items&&j.items.length){M=j;(await caches.open(C)).put(abs('manifest.json'),new Response(JSON.stringify(j)))}}catch(e){try{const r=await (await caches.open(C)).match(abs('manifest.json'));if(r&&!M)M=await r.json()}catch(_){}}
+async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});const j=await r.json();if(j.items&&j.items.length){M=j;mAge(Date.now(),0);(await caches.open(C)).put(abs('manifest.json'),new Response(JSON.stringify(j)))}}catch(e){try{const r=await (await caches.open(C)).match(abs('manifest.json'));if(r&&!M)M=await r.json();mAge(null,1)}catch(_){}}
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
 let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
