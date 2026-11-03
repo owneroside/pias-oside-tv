@@ -189,6 +189,48 @@ body.R #wx .wc{left:auto;right:3vw}
 #wx .cr{position:absolute;right:1vw;bottom:1vh;max-width:40vw;font-size:1.3vh!important;color:#fff!important;background:rgba(0,0,0,.35)!important;padding:.3vh .6vw;border-radius:.6vh;margin:0!important}
 body.R #wx .cr{right:auto;left:1vw}
 body.X.fr #wx .wc{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2)}
+</style><style>/* policy panel v2: wide calm column, one clear logo */
+#side #logo,html body #side #logo,html body.vid #side #logo{background:#12304a!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+#policy,#buy{border-top:0!important}
+#policy b.pt{color:#0f4c5c!important;letter-spacing:.3vh!important;font-size:2.6vh!important}
+#policy .ph{color:#e8641b!important;border-left:0!important;padding-left:0!important;font-size:3.6vh!important;letter-spacing:.1vh!important;margin-bottom:.8vh!important}
+#policy .pl{color:#2b2f33!important;font:700 2.7vh/1.35 Arial,Helvetica,sans-serif!important}
+#policy .pd{background:#dfe3e6!important;height:.25vh!important}
+/* video side column (bL/bR) */
+body.vid.bL #side,body.vid.bR #side{top:0!important;bottom:0!important;height:100vh!important;width:28vw!important;background:#12304a!important;display:flex!important;flex-direction:column!important;gap:0!important;box-shadow:0 0 3vh rgba(0,0,0,.25)}
+body.vid.bL #side{left:0!important;right:auto!important}body.vid.bR #side{right:0!important;left:auto!important}
+body.vid.bL #side #logo,body.vid.bR #side #logo{padding:4vh 3vw 1vh!important;justify-content:center}
+body.vid.bL #side #logo img,body.vid.bR #side #logo img{max-height:16vh!important;max-width:20vw!important;width:auto}
+body.vid.bL #policy,body.vid.bR #policy{border:0!important;background:#12304a!important;padding:2vh 2.6vw 5vh!important;justify-content:center!important;flex:1}
+body.vid.bL #policy b.pt,body.vid.bR #policy b.pt{font-size:2.6vh!important;margin-bottom:2.6vh!important}
+body.vid.bL #policy .ph,body.vid.bR #policy .ph{font-size:3.8vh!important}
+body.vid.bL #policy .pl,body.vid.bR #policy .pl{font-size:2.9vh!important;line-height:1.38!important}
+body.vid.bL #policy .pd,body.vid.bR #policy .pd{margin:3vh 0!important;height:.25vh!important;width:auto!important}
+body.vid.bL #ov.L,body.vid.bL #ov.B{left:31vw!important}body.vid.bR #ov.R{right:31vw!important}body.vid.bR #ov.B{left:3vw!important}
+/* video top/bottom strip: same calm look, logo on white */
+body.vid.bT #policy,body.vid.bB #policy{border:0!important}
+body.vid.bT #side,body.vid.bB #side,body.vid.bT #policy,body.vid.bB #policy{background:#12304a!important}
+/* when the banner slides away, a small logo stays on the banner side */
+body.vid.bh #vlogo{display:block!important;background:rgba(18,48,74,.85)!important;width:10vw;padding:.8vw 1vw;top:3vh;bottom:auto}
+body.vid.bh.bL #vlogo,body.vid.bh.bT #vlogo{left:2.5vw;right:auto}body.vid.bh.bR #vlogo{right:2.5vw;left:auto}
+body.vid.bh.bB #vlogo{top:auto;bottom:3vh;left:2.5vw;right:auto}
+body.vid:not(.bh) #vlogo{display:none!important}
+/* wide service slides: logo at left of strip */
+body.W #side #logo{display:flex!important;align-items:center;padding:1vh 2vw!important}body.W #side #logo img{max-height:15vh;width:auto;max-width:14vw}
+body.W #side,body.W #policy{background:#12304a!important}body.W #policy{border:0!important}
+/* weather: one logo above the card */
+body.X:not(.vid) #vlogo{display:block!important;top:auto;bottom:calc(5vh + 25vh);left:3vw;right:auto;width:11vw;background:rgba(18,48,74,.88)!important;border-radius:1.2vh}
+body.X.R:not(.vid) #vlogo{left:auto;right:3vw}
+
+body.W #side{flex-direction:row!important;align-items:stretch!important}body.W #side #logo{flex:0 0 auto}
+body:not(.vid):not(.W):not(.X) #policy b.pt{font-size:3vh!important;margin-bottom:2.4vh!important}
+body:not(.vid):not(.W):not(.X) #policy .ph{font-size:4.4vh!important}
+body:not(.vid):not(.W):not(.X) #policy .pl{font-size:3.4vh!important;line-height:1.38!important}
+body:not(.vid):not(.W):not(.X) #policy .pd{margin:3.2vh 0!important}
+body.vid #policy b.pt,body.W #policy b.pt{color:#9fd3dc!important}
+body.vid #policy .pl,body.W #policy .pl{color:#f4f1ea!important}
+body.vid #policy .ph,body.W #policy .ph{color:#f39a5b!important}
+body.vid #policy .pd,body.W #policy .pd{background:rgba(255,255,255,.18)!important}
 </style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="buy"><div class="b1">WE BUY USED</div><div class="b2">SPORTS GEAR</div><div class="b3">Bring it in for cash or trade!</div></div><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
