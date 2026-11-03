@@ -19,6 +19,12 @@
  "items": [
   {
    "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "wide": "slides/19-svc-snow-wide.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/326-cash-racquet-a.jpg",
    "seconds": 20
   },
@@ -46,6 +52,12 @@
   },
   {
    "type": "image",
+   "src": "slides/19-svc-snow-menu-ice.jpg",
+   "wide": "slides/19-svc-snow-wide-ice.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/333-cash-soccer-a.jpg",
    "seconds": 20
   },
@@ -62,6 +74,12 @@
   {
    "type": "image",
    "src": "slides/336-cash-baseball-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-night.jpg",
+   "wide": "slides/19-svc-snow-wide-night.jpg",
    "seconds": 20
   },
   {
@@ -89,6 +107,12 @@
   {
    "type": "image",
    "src": "slides/342-cash-wetsuits-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-sunset.jpg",
+   "wide": "slides/19-svc-snow-wide-sunset.jpg",
    "seconds": 20
   },
   {
@@ -120,6 +144,12 @@
   },
   {
    "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "wide": "slides/19-svc-snow-wide.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/327-cash-racquet-b.jpg",
    "seconds": 20
   },
@@ -143,6 +173,12 @@
   {
    "type": "image",
    "src": "slides/335-cash-snow-c.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-ice.jpg",
+   "wide": "slides/19-svc-snow-wide-ice.jpg",
    "seconds": 20
   },
   {
@@ -174,6 +210,12 @@
   },
   {
    "type": "image",
+   "src": "slides/19-svc-snow-menu-night.jpg",
+   "wide": "slides/19-svc-snow-wide-night.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/341-cash-surf-c.jpg",
    "seconds": 20
   },
@@ -197,6 +239,12 @@
   {
    "type": "image",
    "src": "slides/346-cash-outdoor-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-sunset.jpg",
+   "wide": "slides/19-svc-snow-wide-sunset.jpg",
    "seconds": 20
   },
   {
@@ -229,6 +277,12 @@
   },
   {
    "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "wide": "slides/19-svc-snow-wide.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/331-cash-golf-c.jpg",
    "seconds": 20
   },
@@ -256,14 +310,14 @@
   },
   {
    "type": "image",
-   "src": "slides/350-cash-fitness-c.jpg",
+   "src": "slides/19-svc-snow-menu-ice.jpg",
+   "wide": "slides/19-svc-snow-wide-ice.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu.jpg",
-   "seconds": 20,
-   "wide": "slides/19-svc-snow-wide.jpg"
+   "src": "slides/350-cash-fitness-c.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
