@@ -74,12 +74,6 @@
   },
   {
    "type": "image",
-   "src": "slides/17-svc-wax-price.jpg",
-   "seconds": 20,
-   "wide": "slides/17-svc-wax-wide.jpg"
-  },
-  {
-   "type": "image",
    "src": "slides/213-ever-cat-bodyboards.jpg",
    "seconds": 20
   },
@@ -520,12 +514,6 @@
   },
   {
    "type": "image",
-   "src": "slides/17-svc-wax-price.jpg",
-   "seconds": 20,
-   "wide": "slides/17-svc-wax-wide.jpg"
-  },
-  {
-   "type": "image",
    "src": "slides/126-item-S000207672.jpg",
    "seconds": 20,
    "sku": [
@@ -956,12 +944,6 @@
    "type": "image",
    "src": "slides/219-ever-cat-wetsuits.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/17-svc-wax-price.jpg",
-   "seconds": 20,
-   "wide": "slides/17-svc-wax-wide.jpg"
   },
   {
    "type": "video",
@@ -1428,12 +1410,6 @@
    "type": "image",
    "src": "slides/320-ever-corp-golf-yellow.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/17-svc-wax-price.jpg",
-   "seconds": 20,
-   "wide": "slides/17-svc-wax-wide.jpg"
   },
   {
    "type": "image",
