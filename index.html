@@ -189,12 +189,23 @@ body.R #wx .wc{left:auto;right:3vw}
 #wx .cr{position:absolute;right:1vw;bottom:1vh;max-width:40vw;font-size:1.3vh!important;color:#fff!important;background:rgba(0,0,0,.35)!important;padding:.3vh .6vw;border-radius:.6vh;margin:0!important}
 body.R #wx .cr{right:auto;left:1vw}
 body.X.fr #wx .wc{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2)}
+</style><style>/* fresh full-bleed videos (2026-11-02) */
+@font-face{font-family:FP;src:url(fonts/Poppins-Bold.ttf);font-weight:700}@font-face{font-family:FP;src:url(fonts/Poppins-Medium.ttf);font-weight:500}
+#fcap,#flogo{display:none}
+body.vid.fv #vid{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;object-fit:cover!important;z-index:9000!important;margin:0!important;border-radius:0!important;transform:none!important}
+body.vid.fv #side,body.vid.fv #vbar,body.vid.fv #ov,body.vid.fv #vlogo{display:none!important}
+body.vid.fv #fcap{display:flex;position:fixed;z-index:9001;box-sizing:border-box;padding:1.4vw 1.8vw;background:rgba(14,32,48,.80);border-left:.45vw solid #5fb3b3;border-radius:.6vw;color:#f4f1ea;font-family:FP,sans-serif;flex-direction:column;justify-content:center;overflow:hidden;opacity:0;transition:opacity .8s}
+#fcap.on{opacity:1!important}#fcap .h{font-weight:700;line-height:1.1}#fcap .s{font-weight:500;color:#cfe3e1;margin-top:.5vw;line-height:1.2}
+#fcap.L{width:42vw;height:22vh}#fcap.S{width:34vw;height:16vh}
+#fcap.TL{left:3vw;top:5vh}#fcap.TR{right:3vw;top:5vh}#fcap.BL{left:3vw;bottom:5vh}#fcap.BR{right:3vw;bottom:5vh}
+body.vid.fv #flogo{display:block;position:fixed;z-index:9001;width:12vw;height:auto;filter:drop-shadow(0 0 .5vw rgba(0,0,0,.55))}
+#flogo.TL{left:2vw;top:3vh}#flogo.TR{right:2vw;top:3vh}#flogo.BL{left:2vw;bottom:3vh}#flogo.BR{right:2vw;bottom:3vh}
 </style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="buy"><div class="b1">WE BUY USED</div><div class="b2">SPORTS GEAR</div><div class="b3">Bring it in for cash or trade!</div></div><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
 <div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><div class="pl">Returns within 14 days with receipt and original packaging (up to 15% restocking fee).</div></div><div class="pd"></div><div class="ps"><div class="ph">ALL SALES FINAL</div><div class="pl">Used, marked down, special orders and services.</div></div></div></div>
 <div id="vbar"><b style="color:#ffd400">NEW ITEMS:</b> returns within 14 days w/ receipt &amp; original packaging, up to 15% restocking fee &nbsp;|&nbsp; <b style="color:#ffd400">ALL SALES FINAL:</b> used, marked-down, special orders, services</div>
-<div id="ov"></div><video id="vid" muted playsinline preload="auto"></video>
+<div id="fcap"><div class="h"></div><div class="s"></div></div><img id="flogo" src="logo-white.png" alt=""><div id="ov"></div><video id="vid" muted playsinline preload="auto"></video>
 <script>
 const C='pias-media-v1';let M=null,i=0,t=null,blobs={};const img=document.getElementById('img'),vid=document.getElementById('vid'),st=document.getElementById('stage');
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');if(navigator.storage&&navigator.storage.persist)navigator.storage.persist();
@@ -236,6 +247,10 @@ function tryWx(){if(Date.now()-lastWx<WXI)return false;let h=wxHTML();if(!h)retu
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
+function freshOn(f){const B=document.body.classList,c=document.getElementById('fcap');c.classList.remove('on');if(!f){B.remove('fv');return}
+ B.add('fv');c.className=f.capSize+' '+f.cap;document.getElementById('flogo').className=f.logo;const h=c.querySelector('.h'),s=c.querySelector('.s');h.textContent=f.caption;s.textContent=f.sub||'';
+ const vw=innerWidth/100;let hs=f.capSize==='S'?2.6:3.2,ss=hs*.55;for(let k=0;k<40;k++){h.style.fontSize=hs*vw+'px';s.style.fontSize=ss*vw+'px';if(c.scrollHeight<=c.clientHeight+1&&h.scrollWidth<=h.clientWidth+1&&s.scrollWidth<=s.clientWidth+1)break;hs*=.94;ss*=.94}
+ setTimeout(()=>c.classList.add('on'),600)}
 const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTimeout(ovT);document.getElementById('vlogo').className=(o&&o.side==='R')?'L':'';ovEl.className='';ovEl.innerHTML='';if(!o)return;ovEl.className=o.side==='L'?'L':o.side==='B'?'B':'R';if(o.v)ovEl.classList.add(o.v);if(o.sm)ovEl.classList.add('sm');ovEl.innerHTML=o.text?`<div class="ot">${o.text}</div><div class="ob"></div><div class="os ow">${o.sub}</div>`:`<div class="oh">${o.headline.split('|').join('<br>')}</div><div class="ob"></div><div class="os">${o.sub}</div><img class="ol" src="logo.png" alt="">`;ovT=setTimeout(()=>ovEl.classList.add('on'),1000)}
 let bTm=[];function bannerCycle(d,W){bTm.forEach(clearTimeout);bTm=[];const b=document.body.classList,at=(ms,f)=>bTm.push(setTimeout(f,ms));b.add('bh');W=W||(d>=26?[2,d-9]:[2]);for(const s of W){at(s*1000,()=>b.remove('bh'));at((s+7.5)*1000,()=>b.add('bh'))}}
 let holN=0,holI=0;function ptDay(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date())}
@@ -246,7 +261,7 @@ async function next(){clearTimeout(t);const H=document.getElementById('hol');H.s
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){t=setTimeout(next,300);return}
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
   try{await vid.play()}catch(e){fromVid=false;t=setTimeout(next,100);return}
-  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));showOv(it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),it.bAt);document.body.classList.remove('X');vid.style.display='block';fromVid=true;
+  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));freshOn(it.fresh);showOv(it.fresh?null:it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),it.bAt);document.body.classList.remove('X');vid.style.display='block';fromVid=true;
   const done=()=>{if(d)return;d=true;clearTimeout(t);vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
  else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}}if(!L){side=side==='L'?'R':'L';L=side}
