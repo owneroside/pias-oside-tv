@@ -178,6 +178,17 @@ body.X:not(.vid) #policy{padding:1.4vh 1.3vw!important;--pf:1!important}body.X #
 @keyframes sinR{from{transform:translateX(120%);opacity:0}to{transform:none;opacity:1}}@keyframes sinL{from{transform:translateX(-120%);opacity:0}to{transform:none;opacity:1}}
 body.X.fr #policy,body.X.fr #buy,body.X.fr #wx .h,body.X.fr #wx .m,body.X.fr #wx .g div,body.X.fr #wx .src,body.X.fr #wx .cr{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border-color:rgba(255,255,255,.7)!important}
 </style><style>#ov.up{justify-content:flex-start!important}#ov.dn{justify-content:flex-end!important}#ov.sm{transform:scale(.7)!important;transform-origin:left center}#ov.R.sm{transform-origin:right center}#ov.B.sm{transform-origin:center bottom}#ov.up.sm{transform-origin-y:top}#ov.L.up.sm{transform-origin:left top}#ov.R.up.sm{transform-origin:right top}#ov.L.dn.sm{transform-origin:left bottom}#ov.R.dn.sm{transform-origin:right bottom}#policy .ph{display:block;font-family:"Arial Black",Arial;letter-spacing:.12vh;line-height:1.1}body.vid #policy .ph,body.W #policy .ph{font-size:2.7vh!important;margin-bottom:.3vh!important}body.X #policy .ph{font-size:2.2vh!important}
+</style><style>/* simple weather: photo + one card */
+body.X #side,body.X #ov,body.X #vbar{display:none!important}
+body.X:not(.vid) #wx{display:block!important;padding:0!important}
+#wx .wc{position:absolute;left:3vw;bottom:5vh;width:34vw;box-sizing:border-box;padding:2.4vh 2vw;border-radius:1.6vh;background:rgba(255,255,255,.93);color:#2b2f33;border-top:.6vh solid #e8641b;font-family:Arial,sans-serif;font-weight:700;box-shadow:0 1vh 3vh rgba(0,0,0,.25)}
+body.R #wx .wc{left:auto;right:3vw}
+#wx .wh{font-family:"Arial Black",Arial;font-size:2.8vh;letter-spacing:.15vh;color:#0f7c86}
+#wx .wm{display:flex;align-items:center;gap:1.2vw;margin:.8vh 0}#wx .wm .ic{font-size:8vh!important;line-height:1}#wx .wm .t{font-family:"Arial Black",Arial;font-size:9vh!important;line-height:1}#wx .wm .c{font-size:3vh}
+#wx .wr{display:flex;gap:2.5vw;font-size:2.6vh;color:#555b61}#wx .wr b{color:#2b2f33;font-family:"Arial Black",Arial}
+#wx .cr{position:absolute;right:1vw;bottom:1vh;max-width:40vw;font-size:1.3vh!important;color:#fff!important;background:rgba(0,0,0,.35)!important;padding:.3vh .6vw;border-radius:.6vh;margin:0!important}
+body.R #wx .cr{right:auto;left:1vw}
+body.X.fr #wx .wc{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2)}
 </style></head><body class="L"><div id="vlogo"><img src="logo.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="buy"><div class="b1">WE BUY USED</div><div class="b2">SPORTS GEAR</div><div class="b3">Bring it in for cash or trade!</div></div><div id="logo"><img src="logo.png" alt="Play It Again Sports Oceanside"></div>
@@ -213,11 +224,7 @@ async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
 function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now(),a=d.air,w=d.water;
  if(!a||n-a.at>3*3600e3||!w||n-w.at>6*3600e3)return null;let[ic,cn]=WC(a.c);if(!a.day&&a.c<=2)ic='🌙';
  const dir=['N','NE','E','SE','S','SW','W','NW'][Math.round(a.wd/45)%8],s=d.surf&&n-d.surf.at<6*3600e3?d.surf.h:null,r=Math.round;
- return `<div class="h">OCEANSIDE RIGHT NOW<small>${new Date().toLocaleString('en-US',{timeZone:'America/Los_Angeles',weekday:'long',hour:'numeric',minute:'2-digit'})}</small></div>
- <div class="m"><div class="ic">${ic}</div><div><div class="t">${r(a.t)}°</div><div class="c">${cn}</div></div></div>
- <div class="g"><div>Wind<b>${r(a.ws)} mph ${dir}</b></div><div>Today<b>H ${r(a.hi)}° / L ${r(a.lo)}°</b></div>
- <div class="w">🌊 Water Temp<b>${r(w.t)}°F${s!=null?` &nbsp;·&nbsp; Surf ~${s.toFixed(1)} ft`:''}</b></div></div>
- <div class="tag">Perfect day to grab a board</div><div class="src">Weather: Open-Meteo · Water: ${w.src}${s!=null?' · Surf: Open-Meteo Marine':''}</div>${WXB[wxN%WXB.length][1]?`<div class="cr">${WXB[wxN%WXB.length][1]}</div>`:''}`}
+ const cr=WXB[wxN%WXB.length][1];return `<div class="wc"><div class="wh">OCEANSIDE NOW</div><div class="wm"><span class="ic">${ic}</span><span class="t">${r(a.t)}°</span><span class="c">${cn}</span></div><div class="wr"><span>Wind <b>${r(a.ws)} mph ${dir}</b></span><span>Water <b>${r(w.t)}°F</b></span></div></div>${cr?`<div class="cr">${cr}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
  side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%WXB.length][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X');document.body.classList.toggle('fr',wxN%2==1)};
