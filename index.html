@@ -190,6 +190,7 @@ body.R #wx .wc{left:auto;right:3vw}
 body.R #wx .cr{right:auto;left:1vw}
 body.X.fr #wx .wc{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2)}
 </style><style>/* fresh full-bleed videos (2026-11-02) */
+body.vid.fv.fbk #fcap,body.vid.fv.fbk #flogo{display:none!important}
 @font-face{font-family:FP;src:url(fonts/Poppins-Bold.ttf);font-weight:700}@font-face{font-family:FP;src:url(fonts/Poppins-Medium.ttf);font-weight:500}
 #fcap,#flogo{display:none}
 body.vid.fv #vid{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;object-fit:cover!important;z-index:9000!important;margin:0!important;border-radius:0!important;transform:none!important}
@@ -285,7 +286,7 @@ function tryWx(){if(Date.now()-lastWx<WXI)return false;let h=wxHTML();if(!h)retu
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  clearTimeout(t);t=setTimeout(next,15000);return true}
-function freshOn(f){const B=document.body.classList,c=document.getElementById('fcap');c.classList.remove('on');if(!f){B.remove('fv');return}
+function freshOn(f){const B=document.body.classList,c=document.getElementById('fcap');c.classList.remove('on');if(!f){B.remove('fv','fbk');return}B.toggle('fbk',!!f.baked);
  B.add('fv');c.className=f.capSize+' '+f.cap;document.getElementById('flogo').className=f.logo;const h=c.querySelector('.h'),s=c.querySelector('.s');h.textContent=f.caption;s.textContent=f.sub||'';
  const vw=innerWidth/100;let hs=f.capSize==='S'?2.6:3.2,ss=hs*.55;for(let k=0;k<40;k++){h.style.fontSize=hs*vw+'px';s.style.fontSize=ss*vw+'px';if(c.scrollHeight<=c.clientHeight+1&&h.scrollWidth<=h.clientWidth+1&&s.scrollWidth<=s.clientWidth+1)break;hs*=.94;ss*=.94}
  setTimeout(()=>c.classList.add('on'),600)}
