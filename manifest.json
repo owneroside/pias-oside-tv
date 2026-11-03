@@ -343,7 +343,7 @@
    "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44416.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "R",
    "bAt": []
   },
   {
@@ -559,7 +559,7 @@
    "type": "video",
    "src": "clips/golf_mixkit_2033.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "overlay": {
     "side": "R",
     "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
@@ -1015,7 +1015,7 @@
    "type": "video",
    "src": "clips/baseball_mixkit_881.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "bAt": [
     4
    ],
@@ -1396,13 +1396,15 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_mixkit_2044.mp4",
+   "src": "clips/baseball_pixabay_14183.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "B",
    "overlay": {
     "side": "L",
-    "text": "Upgrading your bag? We buy and sell clubs!",
-    "sub": "We buy and sell used sports gear"
+    "text": "Used baseballs, 6 for $14.99",
+    "sub": "Outgrown your glove? We buy and sell!",
+    "v": "up",
+    "sm": true
    }
   },
   {
@@ -1428,9 +1430,14 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_1375.mp4",
+   "src": "clips/golf_mixkit_2044.mp4",
    "maxSeconds": 16,
-   "banner": "R"
+   "banner": "R",
+   "overlay": {
+    "side": "L",
+    "text": "Upgrading your bag? We buy and sell clubs!",
+    "sub": "We buy and sell used sports gear"
+   }
   },
   {
    "type": "image",
@@ -1453,16 +1460,9 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1074.mp4",
+   "src": "clips/skateboarding_mixkit_1375.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "overlay": {
-    "side": "R",
-    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
-    "sub": "We buy and sell used sports gear",
-    "v": "dn",
-    "sm": true
-   }
+   "banner": "R"
   },
   {
    "type": "image",
@@ -1487,14 +1487,15 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_218105.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1074.mp4",
    "maxSeconds": 16,
-   "banner": "B",
+   "banner": "T",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
+    "side": "R",
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
     "sub": "We buy and sell used sports gear",
-    "v": "up"
+    "v": "dn",
+    "sm": true
    }
   },
   {
@@ -1524,15 +1525,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13356.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_218105.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "B",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell used fitness equipment",
+    "text": "We buy and sell tennis rackets and gear, new and used",
     "sub": "We buy and sell used sports gear",
-    "v": "up",
-    "sm": true
+    "v": "up"
    }
   },
   {
@@ -1558,13 +1558,15 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_pixabay_219542.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13356.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell baseball bats, gloves and gear",
-    "sub": "We buy and sell, bring in your gear today"
+    "text": "We buy and sell used fitness equipment",
+    "sub": "We buy and sell used sports gear",
+    "v": "up",
+    "sm": true
    }
   },
   {
@@ -1590,14 +1592,9 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
+   "src": "clips/baseball_pixabay_184211.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "We buy and sell tennis rackets"
-   }
+   "banner": "L"
   },
   {
    "type": "image",
@@ -1617,13 +1614,13 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_pixabay_24166.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "B",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell baseball bats, gloves and gear",
-    "sub": "We buy and sell bats, gloves and cleats"
+    "text": "We buy and sell tennis rackets and gear, new and used",
+    "sub": "We buy and sell tennis rackets"
    }
   },
   {
@@ -1709,13 +1706,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_35265.mp4",
+   "src": "clips/snowboarding_pixabay_17600.mp4",
    "maxSeconds": 16,
-   "banner": "B",
+   "banner": "T",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "We buy and sell, bring in your gear today"
+    "side": "R",
+    "text": "We buy and sell snowboard gear, new and used",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up"
    }
   },
   {
@@ -1741,13 +1739,13 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_50109.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_35265.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "B",
    "overlay": {
     "side": "L",
     "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "We buy and sell tennis rackets"
+    "sub": "We buy and sell, bring in your gear today"
    }
   },
   {
@@ -1789,7 +1787,10 @@
   {
    "type": "image",
    "src": "slides/188-item-40S106416.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "40S106416"
+   ]
   },
   {
    "type": "image",
@@ -1805,12 +1806,18 @@
   {
    "type": "image",
    "src": "slides/189-item-40S106417.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "40S106417"
+   ]
   },
   {
    "type": "image",
    "src": "slides/190-item-40S107200.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "40S107200"
+   ]
   }
  ]
 }
