@@ -70,6 +70,11 @@
   },
   {
    "type": "image",
+   "src": "slides/326-cash-racquet-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/103-item-S000206808.jpg",
    "seconds": 20,
    "sku": [
@@ -115,6 +120,11 @@
    "sku": [
     "S000204223"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/327-cash-racquet-b.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -165,7 +175,7 @@
   },
   {
    "type": "image",
-   "src": "slides/214-ever-cat-bikes.jpg",
+   "src": "slides/328-cash-racquet-c.jpg",
    "seconds": 20
   },
   {
@@ -222,6 +232,11 @@
   },
   {
    "type": "image",
+   "src": "slides/329-cash-golf-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/305-ever-corp-golf-teal.jpg",
    "seconds": 20
   },
@@ -269,6 +284,11 @@
   },
   {
    "type": "image",
+   "src": "slides/330-cash-golf-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/117-item-S000201759.jpg",
    "seconds": 20,
    "sku": [
@@ -293,11 +313,6 @@
    "src": "slides/19-svc-snow-menu.jpg",
    "seconds": 20,
    "wide": "slides/19-svc-snow-wide.jpg"
-  },
-  {
-   "type": "image",
-   "src": "slides/215-ever-cat-tennis.jpg",
-   "seconds": 20
   },
   {
    "type": "video",
@@ -326,6 +341,11 @@
    "sku": [
     "S000204097"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/331-cash-golf-c.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -376,6 +396,11 @@
   },
   {
    "type": "image",
+   "src": "slides/332-cash-skate-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/308-ever-corp-softball-team.jpg",
    "seconds": 20
   },
@@ -386,11 +411,6 @@
    "sku": [
     "S000208542"
    ]
-  },
-  {
-   "type": "image",
-   "src": "slides/216-ever-cat-pickleball.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -433,6 +453,11 @@
    "sku": [
     "S000207755"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/333-cash-soccer-a.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -486,6 +511,11 @@
   },
   {
    "type": "image",
+   "src": "slides/334-cash-snow-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/06-gerber-sumo.jpg",
    "seconds": 20,
    "sku": [
@@ -504,11 +534,6 @@
    "sku": [
     "S000189746"
    ]
-  },
-  {
-   "type": "image",
-   "src": "slides/217-ever-cat-homegym.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -533,6 +558,11 @@
    "sku": [
     "S000204336"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/335-cash-snow-c.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -590,6 +620,11 @@
   },
   {
    "type": "image",
+   "src": "slides/336-cash-baseball-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/07-boysen-surfboard.jpg",
    "seconds": 20,
    "sku": [
@@ -619,11 +654,6 @@
   },
   {
    "type": "image",
-   "src": "slides/218-ever-cat-snowboards.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/19-svc-snow-menu.jpg",
    "seconds": 20,
    "wide": "slides/19-svc-snow-wide.jpg"
@@ -643,6 +673,11 @@
    "sku": [
     "S000208730"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/337-cash-baseball-b.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -698,6 +733,11 @@
   },
   {
    "type": "image",
+   "src": "slides/338-cash-rollerskate-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/145-item-S000207842.jpg",
    "seconds": 20,
    "sku": [
@@ -730,11 +770,6 @@
   },
   {
    "type": "image",
-   "src": "slides/219-ever-cat-wetsuits.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/17-svc-wax-price.jpg",
    "seconds": 20,
    "wide": "slides/17-svc-wax-wide.jpg"
@@ -751,6 +786,11 @@
    "sku": [
     "S000208743"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/339-cash-rollerskate-b.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -804,6 +844,11 @@
   },
   {
    "type": "image",
+   "src": "slides/340-cash-surf-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/154-item-S000208500.jpg",
    "seconds": 20,
    "sku": [
@@ -817,11 +862,6 @@
    "sku": [
     "S000205475"
    ]
-  },
-  {
-   "type": "image",
-   "src": "slides/220-ever-cat-roller.jpg",
-   "seconds": 20
   },
   {
    "type": "video",
@@ -858,6 +898,11 @@
    "sku": [
     "S000208058"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/341-cash-surf-c.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -911,6 +956,11 @@
   },
   {
    "type": "image",
+   "src": "slides/342-cash-wetsuits-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/317-ever-corp-soccer.jpg",
    "seconds": 20
   },
@@ -956,6 +1006,11 @@
    "src": "slides/19-svc-snow-menu.jpg",
    "seconds": 20,
    "wide": "slides/19-svc-snow-wide.jpg"
+  },
+  {
+   "type": "image",
+   "src": "slides/343-cash-wetsuits-b.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1013,6 +1068,11 @@
   },
   {
    "type": "image",
+   "src": "slides/344-cash-wetsuits-c.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/319-ever-corp-hackysacks.jpg",
    "seconds": 20
   },
@@ -1060,6 +1120,11 @@
    "sku": [
     "S000209039"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/345-cash-outdoor-a.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1112,6 +1177,11 @@
    "sku": [
     "S000209040"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/346-cash-outdoor-b.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1169,7 +1239,7 @@
   },
   {
    "type": "image",
-   "src": "slides/223-ever-cat-skateboards.jpg",
+   "src": "slides/347-cash-outdoor-c.jpg",
    "seconds": 20
   },
   {
@@ -1217,6 +1287,11 @@
     "capSize": "S",
     "logo": "TL"
    }
+  },
+  {
+   "type": "image",
+   "src": "slides/348-cash-fitness-a.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -1273,16 +1348,16 @@
   },
   {
    "type": "image",
+   "src": "slides/349-cash-fitness-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/185-item-S000179275.jpg",
    "seconds": 20,
    "sku": [
     "S000179275"
    ]
-  },
-  {
-   "type": "image",
-   "src": "slides/224-ever-cat-swim.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -1319,6 +1394,11 @@
   {
    "type": "image",
    "src": "slides/325-ever-corp-baseball-batter.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/350-cash-fitness-c.jpg",
    "seconds": 20
   },
   {
