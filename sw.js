@@ -1,3 +1,4 @@
+// v2 precache wx-bg
 const C='pias-media-v1';
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>Promise.all([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16].map(n=>{const k=new URL('wx-bg/bg'+n+'.jpg',self.registration.scope).href;return c.match(k).then(h=>h||fetch(k).then(r=>r.ok&&c.put(k,r))).catch(()=>{})}))))});
 self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));

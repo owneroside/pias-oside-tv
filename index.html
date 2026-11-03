@@ -144,7 +144,7 @@ html,body{background:#eef0f2!important}#bg{background:#eef0f2!important;animatio
 #buy .b1{color:#e8641b!important}#buy .b2{color:#0f7c86!important}#buy .b3{background:none!important;color:#2b2f33!important;border:.25vh solid #0f7c86;}
 #logo,#vlogo,#ov .ol{background:#0f7c86!important;box-shadow:none!important}
 #ov .ot,#ov .os{background:rgba(255,255,255,.95)!important;color:#2b2f33!important;border-color:#e8641b!important;text-shadow:none!important}#ov .ob{background:#e8641b!important}
-#wx{background-color:#f6f7f8!important;border:.3vh solid #d5d9dd!important;border-top:.6vh solid #e8641b!important}
+#wx{background-color:#1d4f6e!important;border:.3vh solid #d5d9dd!important;border-top:.6vh solid #e8641b!important}
 #wx .h{color:#2b2f33!important}#wx .h small{color:#0f7c86!important}#wx .g>div,#wx .g>*{background:rgba(255,255,255,.93)!important;color:#2b2f33!important}#wx .w{background:rgba(255,255,255,.93)!important}
 #wx .tag{background:#0f7c86!important;color:#fff!important}#wx .src,#wx .cr{color:#555b61!important}
 html body #side #logo,html body.vid #side #logo{background:#0f7c86!important;border-radius:1vh}</style><style>/* slim animated banner */
@@ -224,10 +224,15 @@ async function wxFetch(){const d=JSON.parse(localStorage.getItem(WXK)||'{}');
 function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now(),a=d.air,w=d.water;
  if(!a||n-a.at>3*3600e3||!w||n-w.at>6*3600e3)return null;let[ic,cn]=WC(a.c);if(!a.day&&a.c<=2)ic='🌙';
  const dir=['N','NE','E','SE','S','SW','W','NW'][Math.round(a.wd/45)%8],s=d.surf&&n-d.surf.at<6*3600e3?d.surf.h:null,r=Math.round;
- const cr=WXB[wxN%WXB.length][1];return `<div class="wc"><div class="wh">OCEANSIDE NOW</div><div class="wm"><span class="ic">${ic}</span><span class="t">${r(a.t)}°</span><span class="c">${cn}</span></div><div class="wr"><span>Wind <b>${r(a.ws)} mph ${dir}</b></span><span>Water <b>${r(w.t)}°F</b></span></div></div>${cr?`<div class="cr">${cr}</div>`:''}`}
+ const cr='%%CR%%';return `<div class="wc"><div class="wh">OCEANSIDE NOW</div><div class="wm"><span class="ic">${ic}</span><span class="t">${r(a.t)}°</span><span class="c">${cn}</span></div><div class="wr"><span>Wind <b>${r(a.ws)} mph ${dir}</b></span><span>Water <b>${r(w.t)}°F</b></span></div></div>${cr?`<div class="cr">${cr}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
-function tryWx(){if(Date.now()-lastWx<WXI)return false;const h=wxHTML();if(!h)return false;lastWx=Date.now();
- side=side==='L'?'R':'L';const L=side,bg=WXB[wxN%WXB.length][0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X');document.body.classList.toggle('fr',wxN%2==1)};
+const WXF='wx-bg/bg3.jpg',wxImg={};function wxPre(u){if(!wxImg[u]){const im=new Image();im.onerror=()=>{delete wxImg[u]};im.src=u;wxImg[u]=im}return wxImg[u]}
+function wxOk(u){const im=wxImg[u];return !!(im&&im.complete&&im.naturalWidth>0)}
+function wxPick(){const c=WXB[wxN%WXB.length];if(wxOk(c[0]))return c;const f=WXB.find(b=>b[0]===WXF);if(wxOk(WXF))return f;return WXB.find(b=>wxOk(b[0]))||null}
+wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);
+function tryWx(){if(Date.now()-lastWx<WXI)return false;let h=wxHTML();if(!h)return false;const pk=wxPick();if(!pk){wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);return false}lastWx=Date.now();
+ h=h.replace(/<div class="cr">%%CR%%<\/div>/,pk[1]?`<div class="cr">${pk[1]}</div>`:'');wxPre(WXB[(wxN+1)%WXB.length][0]);
+ side=side==='L'?'R':'L';const L=side,bg=pk[0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X');document.body.classList.toggle('fr',wxN%2==1)};
  if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
  else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
  t=setTimeout(()=>{t=setTimeout(next,0)},20000);return true}
@@ -251,7 +256,7 @@ async function next(){clearTimeout(t);const H=document.getElementById('hol');H.s
    requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
   else{for(const e of [st,sd,wd])e.style.opacity=0;setTimeout(()=>{tgt.src=u;apply();for(const e of [st,sd,wd])e.style.opacity=1},600)}
   peek();t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
-if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));wxFetch().then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
+if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));const pu=WXB[wxN%WXB.length][0];wxPre(pu);wxFetch().then(()=>new Promise(r=>{const k=()=>wxOk(pu)||wxOk(WXF)?r():setTimeout(k,100);k()})).then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
 </script><script>
 function fitPolicy(){const p=document.getElementById('policy');if(!p||document.body.classList.contains('W')){if(p)p.style.removeProperty('--pf');return}
