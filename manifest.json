@@ -1,1 +1,424 @@
-{"dated": [{"src": "slides/dated/PIAS_HolidayHours_Thanksgiving_BlackFriday_2026_3up_TV_1920x1080.png", "start": "2026-11-02", "end": "2026-11-27", "seconds": 15}, {"src": "slides/dated/PIAS_HolidayHours_Christmas_NewYear_2026_dated_TV_1920x1080.png", "start": "2026-12-07", "end": "2027-01-01", "seconds": 15}], "datedEvery": 7, "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders and services: all sales final.", "defaultSeconds": 20, "items": [{"type": "image", "src": "slides/19-svc-snow-menu.jpg", "wide": "slides/19-svc-snow-wide.jpg", "seconds": 20}, {"type": "image", "src": "slides/326-cash-racquet-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/400-sell-S000208948.jpg", "seconds": 20}, {"type": "image", "src": "slides/329-cash-golf-a.jpg", "seconds": 20}, {"type": "video", "src": "clips/surf_pexels_8907784.mp4", "maxSeconds": 29, "fresh": {"caption": "Surfboards & wetsuits", "sub": "New and used. We buy and sell.", "cap": "BL", "capSize": "L", "logo": "BR"}}, {"type": "image", "src": "slides/19-svc-snow-menu-ice.jpg", "wide": "slides/19-svc-snow-wide-ice.jpg", "seconds": 20}, {"type": "image", "src": "slides/401-sell-S000210079.jpg", "seconds": 20}, {"type": "image", "src": "slides/332-cash-skate-a.jpg", "seconds": 20}, {"type": "video", "src": "clips/surf_pexels_40203014.mp4", "maxSeconds": 24, "fresh": {"caption": "Ready for the next swell?", "sub": "Used surfboards in stock now", "cap": "BR", "capSize": "L", "logo": "BL"}}, {"type": "image", "src": "slides/402-sell-S000206501.jpg", "seconds": 20}, {"type": "image", "src": "slides/333-cash-soccer-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/19-svc-snow-menu-night.jpg", "wide": "slides/19-svc-snow-wide-night.jpg", "seconds": 20}, {"type": "image", "src": "slides/403-sell-S000179409.jpg", "seconds": 20}, {"type": "video", "src": "clips/skate_pexels_5039538.mp4", "maxSeconds": 24, "fresh": {"caption": "Skateboards & pads", "sub": "Complete boards, new and used", "cap": "BL", "capSize": "S", "logo": "BR"}}, {"type": "image", "src": "slides/334-cash-snow-b.jpg", "seconds": 20}, {"type": "image", "src": "slides/420-snow-clearance.jpg", "seconds": 20}, {"type": "image", "src": "slides/19-svc-snow-menu-sunset.jpg", "wide": "slides/19-svc-snow-wide-sunset.jpg", "seconds": 20}, {"type": "video", "src": "clips/tennis_pixabay_105372_cap.mp4", "maxSeconds": 25, "fresh": {"baked": true, "caption": "", "cap": "BL", "capSize": "S", "logo": "BR"}}, {"type": "image", "src": "slides/404-sell-S000208486.jpg", "seconds": 20}, {"type": "image", "src": "slides/303-ever-corp-baseball-golf.jpg", "seconds": 20}, {"type": "video", "src": "clips/golf_pexels_6541683.mp4", "maxSeconds": 26, "fresh": {"caption": "Golf clubs for every swing", "sub": "Club regripping available", "cap": "BR", "capSize": "L", "logo": "BL"}}, {"type": "image", "src": "slides/19-svc-snow-menu.jpg", "wide": "slides/19-svc-snow-wide.jpg", "seconds": 20}, {"type": "image", "src": "slides/405-sell-S000187523.jpg", "seconds": 20}, {"type": "image", "src": "slides/336-cash-baseball-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/406-sell-S000208731.jpg", "seconds": 20}, {"type": "video", "src": "clips/tennis_pexels_40364169.mp4", "maxSeconds": 26, "fresh": {"caption": "Tennis rackets & balls", "sub": "New and used rackets", "cap": "TL", "capSize": "L", "logo": "BL"}}, {"type": "image", "src": "slides/19-svc-snow-menu-ice.jpg", "wide": "slides/19-svc-snow-wide-ice.jpg", "seconds": 20}, {"type": "image", "src": "slides/338-cash-rollerskate-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/407-sell-S000206606.jpg", "seconds": 20}, {"type": "video", "src": "clips/baseball_pexels_37612708.mp4", "maxSeconds": 29, "fresh": {"caption": "Bats, gloves & cleats", "sub": "Gear up for the season", "cap": "BL", "capSize": "L", "logo": "TL"}}, {"type": "image", "src": "slides/340-cash-surf-b.jpg", "seconds": 20}, {"type": "image", "src": "slides/19-svc-snow-menu-night.jpg", "wide": "slides/19-svc-snow-wide-night.jpg", "seconds": 20}, {"type": "image", "src": "slides/18-svc-regrip-price.jpg", "seconds": 20, "wide": "slides/18-svc-regrip-wide.jpg"}, {"type": "image", "src": "slides/408-sell-S000206902.jpg", "seconds": 20}, {"type": "video", "src": "clips/fitness_pexels_5320001.mp4", "maxSeconds": 25, "fresh": {"caption": "Fitness gear for less", "sub": "Weights, benches and more", "cap": "TL", "capSize": "L", "logo": "TR"}}, {"type": "image", "src": "slides/342-cash-wetsuits-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/409-sell-S000201753.jpg", "seconds": 20}, {"type": "image", "src": "slides/19-svc-snow-menu-sunset.jpg", "wide": "slides/19-svc-snow-wide-sunset.jpg", "seconds": 20}, {"type": "video", "src": "clips/tennis_pixabay_108324_cap.mp4", "maxSeconds": 25, "fresh": {"baked": true, "caption": "", "cap": "BL", "capSize": "S", "logo": "BR"}}, {"type": "image", "src": "slides/345-cash-outdoor-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/410-sell-S000207299.jpg", "seconds": 20}, {"type": "video", "src": "clips/surf_mixkit_51442.mp4", "maxSeconds": 29, "fresh": {"caption": "Paddle out for less", "sub": "Boards, leashes and wetsuits", "cap": "TL", "capSize": "L", "logo": "BL"}}, {"type": "image", "src": "slides/19-svc-snow-menu.jpg", "wide": "slides/19-svc-snow-wide.jpg", "seconds": 20}, {"type": "image", "src": "slides/304-ever-corp-rawlings-easton.jpg", "seconds": 20}, {"type": "image", "src": "slides/420-snow-clearance.jpg", "seconds": 20}, {"type": "image", "src": "slides/411-sell-S000209122.jpg", "seconds": 20}, {"type": "video", "src": "clips/skate_pexels_7645683.mp4", "maxSeconds": 29, "fresh": {"caption": "Drop in for less", "sub": "Skate gear, new and used", "cap": "BL", "capSize": "S", "logo": "TL"}}, {"type": "image", "src": "slides/19-svc-snow-menu-ice.jpg", "wide": "slides/19-svc-snow-wide-ice.jpg", "seconds": 20}, {"type": "image", "src": "slides/348-cash-fitness-a.jpg", "seconds": 20}, {"type": "image", "src": "slides/412-sell-S000206676.jpg", "seconds": 20}, {"type": "video", "src": "clips/baseball_pixabay_5077_cap.mp4", "maxSeconds": 10, "fresh": {"baked": true, "caption": "", "cap": "BL", "capSize": "S", "logo": "BR"}}, {"type": "image", "src": "slides/305-ever-corp-golf-teal.jpg", "seconds": 20}, {"type": "image", "src": "slides/413-sell-S000209966.jpg", "seconds": 20}, {"type": "image", "src": "slides/19-svc-snow-menu-night.jpg", "wide": "slides/19-svc-snow-wide-night.jpg", "seconds": 20}, {"type": "video", "src": "clips/snowboard_pexels_6947516.mp4", "maxSeconds": 30, "fresh": {"caption": "Snowboards & gear", "sub": "Board waxing available", "cap": "BL", "capSize": "S", "logo": "TL"}}]}
+{
+ "dated": [
+  {
+   "src": "slides/dated/PIAS_HolidayHours_Thanksgiving_BlackFriday_2026_3up_TV_1920x1080.png",
+   "start": "2026-11-02",
+   "end": "2026-11-27",
+   "seconds": 15
+  },
+  {
+   "src": "slides/dated/PIAS_HolidayHours_Christmas_NewYear_2026_dated_TV_1920x1080.png",
+   "start": "2026-12-07",
+   "end": "2027-01-01",
+   "seconds": 15
+  }
+ ],
+ "datedEvery": 7,
+ "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders and services: all sales final.",
+ "defaultSeconds": 20,
+ "items": [
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "wide": "slides/19-svc-snow-wide.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/326-cash-racquet-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/400-sell-S000208948.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/329-cash-golf-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/surf_pexels_8907784.mp4",
+   "maxSeconds": 29,
+   "fresh": {
+    "caption": "Surfboards & wetsuits",
+    "sub": "New and used. We buy and sell.",
+    "cap": "BL",
+    "capSize": "L",
+    "logo": "BR"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-ice.jpg",
+   "wide": "slides/19-svc-snow-wide-ice.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/401-sell-S000210079.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/430-hat-pirates.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/332-cash-skate-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/surf_pexels_40203014.mp4",
+   "maxSeconds": 24,
+   "fresh": {
+    "caption": "Ready for the next swell?",
+    "sub": "Used surfboards in stock now",
+    "cap": "BR",
+    "capSize": "L",
+    "logo": "BL"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/402-sell-S000206501.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/333-cash-soccer-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-night.jpg",
+   "wide": "slides/19-svc-snow-wide-night.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/403-sell-S000179409.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skate_pexels_5039538.mp4",
+   "maxSeconds": 24,
+   "fresh": {
+    "caption": "Skateboards & pads",
+    "sub": "Complete boards, new and used",
+    "cap": "BL",
+    "capSize": "S",
+    "logo": "BR"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/334-cash-snow-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/420-snow-clearance.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-sunset.jpg",
+   "wide": "slides/19-svc-snow-wide-sunset.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/tennis_pixabay_105372_cap.mp4",
+   "maxSeconds": 25,
+   "fresh": {
+    "baked": true,
+    "caption": "",
+    "cap": "BL",
+    "capSize": "S",
+    "logo": "BR"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/404-sell-S000208486.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/431-hat-oceanside.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/303-ever-corp-baseball-golf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/golf_pexels_6541683.mp4",
+   "maxSeconds": 26,
+   "fresh": {
+    "caption": "Golf clubs for every swing",
+    "sub": "Club regripping available",
+    "cap": "BR",
+    "capSize": "L",
+    "logo": "BL"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "wide": "slides/19-svc-snow-wide.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/405-sell-S000187523.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/336-cash-baseball-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/406-sell-S000208731.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/tennis_pexels_40364169.mp4",
+   "maxSeconds": 26,
+   "fresh": {
+    "caption": "Tennis rackets & balls",
+    "sub": "New and used rackets",
+    "cap": "TL",
+    "capSize": "L",
+    "logo": "BL"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-ice.jpg",
+   "wide": "slides/19-svc-snow-wide-ice.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/338-cash-rollerskate-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/407-sell-S000206606.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/432-hat-southo.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pexels_37612708.mp4",
+   "maxSeconds": 29,
+   "fresh": {
+    "caption": "Bats, gloves & cleats",
+    "sub": "Gear up for the season",
+    "cap": "BL",
+    "capSize": "L",
+    "logo": "TL"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/340-cash-surf-b.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-night.jpg",
+   "wide": "slides/19-svc-snow-wide-night.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
+  },
+  {
+   "type": "image",
+   "src": "slides/408-sell-S000206902.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/fitness_pexels_5320001.mp4",
+   "maxSeconds": 25,
+   "fresh": {
+    "caption": "Fitness gear for less",
+    "sub": "Weights, benches and more",
+    "cap": "TL",
+    "capSize": "L",
+    "logo": "TR"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/342-cash-wetsuits-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/409-sell-S000201753.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-sunset.jpg",
+   "wide": "slides/19-svc-snow-wide-sunset.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/tennis_pixabay_108324_cap.mp4",
+   "maxSeconds": 25,
+   "fresh": {
+    "baked": true,
+    "caption": "",
+    "cap": "BL",
+    "capSize": "S",
+    "logo": "BR"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/345-cash-outdoor-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/410-sell-S000207299.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/433-hat-missionvista.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/surf_mixkit_51442.mp4",
+   "maxSeconds": 29,
+   "fresh": {
+    "caption": "Paddle out for less",
+    "sub": "Boards, leashes and wetsuits",
+    "cap": "TL",
+    "capSize": "L",
+    "logo": "BL"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu.jpg",
+   "wide": "slides/19-svc-snow-wide.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/304-ever-corp-rawlings-easton.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/420-snow-clearance.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/411-sell-S000209122.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/skate_pexels_7645683.mp4",
+   "maxSeconds": 29,
+   "fresh": {
+    "caption": "Drop in for less",
+    "sub": "Skate gear, new and used",
+    "cap": "BL",
+    "capSize": "S",
+    "logo": "TL"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-ice.jpg",
+   "wide": "slides/19-svc-snow-wide-ice.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/348-cash-fitness-a.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/412-sell-S000206676.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/baseball_pixabay_5077_cap.mp4",
+   "maxSeconds": 10,
+   "fresh": {
+    "baked": true,
+    "caption": "",
+    "cap": "BL",
+    "capSize": "S",
+    "logo": "BR"
+   }
+  },
+  {
+   "type": "image",
+   "src": "slides/305-ever-corp-golf-teal.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/413-sell-S000209966.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/434-hat-group.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/19-svc-snow-menu-night.jpg",
+   "wide": "slides/19-svc-snow-wide-night.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/snowboard_pexels_6947516.mp4",
+   "maxSeconds": 30,
+   "fresh": {
+    "caption": "Snowboards & gear",
+    "sub": "Board waxing available",
+    "cap": "BL",
+    "capSize": "S",
+    "logo": "TL"
+   }
+  }
+ ]
+}
