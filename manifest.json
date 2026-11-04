@@ -473,17 +473,20 @@
   {
    "type": "image",
    "src": "slides/188-item-40S106416.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "full": "slides/188-item-40S106416-full.jpg"
   },
   {
    "type": "image",
    "src": "slides/189-item-40S106417.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "full": "slides/189-item-40S106417-full.jpg"
   },
   {
    "type": "image",
    "src": "slides/190-item-40S107200.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "full": "slides/190-item-40S107200-full.jpg"
   },
   {
    "type": "image",

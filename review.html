@@ -3,7 +3,7 @@
 <body><div id="w"></div><div id="b"><button onclick="go(-1)">&larr; Prev</button><span id="t"></span><button onclick="go(1)">Next &rarr;</button></div>
 <script>
 let L=[],i=0;
-fetch('manifest.json?'+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(m=>{L=[...(m.items||[]),...(m.dated||[])].filter(e=>e.src);i=Math.min(L.length-1,Math.max(0,(+location.hash.slice(1)||1)-1));show()});
+fetch('manifest.json?'+Date.now(),{cache:'no-store'}).then(r=>r.json()).then(m=>{L=[...(m.items||[]),...(m.dated||[])].filter(e=>e.src).map(e=>e.full?{...e,src:e.full}:e);i=Math.min(L.length-1,Math.max(0,(+location.hash.slice(1)||1)-1));show()});
 function show(){const e=L[i],w=document.getElementById('w');w.innerHTML='';const v=/\.(mp4|webm|mov)$/i.test(e.src);const el=document.createElement(v?'video':'img');el.src=e.src;if(v){el.autoplay=el.loop=el.muted=true}w.appendChild(el);document.getElementById('t').textContent=(i+1)+' / '+L.length+'  '+e.src.split('/').pop()+(e.start?'  (dated '+e.start+' to '+e.end+')':'');location.hash=i+1}
 function go(d){if(!L.length)return;i=(i+d+L.length)%L.length;show()}
 addEventListener('keydown',e=>{if(e.key=='ArrowRight'||e.key==' ')go(1);if(e.key=='ArrowLeft')go(-1)});
