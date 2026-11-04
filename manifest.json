@@ -664,6 +664,12 @@
    "type": "image",
    "src": "slides/459-hiring-meme-bus.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/460-ever-discgolf-hq-full.jpg",
+   "seconds": 20,
+   "full": "slides/460-ever-discgolf-hq-full.jpg"
   }
  ]
 }
