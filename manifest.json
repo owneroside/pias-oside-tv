@@ -46,6 +46,46 @@
    "type": "image",
    "src": "slides/447-giftcard-meme-7.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/448-ws-01-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/449-ws-02-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/450-ws-03-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/451-ws-04-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/452-ws-05-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/453-ws-06-coming.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/454-ws-07-coming.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/455-ws-08-coming.jpg",
+   "seconds": 20
   }
  ],
  "datedEvery": 7,
