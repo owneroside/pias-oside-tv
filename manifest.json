@@ -11,6 +11,26 @@
    "start": "2026-12-07",
    "end": "2027-01-01",
    "seconds": 15
+  },
+  {
+   "type": "image",
+   "src": "slides/441-giftcard-1.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/442-giftcard-3.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/443-giftcard-4.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/444-giftcard-6.jpg",
+   "seconds": 20
   }
  ],
  "datedEvery": 7,
