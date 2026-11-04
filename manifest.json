@@ -419,6 +419,121 @@
     "capSize": "S",
     "logo": "TL"
    }
+  },
+  {
+   "type": "image",
+   "src": "slides/440-gerber-knives-3up.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/04-reviews-1100.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/07-boysen-surfboard.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/08-yonex-vcore.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/10-ramp-tumbleweed.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/11-tm-qi10-hybrid.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/12-zflex-fishtail.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/14-sell-wavestorm-8ft.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/15-sell2-micron-magic-120.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/188-item-40S106416.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/189-item-40S106417.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/190-item-40S107200.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/200-ever-cash-surfboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/201-ever-cash-soft-top.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/202-ever-cash-golfclubs.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/203-ever-cash-ballgloves.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/206-ever-cash-dumbbells.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/207-ever-cash-wetsuits.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/209-ever-cash-bodyboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/221-ever-cat-baseball.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/222-ever-cat-discgolf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/225-ever-trade-surf.jpg",
+   "seconds": 20
   }
  ]
 }
