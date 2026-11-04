@@ -244,7 +244,8 @@ async function getBlob2(k){
 function release(keep){for(const k in blobs)if(!keep.includes(k)){URL.revokeObjectURL(blobs[k]);delete blobs[k]}}
 let warming=false;async function warmAll(){if(warming||!M||!self.caches)return;warming=true;const c=await caches.open(C);
  for(const it of [...M.items,...(M.dated||[])])for(const q of [it.src,it.wide].filter(Boolean)){const k=abs(q);try{if(!await c.match(k)){const r=await fetch(k);if(r.ok)await c.put(k,r)}}catch(e){}}warming=false}
-async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});const j=await r.json();if(j.items&&j.items.length){M=j;mAge(Date.now(),0);try{(await caches.open(C)).put(abs('manifest.json'),new Response(JSON.stringify(j)))}catch(_){}}}catch(e){try{const r=await (await caches.open(C)).match(abs('manifest.json'));if(r&&!M)M=await r.json();mAge(null,1)}catch(_){}}
+function shuf(m){const d=new Date(),k=d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate();let x=k>>>0;const r=()=>{x=(x*1664525+1013904223)>>>0;return x/4294967296};const a=m.items;for(let n=a.length-1;n>0;n--){const q=Math.floor(r()*(n+1));[a[n],a[q]]=[a[q],a[n]]}return m}
+async function load(){try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});const j=await r.json();if(j.items&&j.items.length){M=shuf(j);mAge(Date.now(),0);try{(await caches.open(C)).put(abs('manifest.json'),new Response(JSON.stringify(j)))}catch(_){}}}catch(e){try{const r=await (await caches.open(C)).match(abs('manifest.json'));if(r&&!M)M=shuf(await r.json());mAge(null,1)}catch(_){}}
  setTimeout(warmAll,20000)}
 function peek(){if(!M)return;for(let j=0;j<M.items.length;j++){const it=M.items[(i+j)%M.items.length];if(it.type==='video'){getBlob(it.src).catch(()=>{});return}}}
 let fromVid=false,side='R',svcN=0;const wimg=document.getElementById('wimg'),sd=document.getElementById('side'),wd=document.getElementById('wide');
