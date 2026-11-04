@@ -86,6 +86,11 @@
    "type": "image",
    "src": "slides/455-ws-08-coming.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/456-giftcard-meme-8.jpg",
+   "seconds": 20
   }
  ],
  "datedEvery": 7,
