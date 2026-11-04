@@ -283,8 +283,8 @@ wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);
 function tryWx(){if(Date.now()-lastWx<WXI)return false;let h=wxHTML();if(!h)return false;const pk=wxPick();if(!pk){wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);return false}lastWx=Date.now();
  h=h.replace(/<div class="cr">%%CR%%<\/div>/,pk[1]?`<div class="cr">${pk[1]}</div>`:'');wxPre(WXB[(wxN+1)%WXB.length][0]);
  side=side==='L'?'R':'L';const L=side,bg=pk[0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X');st.style.visibility=wd.style.visibility='';document.body.classList.toggle('fr',wxN%2==1)};
- if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
- else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();for(const e of [st,sd,wd,wxEl])e.style.opacity=1},600)}
+ if(fromVid){apply();requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load();hideHol()});fromVid=false}
+ else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();requestAnimationFrame(()=>requestAnimationFrame(()=>{hideHol();for(const e of [st,sd,wd,wxEl])e.style.opacity=1}))},600)}
  clearTimeout(t);t=setTimeout(next,15000);return true}
 function freshOn(f){const B=document.body.classList,c=document.getElementById('fcap');c.classList.remove('on');if(!f){B.remove('fv','fbk');return}B.toggle('fbk',!!f.baked);
  B.add('fv');c.className=f.capSize+' '+f.cap;document.getElementById('flogo').className=f.logo;const h=c.querySelector('.h'),s=c.querySelector('.s');h.textContent=f.caption;s.textContent=f.sub||'';
@@ -294,23 +294,24 @@ const ovEl=document.getElementById('ov');let ovT=null;function showOv(o){clearTi
 let bTm=[];function bannerCycle(d,W){bTm.forEach(clearTimeout);bTm=[];const b=document.body.classList,at=(ms,f)=>bTm.push(setTimeout(f,ms));b.add('bh');W=W||(d>=26?[2,d-9]:[2]);for(const s of W){at(s*1000,()=>b.remove('bh'));at((s+7.5)*1000,()=>b.add('bh'))}}
 let holN=0,holI=0;function ptDay(){return new Intl.DateTimeFormat('en-CA',{timeZone:'America/Los_Angeles'}).format(new Date())}
 function activeDated(){if(!M||!M.dated)return[];const d=ptDay();return M.dated.filter(x=>x.start<=d&&d<=x.end)}
-let gen=0;async function next(){clearTimeout(t);t=null;const g=++gen;const stale=()=>g!==gen;const H=document.getElementById('hol');H.style.display='none';
- const A=activeDated();if(A.length&&++holN>(M.datedEvery||7)){holN=0;const it=A[holI++%A.length];try{const u=await getBlob(it.src);H.firstChild.src=u;try{await H.firstChild.decode()}catch(e){}if(stale())return;if(fromVid){vid.pause()}H.style.display='block';clearTimeout(t);t=setTimeout(next,(it.seconds||15)*1000);return}catch(e){}}if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
+function hideHol(){document.getElementById('hol').style.display='none'}
+let gen=0;async function next(){clearTimeout(t);t=null;const g=++gen;const stale=()=>g!==gen;const H=document.getElementById('hol');
+ const A=activeDated();if(A.length&&++holN>(M.datedEvery||7)){holN=0;const it=A[holI++%A.length];try{const u=await getBlob(it.src);if(H.style.display==='block')throw 0;H.firstChild.src=u;try{await H.firstChild.decode()}catch(e){}if(stale())return;if(fromVid){vid.pause()}H.style.display='block';clearTimeout(t);t=setTimeout(next,(it.seconds||15)*1000);return}catch(e){}}if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load();if(stale())return}
  const it=M.items[i++];let u;try{u=await getBlob(it.src)}catch(e){if(!stale())t=setTimeout(next,300);return}if(stale())return;
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
-  try{await vid.play()}catch(e){if(stale())return;fromVid=false;t=setTimeout(next,100);return}if(stale())return;
-  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));freshOn(it.fresh);showOv(it.fresh?null:it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),it.bAt);document.body.classList.remove('X');vid.style.display='block';fromVid=true;st.style.visibility=wd.style.visibility='hidden';
+  try{await vid.play()}catch(e){if(stale())return;t=setTimeout(next,100);return}if(stale())return;
+  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));freshOn(it.fresh);showOv(it.fresh?null:it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),it.bAt);document.body.classList.remove('X');vid.style.display='block';fromVid=true;st.style.visibility=wd.style.visibility='hidden';requestAnimationFrame(hideHol);
   const done=()=>{if(d||stale())return;d=true;vid.onended=vid.onerror=null;clearTimeout(t);t=null;bTm.forEach(clearTimeout);bTm=[];vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
  else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}if(stale())return}if(!L){side=side==='L'?'R':'L';L=side}
   const n=new Image();n.src=u;try{await n.decode()}catch(e){}if(stale())return;
   const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W','X');document.body.classList.add(L);st.style.visibility=wd.style.visibility=''};
   if(fromVid){tgt.src=u;try{await tgt.decode()}catch(e){}if(stale())return;apply();
-   requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load()});fromVid=false}
+   requestAnimationFrame(()=>{document.body.classList.remove('vid');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load();hideHol()});fromVid=false}
   else{const fw=document.body.classList.contains('X'),F=fw?[st,sd,wd,wxEl]:[st,sd,wd];for(const e of F)e.style.opacity=0;
    await new Promise(r=>setTimeout(r,600));if(stale())return;tgt.src=u;try{await tgt.decode()}catch(e){}if(stale())return;
-   apply();await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));if(stale())return;for(const e of F)e.style.opacity=1}
+   apply();await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));if(stale())return;hideHol();for(const e of F)e.style.opacity=1}
   peek();clearTimeout(t);t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
 if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));const pu=WXB[wxN%WXB.length][0];wxPre(pu);wxFetch().then(()=>new Promise(r=>{const k=()=>wxOk(pu)||wxOk(WXF)?r():setTimeout(k,100);k()})).then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else load().then(next);setTimeout(()=>location.reload(),6*3600*1000);
 let V=null;setInterval(async()=>{try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(V===null)V=t;else if(t!==V&&!document.body.classList.contains('vid'))location.reload()}catch(e){}},180000);
