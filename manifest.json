@@ -31,6 +31,21 @@
    "type": "image",
    "src": "slides/444-giftcard-6.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/445-giftcard-meme-2.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/446-giftcard-meme-3.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/447-giftcard-meme-7.jpg",
+   "seconds": 20
   }
  ],
  "datedEvery": 7,
