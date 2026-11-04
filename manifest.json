@@ -91,6 +91,11 @@
    "type": "image",
    "src": "slides/456-giftcard-meme-8.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/457-wax-meme-skeptical-kid.jpg",
+   "seconds": 20
   }
  ],
  "datedEvery": 7,
