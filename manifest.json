@@ -474,19 +474,28 @@
    "type": "image",
    "src": "slides/188-item-40S106416.jpg",
    "seconds": 20,
-   "full": "slides/188-item-40S106416-full.jpg"
+   "full": "slides/188-item-40S106416-full.jpg",
+   "sku": [
+    "40S106416"
+   ]
   },
   {
    "type": "image",
    "src": "slides/189-item-40S106417.jpg",
    "seconds": 20,
-   "full": "slides/189-item-40S106417-full.jpg"
+   "full": "slides/189-item-40S106417-full.jpg",
+   "sku": [
+    "40S106417"
+   ]
   },
   {
    "type": "image",
    "src": "slides/190-item-40S107200.jpg",
    "seconds": 20,
-   "full": "slides/190-item-40S107200-full.jpg"
+   "full": "slides/190-item-40S107200-full.jpg",
+   "sku": [
+    "40S107200"
+   ]
   },
   {
    "type": "image",
@@ -576,27 +585,50 @@
   {
    "type": "image",
    "src": "slides/448-ws-01-instock.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "90W5099",
+    "90W578",
+    "90W5009"
+   ]
   },
   {
    "type": "image",
    "src": "slides/449-ws-02-instock.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "90W5038",
+    "90W504",
+    "90W514"
+   ]
   },
   {
    "type": "image",
    "src": "slides/450-ws-03-instock.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "90W577",
+    "90W5313",
+    "90W5315"
+   ]
   },
   {
    "type": "image",
    "src": "slides/451-ws-04-instock.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "90W5079",
+    "90W5061"
+   ]
   },
   {
    "type": "image",
    "src": "slides/452-ws-05-instock.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "90W5008",
+    "90W5170"
+   ]
   },
   {
    "type": "image",
