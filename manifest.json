@@ -96,6 +96,16 @@
    "type": "image",
    "src": "slides/457-wax-meme-skeptical-kid.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/458-surf-meme-distracted.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/459-hiring-meme-bus.jpg",
+   "seconds": 20
   }
  ],
  "datedEvery": 7,
