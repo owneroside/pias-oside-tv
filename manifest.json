@@ -11,101 +11,6 @@
    "start": "2026-12-07",
    "end": "2027-01-01",
    "seconds": 15
-  },
-  {
-   "type": "image",
-   "src": "slides/441-giftcard-1.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/442-giftcard-3.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/443-giftcard-4.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/444-giftcard-6.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/445-giftcard-meme-2.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/446-giftcard-meme-3.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/447-giftcard-meme-7.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/448-ws-01-instock.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/449-ws-02-instock.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/450-ws-03-instock.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/451-ws-04-instock.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/452-ws-05-instock.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/453-ws-06-coming.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/454-ws-07-coming.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/455-ws-08-coming.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/456-giftcard-meme-8.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/457-wax-meme-skeptical-kid.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/458-surf-meme-distracted.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/459-hiring-meme-bus.jpg",
-   "seconds": 20
   }
  ],
  "datedEvery": 7,
@@ -628,6 +533,101 @@
   {
    "type": "image",
    "src": "slides/225-ever-trade-surf.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/441-giftcard-1.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/442-giftcard-3.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/443-giftcard-4.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/444-giftcard-6.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/445-giftcard-meme-2.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/446-giftcard-meme-3.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/447-giftcard-meme-7.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/448-ws-01-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/449-ws-02-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/450-ws-03-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/451-ws-04-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/452-ws-05-instock.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/453-ws-06-coming.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/454-ws-07-coming.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/455-ws-08-coming.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/456-giftcard-meme-8.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/457-wax-meme-skeptical-kid.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/458-surf-meme-distracted.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/459-hiring-meme-bus.jpg",
    "seconds": 20
   }
  ]
