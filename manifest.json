@@ -214,14 +214,14 @@
   },
   {
    "type": "image",
-   "src": "slides/18-svc-regrip-price.jpg",
-   "seconds": 20,
-   "wide": "slides/18-svc-regrip-wide.jpg"
+   "src": "slides/225-ever-trade-surf.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/225-ever-trade-surf.jpg",
-   "seconds": 20
+   "src": "slides/18-svc-regrip-price.jpg",
+   "seconds": 20,
+   "wide": "slides/18-svc-regrip-wide.jpg"
   },
   {
    "type": "video",
@@ -244,16 +244,16 @@
   },
   {
    "type": "image",
-   "src": "slides/326-cash-racquet-a.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/110-item-S000208032.jpg",
    "seconds": 20,
    "sku": [
     "S000208032"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/326-cash-racquet-a.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -344,8 +344,11 @@
   },
   {
    "type": "image",
-   "src": "slides/307-ever-corp-basketball-online.jpg",
-   "seconds": 20
+   "src": "slides/186-item-S000187490.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000187490"
+   ]
   },
   {
    "type": "video",
@@ -366,15 +369,12 @@
   },
   {
    "type": "image",
-   "src": "slides/186-item-S000187490.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000187490"
-   ]
+   "src": "slides/307-ever-corp-basketball-online.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/233-ever-online-1.jpg",
+   "src": "slides/334-cash-snow-b.jpg",
    "seconds": 20
   },
   {
@@ -390,7 +390,7 @@
   },
   {
    "type": "image",
-   "src": "slides/334-cash-snow-b.jpg",
+   "src": "slides/233-ever-online-1.jpg",
    "seconds": 20
   },
   {
@@ -400,7 +400,7 @@
   },
   {
    "type": "image",
-   "src": "slides/202-ever-cash-golfclubs.jpg",
+   "src": "slides/336-cash-baseball-a.jpg",
    "seconds": 20
   },
   {
@@ -418,7 +418,7 @@
   },
   {
    "type": "image",
-   "src": "slides/336-cash-baseball-a.jpg",
+   "src": "slides/202-ever-cash-golfclubs.jpg",
    "seconds": 20
   },
   {
@@ -428,7 +428,7 @@
   },
   {
    "type": "image",
-   "src": "slides/216-ever-cat-pickleball.jpg",
+   "src": "slides/337-cash-baseball-b.jpg",
    "seconds": 20
   },
   {
@@ -445,12 +445,12 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu-night.jpg",
+   "src": "slides/216-ever-cat-pickleball.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/337-cash-baseball-b.jpg",
+   "src": "slides/19-svc-snow-menu-night.jpg",
    "seconds": 20
   },
   {
@@ -471,12 +471,12 @@
   },
   {
    "type": "image",
-   "src": "slides/309-ever-corp-golf-putt.jpg",
+   "src": "slides/188-item-40S106416-full.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/340-cash-surf-b.jpg",
+   "src": "slides/309-ever-corp-golf-putt.jpg",
    "seconds": 20
   },
   {
@@ -496,12 +496,12 @@
   },
   {
    "type": "image",
-   "src": "slides/341-cash-surf-c.jpg",
+   "src": "slides/340-cash-surf-b.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/188-item-40S106416-full.jpg",
+   "src": "slides/341-cash-surf-c.jpg",
    "seconds": 20
   },
   {
@@ -524,12 +524,12 @@
   },
   {
    "type": "image",
-   "src": "slides/310-ever-corp-golf-bag.jpg",
+   "src": "slides/343-cash-wetsuits-b.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/343-cash-wetsuits-b.jpg",
+   "src": "slides/310-ever-corp-golf-bag.jpg",
    "seconds": 20
   },
   {
@@ -605,12 +605,15 @@
   },
   {
    "type": "image",
-   "src": "slides/311-ever-corp-golfer.jpg",
-   "seconds": 20
+   "src": "slides/188-item-40S106416.jpg",
+   "seconds": 20,
+   "sku": [
+    "40S106416"
+   ]
   },
   {
    "type": "image",
-   "src": "slides/347-cash-outdoor-c.jpg",
+   "src": "slides/311-ever-corp-golfer.jpg",
    "seconds": 20
   },
   {
@@ -622,6 +625,11 @@
   },
   {
    "type": "image",
+   "src": "slides/347-cash-outdoor-c.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/348-cash-fitness-a.jpg",
    "seconds": 20
   },
@@ -629,14 +637,6 @@
    "type": "image",
    "src": "slides/349-cash-fitness-b.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/188-item-40S106416.jpg",
-   "seconds": 20,
-   "sku": [
-    "40S106416"
-   ]
   },
   {
    "type": "video",
@@ -651,6 +651,11 @@
   },
   {
    "type": "image",
+   "src": "slides/350-cash-fitness-c.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/312-ever-corp-pickleball.jpg",
    "seconds": 20
   },
@@ -658,12 +663,6 @@
    "type": "image",
    "src": "slides/218-ever-cat-snowboards.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/19-svc-snow-menu.jpg",
-   "seconds": 20,
-   "wide": "slides/19-svc-snow-wide.jpg"
   },
   {
    "type": "video",
@@ -679,8 +678,9 @@
   },
   {
    "type": "image",
-   "src": "slides/350-cash-fitness-c.jpg",
-   "seconds": 20
+   "src": "slides/19-svc-snow-menu.jpg",
+   "seconds": 20,
+   "wide": "slides/19-svc-snow-wide.jpg"
   },
   {
    "type": "image",
@@ -730,12 +730,12 @@
   },
   {
    "type": "image",
-   "src": "slides/403-sell-S000179409.jpg",
+   "src": "slides/189-item-40S106417-full.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/404-sell-S000208486.jpg",
+   "src": "slides/403-sell-S000179409.jpg",
    "seconds": 20
   },
   {
@@ -744,6 +744,11 @@
    "maxSeconds": 16,
    "banner": "R",
    "bAt": []
+  },
+  {
+   "type": "image",
+   "src": "slides/404-sell-S000208486.jpg",
+   "seconds": 20
   },
   {
    "type": "image",
@@ -756,12 +761,6 @@
    "seconds": 20
   },
   {
-   "type": "image",
-   "src": "slides/17-svc-wax-price.jpg",
-   "seconds": 20,
-   "wide": "slides/17-svc-wax-wide.jpg"
-  },
-  {
    "type": "video",
    "src": "clips/golf_mixkit_2036.mp4",
    "maxSeconds": 16,
@@ -769,12 +768,13 @@
   },
   {
    "type": "image",
-   "src": "slides/314-ever-corp-golf-recycle.jpg",
-   "seconds": 20
+   "src": "slides/17-svc-wax-price.jpg",
+   "seconds": 20,
+   "wide": "slides/17-svc-wax-wide.jpg"
   },
   {
    "type": "image",
-   "src": "slides/189-item-40S106417-full.jpg",
+   "src": "slides/314-ever-corp-golf-recycle.jpg",
    "seconds": 20
   },
   {
@@ -801,7 +801,7 @@
   },
   {
    "type": "image",
-   "src": "slides/315-ever-corp-local-sports.jpg",
+   "src": "slides/409-sell-S000201753.jpg",
    "seconds": 20
   },
   {
@@ -817,17 +817,20 @@
   },
   {
    "type": "image",
-   "src": "slides/409-sell-S000201753.jpg",
+   "src": "slides/315-ever-corp-local-sports.jpg",
    "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/189-item-40S106417.jpg",
+   "seconds": 20,
+   "sku": [
+    "40S106417"
+   ]
   },
   {
    "type": "image",
    "src": "slides/410-sell-S000207299.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/207-ever-cash-wetsuits.jpg",
    "seconds": 20
   },
   {
@@ -850,12 +853,12 @@
   },
   {
    "type": "image",
-   "src": "slides/220-ever-cat-roller.jpg",
+   "src": "slides/207-ever-cash-wetsuits.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/231-ever-newused-fitness.jpg",
+   "src": "slides/412-sell-S000206676.jpg",
    "seconds": 20
   },
   {
@@ -872,19 +875,19 @@
   },
   {
    "type": "image",
+   "src": "slides/220-ever-cat-roller.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/231-ever-newused-fitness.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20,
    "wide": "slides/18-svc-regrip-wide.jpg"
-  },
-  {
-   "type": "image",
-   "src": "slides/227-ever-trade-snow.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/412-sell-S000206676.jpg",
-   "seconds": 20
   },
   {
    "type": "video",
@@ -903,6 +906,11 @@
   },
   {
    "type": "image",
+   "src": "slides/227-ever-trade-snow.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/316-ever-corp-golf-course.jpg",
    "seconds": 20
   },
@@ -910,14 +918,6 @@
    "type": "image",
    "src": "slides/413-sell-S000209966.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/189-item-40S106417.jpg",
-   "seconds": 20,
-   "sku": [
-    "40S106417"
-   ]
   },
   {
    "type": "video",
@@ -942,7 +942,7 @@
   },
   {
    "type": "image",
-   "src": "slides/317-ever-corp-soccer.jpg",
+   "src": "slides/431-hat-oceanside.jpg",
    "seconds": 20
   },
   {
@@ -953,17 +953,17 @@
   },
   {
    "type": "image",
-   "src": "slides/431-hat-oceanside.jpg",
+   "src": "slides/317-ever-corp-soccer.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/190-item-40S107200-full.jpg",
    "seconds": 20
   },
   {
    "type": "image",
    "src": "slides/432-hat-southo.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/433-hat-missionvista.jpg",
    "seconds": 20
   },
   {
@@ -981,17 +981,17 @@
   },
   {
    "type": "image",
+   "src": "slides/433-hat-missionvista.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/221-ever-cat-baseball.jpg",
    "seconds": 20
   },
   {
    "type": "image",
    "src": "slides/19-svc-snow-menu-ice.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/318-ever-corp-reuse-recycle.jpg",
    "seconds": 20
   },
   {
@@ -1012,17 +1012,13 @@
   },
   {
    "type": "image",
-   "src": "slides/208-ever-cash-tennis.jpg",
+   "src": "slides/318-ever-corp-reuse-recycle.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/440-gerber-knives-3up.jpg",
-   "seconds": 20,
-   "sku": [
-    "42G1066484",
-    "42G31003928"
-   ]
+   "src": "slides/208-ever-cash-tennis.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1038,17 +1034,21 @@
   },
   {
    "type": "image",
+   "src": "slides/440-gerber-knives-3up.jpg",
+   "seconds": 20,
+   "sku": [
+    "42G1066484",
+    "42G31003928"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/441-giftcard-1.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/190-item-40S107200-full.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/235-ever-online-3.jpg",
+   "src": "slides/442-giftcard-3.jpg",
    "seconds": 20
   },
   {
@@ -1064,7 +1064,7 @@
   },
   {
    "type": "image",
-   "src": "slides/442-giftcard-3.jpg",
+   "src": "slides/235-ever-online-3.jpg",
    "seconds": 20
   },
   {
@@ -1090,17 +1090,20 @@
   },
   {
    "type": "image",
+   "src": "slides/190-item-40S107200.jpg",
+   "seconds": 20,
+   "sku": [
+    "40S107200"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/444-giftcard-6.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/222-ever-cat-discgolf.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/19-svc-snow-menu-night.jpg",
+   "src": "slides/445-giftcard-meme-2.jpg",
    "seconds": 20
   },
   {
@@ -1111,12 +1114,12 @@
   },
   {
    "type": "image",
-   "src": "slides/445-giftcard-meme-2.jpg",
+   "src": "slides/222-ever-cat-discgolf.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/320-ever-corp-golf-yellow.jpg",
+   "src": "slides/19-svc-snow-menu-night.jpg",
    "seconds": 20
   },
   {
@@ -1141,12 +1144,12 @@
   },
   {
    "type": "image",
-   "src": "slides/447-giftcard-meme-7.jpg",
+   "src": "slides/320-ever-corp-golf-yellow.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/209-ever-cash-bodyboards.jpg",
+   "src": "slides/447-giftcard-meme-7.jpg",
    "seconds": 20
   },
   {
@@ -1173,16 +1176,8 @@
   },
   {
    "type": "image",
-   "src": "slides/321-ever-corp-golf-recycle2.jpg",
+   "src": "slides/209-ever-cash-bodyboards.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/190-item-40S107200.jpg",
-   "seconds": 20,
-   "sku": [
-    "40S107200"
-   ]
   },
   {
    "type": "image",
@@ -1193,6 +1188,11 @@
     "90W504",
     "90W514"
    ]
+  },
+  {
+   "type": "image",
+   "src": "slides/321-ever-corp-golf-recycle2.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1218,13 +1218,20 @@
   },
   {
    "type": "image",
-   "src": "slides/223-ever-cat-skateboards.jpg",
-   "seconds": 20
+   "src": "slides/191-item-S000210296.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210296"
+   ]
   },
   {
    "type": "image",
-   "src": "slides/232-ever-newused-surf.jpg",
-   "seconds": 20
+   "src": "slides/451-ws-04-instock.jpg",
+   "seconds": 20,
+   "sku": [
+    "90W5079",
+    "90W5061"
+   ]
   },
   {
    "type": "video",
@@ -1240,22 +1247,18 @@
   },
   {
    "type": "image",
+   "src": "slides/223-ever-cat-skateboards.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/19-svc-snow-menu-sunset.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/228-ever-trade-bike.jpg",
+   "src": "slides/232-ever-newused-surf.jpg",
    "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/451-ws-04-instock.jpg",
-   "seconds": 20,
-   "sku": [
-    "90W5079",
-    "90W5061"
-   ]
   },
   {
    "type": "video",
@@ -1270,17 +1273,17 @@
   },
   {
    "type": "image",
+   "src": "slides/228-ever-trade-bike.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/452-ws-05-instock.jpg",
    "seconds": 20,
    "sku": [
     "90W5008",
     "90W5170"
    ]
-  },
-  {
-   "type": "image",
-   "src": "slides/322-ever-corp-kettlebell.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -1300,17 +1303,17 @@
   },
   {
    "type": "image",
+   "src": "slides/322-ever-corp-kettlebell.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/454-ws-07-coming.jpg",
    "seconds": 20
   },
   {
    "type": "image",
    "src": "slides/455-ws-08-coming.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/324-ever-corp-discgolf-pack.jpg",
    "seconds": 20
   },
   {
@@ -1327,16 +1330,13 @@
   },
   {
    "type": "image",
-   "src": "slides/211-ever-cash-discgolf.jpg",
+   "src": "slides/324-ever-corp-discgolf-pack.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/191-item-S000210296.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000210296"
-   ]
+   "src": "slides/457-wax-meme-skeptical-kid.jpg",
+   "seconds": 20
   },
   {
    "type": "video",
@@ -1351,18 +1351,20 @@
   },
   {
    "type": "image",
-   "src": "slides/457-wax-meme-skeptical-kid.jpg",
+   "src": "slides/211-ever-cash-discgolf.jpg",
    "seconds": 20
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu.jpg",
+   "src": "slides/192-item-80YJZLB.jpg",
    "seconds": 20,
-   "wide": "slides/19-svc-snow-wide.jpg"
+   "sku": [
+    "80YJZLB"
+   ]
   },
   {
    "type": "image",
-   "src": "slides/224-ever-cat-swim.jpg",
+   "src": "slides/458-surf-meme-distracted.jpg",
    "seconds": 20
   },
   {
@@ -1379,12 +1381,13 @@
   },
   {
    "type": "image",
-   "src": "slides/458-surf-meme-distracted.jpg",
-   "seconds": 20
+   "src": "slides/19-svc-snow-menu.jpg",
+   "seconds": 20,
+   "wide": "slides/19-svc-snow-wide.jpg"
   },
   {
    "type": "image",
-   "src": "slides/325-ever-corp-baseball-batter.jpg",
+   "src": "slides/224-ever-cat-swim.jpg",
    "seconds": 20
   },
   {
@@ -1400,8 +1403,30 @@
   },
   {
    "type": "image",
+   "src": "slides/325-ever-corp-baseball-batter.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/461-cat-discraft-selection.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/dated",
    "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/snowboarding_pixabay_65918.mp4",
+   "maxSeconds": 16,
+   "banner": "T",
+   "overlay": {
+    "side": "R",
+    "text": "Upgrading your board? We buy and sell!",
+    "sub": "We buy and sell used sports gear",
+    "v": "up"
+   }
   }
  ]
 }
