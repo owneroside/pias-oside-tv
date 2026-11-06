@@ -100,12 +100,12 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44414.mp4",
+   "src": "clips/skateboarding_mixkit_1362.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "L",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell weights and fitness gear",
+    "text": "We buy and sell skateboards and completes",
     "sub": "We buy and sell used sports gear"
    }
   },
@@ -133,12 +133,14 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_mixkit_853.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1002.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "bAt": [
-    3
-   ]
+   "banner": "R",
+   "overlay": {
+    "side": "R",
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "We buy and sell wetsuits and fins too"
+   }
   },
   {
    "type": "image",
@@ -163,10 +165,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_108324.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44414.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "bAt": []
+   "banner": "R",
+   "overlay": {
+    "side": "L",
+    "text": "We buy and sell weights and fitness gear",
+    "sub": "We buy and sell used sports gear"
+   }
   },
   {
    "type": "image",
@@ -182,7 +188,6 @@
    "seconds": 20,
    "sku": [
     "S000209045",
-    "S000209047",
     "S000209049",
     "S000209052",
     "S000209053"
@@ -195,10 +200,12 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44416.mp4",
+   "src": "clips/baseball_mixkit_853.mp4",
    "maxSeconds": 16,
    "banner": "T",
-   "bAt": []
+   "bAt": [
+    3
+   ]
   },
   {
    "type": "image",
@@ -218,14 +225,13 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_mixkit_855.mp4",
+   "src": "clips/golf_mixkit_2030.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "T",
    "overlay": {
     "side": "L",
-    "text": "Used baseballs, 6 for $14.99",
-    "sub": "We buy and sell used baseball gear",
-    "v": "dn"
+    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
+    "sub": "We buy and sell, bring in your gear today"
    }
   },
   {
@@ -251,17 +257,14 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_mixkit_856.mp4",
+   "src": "clips/skateboarding_mixkit_1363.mp4",
    "maxSeconds": 16,
    "banner": "T",
-   "bAt": [
-    1
-   ],
    "overlay": {
     "side": "L",
-    "text": "Used baseballs, 6 for $14.99",
-    "sub": "Outgrown your glove? We buy and sell!",
-    "sm": true
+    "text": "We buy and sell skate decks and gear",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up"
    }
   },
   {
@@ -281,15 +284,9 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1042.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "overlay": {
-    "side": "R",
-    "text": "We buy and sell, bring in your gear today",
-    "sub": "We buy and sell, bring in your gear today",
-    "v": "up"
-   }
+   "banner": "R"
   },
   {
    "type": "image",
@@ -308,18 +305,10 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_mixkit_881.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_108324.mp4",
    "maxSeconds": 16,
    "banner": "T",
-   "bAt": [
-    4
-   ],
-   "overlay": {
-    "side": "R",
-    "text": "Used baseballs, 6 for $14.99",
-    "sub": "We buy and sell bats, gloves and cleats",
-    "sm": true
-   }
+   "bAt": []
   },
   {
    "type": "image",
@@ -338,14 +327,10 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_mixkit_2038.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44416.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "overlay": {
-    "side": "R",
-    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
-    "sub": "We buy and sell used sports gear"
-   }
+   "banner": "T",
+   "bAt": []
   },
   {
    "type": "image",
@@ -364,14 +349,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52100.mp4",
+   "src": "clips/baseball_mixkit_855.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "overlay": {
-    "side": "R",
-    "text": "We buy and sell weights and fitness gear",
-    "sub": "We buy and sell used sports gear",
-    "v": "up"
+    "side": "L",
+    "text": "Used baseballs, 6 for $14.99",
+    "sub": "We buy and sell used baseball gear",
+    "v": "dn"
    }
   },
   {
@@ -394,13 +379,13 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_pixabay_133206.mp4",
+   "src": "clips/golf_mixkit_2031.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "overlay": {
     "side": "R",
-    "text": "Used baseballs, 6 for $14.99",
-    "sub": "We buy and sell used baseball gear"
+    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
+    "sub": "We buy and sell used sports gear"
    }
   },
   {
@@ -420,13 +405,15 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_mixkit_2040.mp4",
+   "src": "clips/skateboarding_mixkit_1365.mp4",
    "maxSeconds": 16,
    "banner": "L",
    "overlay": {
     "side": "R",
-    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
-    "sub": "We buy and sell, bring in your gear today"
+    "text": "We buy and sell skateboards, new and used",
+    "sub": "We buy and sell used sports gear",
+    "v": "up",
+    "sm": true
    }
   },
   {
@@ -446,13 +433,13 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52106.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1044.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "R",
    "overlay": {
-    "side": "R",
-    "text": "We buy and sell dumbbells, plates and benches",
-    "sub": "We buy and sell, bring in your gear today",
+    "side": "L",
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "We buy and sell surf gear, new and used",
     "sm": true
    }
   },
@@ -473,14 +460,9 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_mixkit_2044.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44433.mp4",
    "maxSeconds": 16,
-   "banner": "R",
-   "overlay": {
-    "side": "L",
-    "text": "Upgrading your bag? We buy and sell clubs!",
-    "sub": "We buy and sell used sports gear"
-   }
+   "banner": "L"
   },
   {
    "type": "image",
@@ -499,14 +481,16 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13356.mp4",
+   "src": "clips/baseball_mixkit_856.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "T",
+   "bAt": [
+    1
+   ],
    "overlay": {
     "side": "L",
-    "text": "We buy and sell used fitness equipment",
-    "sub": "We buy and sell used sports gear",
-    "v": "up",
+    "text": "Used baseballs, 6 for $14.99",
+    "sub": "Outgrown your glove? We buy and sell!",
     "sm": true
    }
   },
@@ -527,13 +511,15 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_pixabay_10803.mp4",
+   "src": "clips/golf_mixkit_2033.mp4",
    "maxSeconds": 16,
    "banner": "T",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell used golf gear",
-    "sub": "We buy and sell, bring in your gear today"
+    "side": "R",
+    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up",
+    "sm": true
    }
   },
   {
@@ -553,10 +539,15 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_13360.mp4",
+   "src": "clips/skateboarding_mixkit_1366.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "bAt": []
+   "banner": "L",
+   "overlay": {
+    "side": "R",
+    "text": "Got an old board? We buy and sell!",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up"
+   }
   },
   {
    "type": "image",
@@ -575,13 +566,15 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_pixabay_219542.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1045.mp4",
    "maxSeconds": 16,
    "banner": "T",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell baseball bats, gloves and gear",
-    "sub": "We buy and sell, bring in your gear today"
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "We buy and sell used sports gear",
+    "v": "up",
+    "sm": true
    }
   },
   {
@@ -601,16 +594,9 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1127.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44434.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "overlay": {
-    "side": "L",
-    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
-    "sub": "We buy and sell wetsuits and fins too",
-    "v": "up",
-    "sm": true
-   }
+   "banner": "L"
   },
   {
    "type": "image",
@@ -629,14 +615,10 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
+   "src": "clips/baseball_mixkit_858.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "We buy and sell tennis rackets"
-   }
+   "banner": "R",
+   "bAt": []
   },
   {
    "type": "image",
@@ -658,10 +640,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_pixabay_169590.mp4",
+   "src": "clips/golf_mixkit_2035.mp4",
    "maxSeconds": 16,
-   "banner": "L",
-   "bAt": []
+   "banner": "T",
+   "overlay": {
+    "side": "R",
+    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
+    "sub": "We buy and sell used sports gear"
+   }
   },
   {
    "type": "image",
@@ -681,13 +667,14 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_pixabay_24166.mp4",
+   "src": "clips/skateboarding_mixkit_1367.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "R",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell baseball bats, gloves and gear",
-    "sub": "We buy and sell bats, gloves and cleats"
+    "text": "We buy and sell used sports gear",
+    "sub": "We buy and sell used sports gear",
+    "v": "up"
    }
   },
   {
@@ -707,10 +694,12 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_1529.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1059.mp4",
    "maxSeconds": 16,
-   "banner": "L",
-   "bAt": []
+   "banner": "R",
+   "bAt": [
+    3
+   ]
   },
   {
    "type": "image",
@@ -729,9 +718,9 @@
   },
   {
    "type": "video",
-   "src": "clips/snowboarding_pixabay_106942.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44442.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "bAt": []
   },
   {
@@ -751,15 +740,10 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1128.mp4",
+   "src": "clips/baseball_mixkit_871.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "overlay": {
-    "side": "L",
-    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
-    "sub": "Trade up your board, we buy and sell!",
-    "v": "dn"
-   }
+   "banner": "R",
+   "bAt": []
   },
   {
    "type": "image",
@@ -779,14 +763,9 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_pixabay_18080.mp4",
+   "src": "clips/golf_mixkit_2036.mp4",
    "maxSeconds": 16,
-   "banner": "T",
-   "overlay": {
-    "side": "L",
-    "text": "We buy and sell golf clubs",
-    "sub": "We buy and sell used sports gear"
-   }
+   "banner": "T"
   },
   {
    "type": "image",
@@ -805,9 +784,9 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_2549.mp4",
+   "src": "clips/skateboarding_mixkit_1368.mp4",
    "maxSeconds": 16,
-   "banner": "B",
+   "banner": "T",
    "bAt": []
   },
   {
@@ -827,10 +806,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1163.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1064.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "bAt": []
+   "banner": "T",
+   "overlay": {
+    "side": "R",
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "We buy and sell wetsuits and fins too"
+   }
   },
   {
    "type": "image",
@@ -849,13 +832,15 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_32819.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_199833.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "L",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "Bring in your old racket, we buy and sell!"
+    "text": "We buy and sell tennis and table tennis gear",
+    "sub": "We buy and sell used sports gear",
+    "v": "dn",
+    "sm": true
    }
   },
   {
@@ -875,17 +860,14 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_323.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
    "maxSeconds": 16,
-   "banner": "R",
-   "bAt": [
-    3
-   ],
+   "banner": "B",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell skate decks and gear",
+    "side": "R",
+    "text": "We buy and sell, bring in your gear today",
     "sub": "We buy and sell, bring in your gear today",
-    "sm": true
+    "v": "up"
    }
   },
   {
@@ -906,9 +888,18 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_2536.mp4",
+   "src": "clips/baseball_mixkit_881.mp4",
    "maxSeconds": 16,
-   "banner": "R"
+   "banner": "T",
+   "bAt": [
+    4
+   ],
+   "overlay": {
+    "side": "R",
+    "text": "Used baseballs, 6 for $14.99",
+    "sub": "We buy and sell bats, gloves and cleats",
+    "sm": true
+   }
   },
   {
    "type": "image",
@@ -930,9 +921,14 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_326.mp4",
+   "src": "clips/golf_mixkit_2038.mp4",
    "maxSeconds": 16,
-   "banner": "T"
+   "banner": "B",
+   "overlay": {
+    "side": "R",
+    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
+    "sub": "We buy and sell used sports gear"
+   }
   },
   {
    "type": "image",
@@ -951,14 +947,9 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_35265.mp4",
+   "src": "clips/skateboarding_mixkit_1370.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "We buy and sell, bring in your gear today"
-   }
+   "banner": "T"
   },
   {
    "type": "image",
@@ -977,14 +968,14 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_34381.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1070.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "B",
    "overlay": {
-    "side": "L",
-    "text": "Got an old board? We buy and sell!",
-    "sub": "We buy and sell, bring in your gear today",
-    "v": "up",
+    "side": "R",
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "Trade up your board, we buy and sell!",
+    "v": "dn",
     "sm": true
    }
   },
@@ -1005,14 +996,13 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38927.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_208386.mp4",
    "maxSeconds": 16,
    "banner": "B",
    "overlay": {
     "side": "L",
-    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
-    "sub": "We buy and sell wetsuits and fins too",
-    "v": "up"
+    "text": "We buy and sell tennis rackets and gear, new and used",
+    "sub": "We buy and sell tennis gear, new and used"
    }
   },
   {
@@ -1028,17 +1018,22 @@
   {
    "type": "image",
    "src": "slides/440-gerber-knives-3up.jpg",
-   "seconds": 20
+   "seconds": 20,
+   "sku": [
+    "42G1066484",
+    "42G31003928"
+   ]
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_50109.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52100.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "T",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis rackets and gear, new and used",
-    "sub": "We buy and sell tennis rackets"
+    "side": "R",
+    "text": "We buy and sell weights and fitness gear",
+    "sub": "We buy and sell used sports gear",
+    "v": "up"
    }
   },
   {
@@ -1058,9 +1053,14 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_34382.mp4",
+   "src": "clips/baseball_pixabay_133206.mp4",
    "maxSeconds": 16,
-   "banner": "L"
+   "banner": "T",
+   "overlay": {
+    "side": "R",
+    "text": "Used baseballs, 6 for $14.99",
+    "sub": "We buy and sell used baseball gear"
+   }
   },
   {
    "type": "image",
@@ -1079,13 +1079,13 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38933.mp4",
+   "src": "clips/golf_mixkit_2040.mp4",
    "maxSeconds": 16,
-   "banner": "R",
+   "banner": "L",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
-    "sub": "Trade up your board, we buy and sell!"
+    "side": "R",
+    "text": "We sell kids' golf clubs cheap! Check out what we have; inventory changes daily",
+    "sub": "We buy and sell, bring in your gear today"
    }
   },
   {
@@ -1105,10 +1105,9 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_34384.mp4",
+   "src": "clips/skateboarding_mixkit_1372.mp4",
    "maxSeconds": 16,
-   "banner": "B",
-   "bAt": []
+   "banner": "T"
   },
   {
    "type": "image",
@@ -1127,13 +1126,17 @@
   },
   {
    "type": "video",
-   "src": "clips/baseball_pixabay_83054.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1071.mp4",
    "maxSeconds": 16,
-   "banner": "B",
+   "banner": "R",
+   "bAt": [
+    4
+   ],
    "overlay": {
     "side": "L",
-    "text": "We buy and sell baseball bats, gloves and gear",
-    "sub": "Outgrown your glove? We buy and sell!"
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "We buy and sell surf gear, new and used",
+    "sm": true
    }
   },
   {
@@ -1158,14 +1161,14 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_pixabay_41471.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_208388.mp4",
    "maxSeconds": 16,
-   "banner": "T",
+   "banner": "B",
    "overlay": {
-    "side": "R",
-    "text": "We buy and sell golf clubs",
-    "sub": "We buy and sell used sports gear",
-    "v": "up"
+    "side": "L",
+    "text": "We buy and sell tennis rackets and gear, new and used",
+    "sub": "Bring in your old racket, we buy and sell!",
+    "v": "dn"
    }
   },
   {
@@ -1193,10 +1196,15 @@
   },
   {
    "type": "video",
-   "src": "clips/skateboarding_mixkit_34385.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52106.mp4",
    "maxSeconds": 16,
-   "banner": "R",
-   "bAt": []
+   "banner": "L",
+   "overlay": {
+    "side": "R",
+    "text": "We buy and sell dumbbells, plates and benches",
+    "sub": "We buy and sell, bring in your gear today",
+    "sm": true
+   }
   },
   {
    "type": "image",
@@ -1220,16 +1228,13 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_pixabay_45301.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_218105.mp4",
    "maxSeconds": 16,
    "banner": "B",
-   "bAt": [
-    4
-   ],
    "overlay": {
     "side": "L",
-    "text": "We buy and sell drivers, irons and putters",
-    "sub": "We buy and sell, bring in your gear today",
+    "text": "We buy and sell tennis rackets and gear, new and used",
+    "sub": "We buy and sell used sports gear",
     "v": "up"
    }
   },
@@ -1254,9 +1259,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_132846.mp4",
+   "src": "clips/baseball_pixabay_219542.mp4",
    "maxSeconds": 16,
-   "banner": "T"
+   "banner": "T",
+   "overlay": {
+    "side": "L",
+    "text": "We buy and sell baseball bats, gloves and gear",
+    "sub": "We buy and sell, bring in your gear today"
+   }
   },
   {
    "type": "image",
@@ -1279,13 +1289,13 @@
   },
   {
    "type": "video",
-   "src": "clips/golf_pixabay_5166.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
    "maxSeconds": 16,
    "banner": "B",
    "overlay": {
     "side": "L",
-    "text": "Upgrading your bag? We buy and sell clubs!",
-    "sub": "We buy and sell used sports gear"
+    "text": "We buy and sell tennis rackets and gear, new and used",
+    "sub": "We buy and sell tennis rackets"
    }
   },
   {
@@ -1305,9 +1315,10 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_189547.mp4",
+   "src": "clips/snowboarding_pixabay_106942.mp4",
    "maxSeconds": 16,
-   "banner": "R"
+   "banner": "T",
+   "bAt": []
   },
   {
    "type": "image",
@@ -1329,15 +1340,13 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_74670.mp4",
+   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_32819.mp4",
    "maxSeconds": 16,
-   "banner": "L",
+   "banner": "T",
    "overlay": {
     "side": "L",
-    "text": "Used tennis balls, $5.99 a dozen or 2 dozen for $10.00",
-    "sub": "We buy and sell used sports gear",
-    "v": "dn",
-    "sm": true
+    "text": "We buy and sell tennis rackets and gear, new and used",
+    "sub": "Bring in your old racket, we buy and sell!"
    }
   },
   {
@@ -1358,14 +1367,14 @@
   },
   {
    "type": "video",
-   "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_88194.mp4",
+   "src": "clips/golf_pixabay_41471.mp4",
    "maxSeconds": 16,
-   "banner": "B",
+   "banner": "T",
    "overlay": {
-    "side": "L",
-    "text": "We buy and sell tennis and table tennis gear",
+    "side": "R",
+    "text": "We buy and sell golf clubs",
     "sub": "We buy and sell used sports gear",
-    "v": "dn"
+    "v": "up"
    }
   },
   {
