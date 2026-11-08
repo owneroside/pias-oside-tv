@@ -160,16 +160,6 @@
   },
   {
    "type": "image",
-   "src": "slides/214-ever-cat-bikes.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/229-ever-newused-golf.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20,
    "wide": "slides/18-svc-regrip-wide.jpg"
@@ -247,8 +237,8 @@
    "banner": "B",
    "overlay": {
     "side": "R",
-    "text": "We buy and sell, bring in your gear today",
-    "sub": "We buy and sell, bring in your gear today",
+    "text": "We buy and sell weights and fitness gear",
+    "sub": "We buy and sell dumbbells, plates and benches",
     "v": "up"
    },
    "pool": "action",
@@ -257,11 +247,6 @@
   {
    "type": "image",
    "src": "slides/19-svc-snow-menu-ice.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/215-ever-cat-tennis.jpg",
    "seconds": 20
   },
   {
@@ -286,22 +271,12 @@
   },
   {
    "type": "image",
-   "src": "slides/233-ever-online-1.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/335-cash-snow-c.jpg",
    "seconds": 20
   },
   {
    "type": "image",
    "src": "slides/336-cash-baseball-a.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/188-item-40S106416-full.jpg",
    "seconds": 20
   },
   {
@@ -317,11 +292,6 @@
   {
    "type": "image",
    "src": "slides/308-ever-corp-softball-team.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/216-ever-cat-pickleball.jpg",
    "seconds": 20
   },
   {
@@ -379,7 +349,8 @@
    "seconds": 20,
    "sku": [
     "40S106416"
-   ]
+   ],
+   "full": "slides/188-item-40S106416-full.jpg"
   },
   {
    "type": "image",
@@ -394,16 +365,6 @@
   {
    "type": "image",
    "src": "slides/310-ever-corp-golf-bag.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/217-ever-cat-homegym.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/230-ever-newused-baseball.jpg",
    "seconds": 20
   },
   {
@@ -422,11 +383,6 @@
   {
    "type": "image",
    "src": "slides/19-svc-snow-menu-sunset.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/226-ever-trade-golf.jpg",
    "seconds": 20
   },
   {
@@ -457,11 +413,6 @@
   {
    "type": "image",
    "src": "slides/348-cash-fitness-a.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/189-item-40S106417-full.jpg",
    "seconds": 20
   },
   {
@@ -520,11 +471,6 @@
   },
   {
    "type": "image",
-   "src": "slides/218-ever-cat-snowboards.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/401-sell-S000210079.jpg",
    "seconds": 20
   },
@@ -560,7 +506,14 @@
    "banner": "L",
    "bAt": [],
    "pool": "action",
-   "ord": 4
+   "ord": 4,
+   "overlay": {
+    "side": "L",
+    "text": "Got an old board? We buy and sell!",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up",
+    "sm": true
+   }
   },
   {
    "type": "image",
@@ -568,7 +521,8 @@
    "seconds": 20,
    "sku": [
     "40S106417"
-   ]
+   ],
+   "full": "slides/189-item-40S106417-full.jpg"
   },
   {
    "type": "image",
@@ -583,11 +537,6 @@
   {
    "type": "image",
    "src": "slides/406-sell-S000208731.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/219-ever-cat-wetsuits.jpg",
    "seconds": 20
   },
   {
@@ -645,11 +594,6 @@
   },
   {
    "type": "image",
-   "src": "slides/190-item-40S107200-full.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/410-sell-S000207299.jpg",
    "seconds": 20
   },
@@ -680,24 +624,9 @@
   },
   {
    "type": "image",
-   "src": "slides/220-ever-cat-roller.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/231-ever-newused-fitness.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/18-svc-regrip-price.jpg",
    "seconds": 20,
    "wide": "slides/18-svc-regrip-wide.jpg"
-  },
-  {
-   "type": "image",
-   "src": "slides/227-ever-trade-snow.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
@@ -720,7 +649,8 @@
    "seconds": 20,
    "sku": [
     "40S107200"
-   ]
+   ],
+   "full": "slides/190-item-40S107200-full.jpg"
   },
   {
    "type": "image",
@@ -862,7 +792,14 @@
    "maxSeconds": 16,
    "banner": "L",
    "pool": "action",
-   "ord": 13
+   "ord": 13,
+   "overlay": {
+    "side": "L",
+    "text": "Got an old board? We buy and sell!",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up",
+    "sm": true
+   }
   },
   {
    "type": "image",
@@ -901,7 +838,14 @@
    "banner": "B",
    "bAt": [],
    "pool": "action",
-   "ord": 15
+   "ord": 15,
+   "overlay": {
+    "side": "L",
+    "text": "Got an old board? We buy and sell!",
+    "sub": "We buy and sell, bring in your gear today",
+    "v": "up",
+    "sm": true
+   }
   },
   {
    "type": "image",
@@ -976,22 +920,7 @@
   },
   {
    "type": "image",
-   "src": "slides/223-ever-cat-skateboards.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/232-ever-newused-surf.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/19-svc-snow-menu-sunset.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/228-ever-trade-bike.jpg",
    "seconds": 20
   },
   {
@@ -1013,7 +942,14 @@
    "maxSeconds": 16,
    "banner": "T",
    "pool": "action",
-   "ord": 14
+   "ord": 14,
+   "overlay": {
+    "side": "L",
+    "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+    "sub": "We buy and sell wetsuits and fins too",
+    "v": "up",
+    "sm": true
+   }
   },
   {
    "type": "image",
@@ -1065,11 +1001,6 @@
    "src": "slides/19-svc-snow-menu.jpg",
    "seconds": 20,
    "wide": "slides/19-svc-snow-wide.jpg"
-  },
-  {
-   "type": "image",
-   "src": "slides/224-ever-cat-swim.jpg",
-   "seconds": 20
   },
   {
    "type": "image",
