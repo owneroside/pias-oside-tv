@@ -86,7 +86,18 @@
     "sub": "We buy and sell used sports gear"
    },
    "pool": "action",
-   "ord": 2
+   "ord": 2,
+   "policyEdge": "T",
+   "bannerSpan": [
+    [
+     2,
+     4.05
+    ],
+    [
+     6.75,
+     11.7
+    ]
+   ]
   },
   {
    "type": "image",
@@ -252,7 +263,18 @@
     "v": "up"
    },
    "pool": "action",
-   "ord": 7
+   "ord": 7,
+   "policyEdge": "T",
+   "bannerSpan": [
+    [
+     4.6,
+     6.2
+    ],
+    [
+     9.0,
+     11.7
+    ]
+   ]
   },
   {
    "type": "image",
@@ -356,7 +378,8 @@
     "sm": true
    },
    "pool": "action",
-   "ord": 12
+   "ord": 12,
+   "policyEdge": "L"
   },
   {
    "type": "image",
@@ -417,7 +440,8 @@
     "sub": "We buy and sell, bring in your gear today"
    },
    "pool": "action",
-   "ord": 5
+   "ord": 5,
+   "policyEdge": "T"
   },
   {
    "type": "image",
@@ -477,7 +501,8 @@
     "sm": true
    },
    "pool": "action",
-   "ord": 1
+   "ord": 1,
+   "policyEdge": "T"
   },
   {
    "type": "image",
@@ -505,7 +530,8 @@
     "sub": "We buy and sell tennis rackets"
    },
    "pool": "action",
-   "ord": 3
+   "ord": 3,
+   "policyEdge": "T"
   },
   {
    "type": "image",
@@ -607,7 +633,8 @@
     "v": "dn"
    },
    "pool": "action",
-   "ord": 6
+   "ord": 6,
+   "policyEdge": "T"
   },
   {
    "type": "image",
@@ -636,7 +663,14 @@
     "sub": "We buy and sell used sports gear"
    },
    "pool": "action",
-   "ord": 10
+   "ord": 10,
+   "policyEdge": "T",
+   "bannerSpan": [
+    [
+     2,
+     7.3
+    ]
+   ]
   },
   {
    "type": "image",
@@ -779,7 +813,8 @@
     "sm": true
    },
    "pool": "action",
-   "ord": 9
+   "ord": 9,
+   "policyEdge": "T"
   },
   {
    "type": "image",
@@ -808,7 +843,8 @@
     "v": "up"
    },
    "pool": "action",
-   "ord": 11
+   "ord": 11,
+   "policyEdge": "B"
   },
   {
    "type": "image",
@@ -839,7 +875,8 @@
     "sub": "We buy and sell tennis rackets"
    },
    "pool": "action",
-   "ord": 8
+   "ord": 8,
+   "policyEdge": "B"
   },
   {
    "type": "image",
@@ -862,7 +899,8 @@
    "maxSeconds": 16,
    "banner": "L",
    "pool": "action",
-   "ord": 13
+   "ord": 13,
+   "policyEdge": "TL"
   },
   {
    "type": "image",
@@ -1013,7 +1051,8 @@
    "maxSeconds": 16,
    "banner": "T",
    "pool": "action",
-   "ord": 14
+   "ord": 14,
+   "policyEdge": "T"
   },
   {
    "type": "image",
