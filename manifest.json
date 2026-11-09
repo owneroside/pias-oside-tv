@@ -1047,7 +1047,7 @@
   },
   {
    "type": "video",
-   "src": "clips/corporate-fitness-01-oside-v2.mp4",
+   "src": "clips/corporate-golf-02-oside-v2.mp4",
    "maxSeconds": 16,
    "pool": "corporate",
    "ord": 3,
@@ -1057,7 +1057,7 @@
   },
   {
    "type": "video",
-   "src": "clips/corporate-baseball-softball-01-oside-v2.mp4",
+   "src": "clips/corporate-fitness-01-oside-v2.mp4",
    "maxSeconds": 16,
    "pool": "corporate",
    "ord": 4,
@@ -1067,10 +1067,20 @@
   },
   {
    "type": "video",
-   "src": "clips/corporate-disc-golf-02-oside-v2.mp4",
+   "src": "clips/corporate-baseball-softball-01-oside-v2.mp4",
    "maxSeconds": 16,
    "pool": "corporate",
    "ord": 5,
+   "fresh": {
+    "baked": true
+   }
+  },
+  {
+   "type": "video",
+   "src": "clips/corporate-disc-golf-02-oside-v2.mp4",
+   "maxSeconds": 16,
+   "pool": "corporate",
+   "ord": 6,
    "fresh": {
     "baked": true
    }
