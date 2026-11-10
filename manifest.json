@@ -728,6 +728,14 @@
   },
   {
    "type": "video",
+   "src": "clips/tennis_pixabay_105372_cap.mp4",
+   "maxSeconds": 25,
+   "fresh": {
+    "baked": true
+   }
+  },
+  {
+   "type": "video",
    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38927.mp4",
    "maxSeconds": 16,
    "banner": "B",
@@ -889,6 +897,14 @@
    "type": "image",
    "src": "slides/209-ever-cash-bodyboards.jpg",
    "seconds": 20
+  },
+  {
+   "type": "video",
+   "src": "clips/tennis_pixabay_108324_cap.mp4",
+   "maxSeconds": 25,
+   "fresh": {
+    "baked": true
+   }
   },
   {
    "type": "image",
