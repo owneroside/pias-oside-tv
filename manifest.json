@@ -1028,6 +1028,14 @@
   },
   {
    "type": "image",
+   "src": "slides/466-sell-nidecker-gamma-apx.png",
+   "seconds": 20,
+   "sku": [
+    "S000189219"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
