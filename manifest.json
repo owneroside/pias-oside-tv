@@ -1036,6 +1036,19 @@
   },
   {
    "type": "image",
+   "src": "slides/467-sell-dawes-roundhouse.png",
+   "seconds": 20,
+   "sku": [
+    "S000207000"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/468-cash-for-bikes.png",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
