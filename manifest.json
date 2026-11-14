@@ -14,7 +14,7 @@
   }
  ],
  "datedEvery": 7,
- "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders and services: all sales final.",
+ "returnPolicy": "New items: returns within 14 days with receipt and original packaging (up to 15% restocking fee). Used, marked down, special orders, services and rentals: all sales final. All rentals are final, no refunds.",
  "defaultSeconds": 20,
  "items": [
   {
