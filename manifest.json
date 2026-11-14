@@ -1089,6 +1089,16 @@
   },
   {
    "type": "image",
+   "src": "slides/477-sell-yes4all-mats.jpg",
+   "seconds": 20,
+   "sku": [
+    "80YAMNS",
+    "80YAPMB",
+    "80YK4ZL"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
