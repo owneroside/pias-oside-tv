@@ -1109,6 +1109,11 @@
   },
   {
    "type": "image",
+   "src": "slides/480-category-baseball.png",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
