@@ -1116,6 +1116,31 @@
   },
   {
    "type": "image",
+   "src": "slides/484-sell-peloton-dumbbells.png",
+   "seconds": 20,
+   "sku": [
+    "40SPELOTON25",
+    "40SPELOTON30"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/485-sell-peloton-30lb.png",
+   "seconds": 20,
+   "sku": [
+    "40SPELOTON30"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/486-sell-peloton-25lb.png",
+   "seconds": 20,
+   "sku": [
+    "40SPELOTON25"
+   ]
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
