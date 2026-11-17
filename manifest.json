@@ -1098,6 +1098,36 @@
   },
   {
    "type": "image",
+   "src": "slides/490-credit-good-for-1-year.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/491-credit-year-resets.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/492-credit-fresh-year.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/493-credit-next-find.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/494-credit-number-keeps-it-yours.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
+   "src": "slides/495-credit-snap-keep-handy.jpg",
+   "seconds": 20
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
