@@ -1089,6 +1089,15 @@
   },
   {
    "type": "image",
+   "src": "slides/489-sell-mizuno-pro-irons-wide.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000208106"
+   ],
+   "full": "slides/489-sell-mizuno-pro-irons-wide.jpg"
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
