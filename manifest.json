@@ -230,8 +230,9 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu-ice.jpg",
-   "seconds": 20
+   "src": "slides/497-svc-tubes-tires-wide.jpg",
+   "seconds": 20,
+   "full": "slides/497-svc-tubes-tires-wide.jpg"
   },
   {
    "type": "image",
@@ -276,11 +277,6 @@
   {
    "type": "image",
    "src": "slides/308-ever-corp-softball-team.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/19-svc-snow-menu-night.jpg",
    "seconds": 20
   },
   {
@@ -366,11 +362,6 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu-sunset.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/345-cash-outdoor-a.jpg",
    "seconds": 20
   },
@@ -449,9 +440,9 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu.jpg",
+   "src": "slides/496-svc-snow-menu-wide.jpg",
    "seconds": 20,
-   "wide": "slides/19-svc-snow-wide.jpg"
+   "full": "slides/496-svc-snow-menu-wide.jpg"
   },
   {
    "type": "image",
@@ -677,8 +668,9 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu-ice.jpg",
-   "seconds": 20
+   "src": "slides/497-svc-tubes-tires-wide.jpg",
+   "seconds": 20,
+   "full": "slides/497-svc-tubes-tires-wide.jpg"
   },
   {
    "type": "video",
@@ -815,11 +807,6 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu-night.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
    "src": "slides/320-ever-corp-golf-yellow.jpg",
    "seconds": 20
   },
@@ -855,11 +842,6 @@
   {
    "type": "image",
    "src": "slides/321-ever-corp-golf-recycle2.jpg",
-   "seconds": 20
-  },
-  {
-   "type": "image",
-   "src": "slides/19-svc-snow-menu-sunset.jpg",
    "seconds": 20
   },
   {
@@ -927,9 +909,9 @@
   },
   {
    "type": "image",
-   "src": "slides/19-svc-snow-menu.jpg",
+   "src": "slides/496-svc-snow-menu-wide.jpg",
    "seconds": 20,
-   "wide": "slides/19-svc-snow-wide.jpg"
+   "full": "slides/496-svc-snow-menu-wide.jpg"
   },
   {
    "type": "image",
