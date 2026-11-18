@@ -1,0 +1,375 @@
+{
+ "pausedAt": "2026-11-18T15:50:00-08:00",
+ "reason": "Temporarily remove all videos from the register TV feed until the store internet speed issue is worked out (Dustin, Nov 18, 2026, 3:50 PM PT).",
+ "stillCountAtPause": 156,
+ "datedCountAtPause": 2,
+ "videoCountAtPause": 23,
+ "note": "Video files themselves were not deleted. Only their manifest entries were removed from the live items list. The player shuf(), peek(), and warmAll() paths are safe with zero videos: peek() no-ops, warmAll() only fetches remaining still/dated srcs, and shuf() outputs the shuffled stills.",
+ "restore": [
+  "Fresh-clone owneroside/pias-oside-tv and open this file.",
+  "Copy each object in \"videos\" back into manifest.json \"items\". If no stills have been added or removed since the pause, splice each item back at its originalIndex, working from lowest originalIndex to highest. If the still list has changed, append the item objects to items instead; the player shuf() will re-interleave corporate and action pools.",
+  "Leave this backup file in the repo until the live restore is verified, then it can be removed in a later PR.",
+  "Do not delete any files under clips/ or on the pias-oside-tv-clips2 site.",
+  "Open a PR, merge it, bump version.txt, wait for GitHub Pages, and confirm the live manifest again contains these 23 videos and the still count is unchanged except for any stills added since the pause."
+ ],
+ "videos": [
+  {
+   "originalIndex": 9,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_44414.mp4",
+    "maxSeconds": 16,
+    "banner": "R",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell weights and fitness gear",
+     "sub": "We buy and sell used sports gear"
+    },
+    "pool": "action",
+    "ord": 2
+   }
+  },
+  {
+   "originalIndex": 30,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52094.mp4",
+    "maxSeconds": 16,
+    "banner": "B",
+    "overlay": {
+     "side": "R",
+     "text": "We buy and sell weights and fitness gear",
+     "sub": "We buy and sell dumbbells, plates and benches",
+     "v": "up"
+    },
+    "pool": "action",
+    "ord": 7
+   }
+  },
+  {
+   "originalIndex": 44,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/weightlifting_mixkit_52106.mp4",
+    "maxSeconds": 16,
+    "banner": "L",
+    "overlay": {
+     "side": "R",
+     "text": "We buy and sell dumbbells, plates and benches",
+     "sub": "We buy and sell, bring in your gear today",
+     "sm": true
+    },
+    "pool": "action",
+    "ord": 12
+   }
+  },
+  {
+   "originalIndex": 52,
+   "item": {
+    "type": "video",
+    "src": "clips/golf_pixabay_10803.mp4",
+    "maxSeconds": 16,
+    "banner": "T",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell used golf gear",
+     "sub": "We buy and sell, bring in your gear today"
+    },
+    "pool": "action",
+    "ord": 5
+   }
+  },
+  {
+   "originalIndex": 59,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1127.mp4",
+    "maxSeconds": 16,
+    "banner": "T",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+     "sub": "We buy and sell wetsuits and fins too",
+     "v": "up",
+     "sm": true
+    },
+    "pool": "action",
+    "ord": 1
+   }
+  },
+  {
+   "originalIndex": 63,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_281992.mp4",
+    "maxSeconds": 16,
+    "banner": "B",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell tennis rackets and gear, new and used",
+     "sub": "We buy and sell tennis rackets"
+    },
+    "pool": "action",
+    "ord": 3
+   }
+  },
+  {
+   "originalIndex": 72,
+   "item": {
+    "type": "video",
+    "src": "clips/skateboarding_mixkit_1529.mp4",
+    "maxSeconds": 16,
+    "banner": "L",
+    "bAt": [],
+    "pool": "action",
+    "ord": 4,
+    "overlay": {
+     "side": "L",
+     "text": "Got an old board? We buy and sell!",
+     "sub": "We buy and sell, bring in your gear today",
+     "v": "up",
+     "sm": true
+    }
+   }
+  },
+  {
+   "originalIndex": 78,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_1128.mp4",
+    "maxSeconds": 16,
+    "banner": "T",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+     "sub": "Trade up your board, we buy and sell!",
+     "v": "dn"
+    },
+    "pool": "action",
+    "ord": 6
+   }
+  },
+  {
+   "originalIndex": 82,
+   "item": {
+    "type": "video",
+    "src": "clips/golf_pixabay_18080.mp4",
+    "maxSeconds": 16,
+    "banner": "T",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell golf clubs",
+     "sub": "We buy and sell used sports gear"
+    },
+    "pool": "action",
+    "ord": 10
+   }
+  },
+  {
+   "originalIndex": 103,
+   "item": {
+    "type": "video",
+    "src": "clips/skateboarding_mixkit_34381.mp4",
+    "maxSeconds": 16,
+    "banner": "R",
+    "overlay": {
+     "side": "L",
+     "text": "Got an old board? We buy and sell!",
+     "sub": "We buy and sell, bring in your gear today",
+     "v": "up",
+     "sm": true
+    },
+    "pool": "action",
+    "ord": 9
+   }
+  },
+  {
+   "originalIndex": 107,
+   "item": {
+    "type": "video",
+    "src": "clips/tennis_pixabay_105372_cap.mp4",
+    "maxSeconds": 25,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 108,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_mixkit_38927.mp4",
+    "maxSeconds": 16,
+    "banner": "B",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+     "sub": "We buy and sell wetsuits and fins too",
+     "v": "up"
+    },
+    "pool": "action",
+    "ord": 11
+   }
+  },
+  {
+   "originalIndex": 112,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/tennis_pixabay_50109.mp4",
+    "maxSeconds": 16,
+    "banner": "R",
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell tennis rackets and gear, new and used",
+     "sub": "We buy and sell tennis rackets"
+    },
+    "pool": "action",
+    "ord": 8
+   }
+  },
+  {
+   "originalIndex": 116,
+   "item": {
+    "type": "video",
+    "src": "clips/skateboarding_mixkit_34382.mp4",
+    "maxSeconds": 16,
+    "banner": "L",
+    "pool": "action",
+    "ord": 13,
+    "overlay": {
+     "side": "L",
+     "text": "Got an old board? We buy and sell!",
+     "sub": "We buy and sell, bring in your gear today",
+     "v": "up",
+     "sm": true
+    }
+   }
+  },
+  {
+   "originalIndex": 122,
+   "item": {
+    "type": "video",
+    "src": "clips/skateboarding_mixkit_34384.mp4",
+    "maxSeconds": 16,
+    "banner": "B",
+    "bAt": [],
+    "pool": "action",
+    "ord": 15,
+    "overlay": {
+     "side": "L",
+     "text": "Got an old board? We buy and sell!",
+     "sub": "We buy and sell, bring in your gear today",
+     "v": "up",
+     "sm": true
+    }
+   }
+  },
+  {
+   "originalIndex": 124,
+   "item": {
+    "type": "video",
+    "src": "clips/tennis_pixabay_108324_cap.mp4",
+    "maxSeconds": 25,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 127,
+   "item": {
+    "type": "video",
+    "src": "https://owneroside.github.io/pias-oside-tv-clips2/clips/surfing_pixabay_132846.mp4",
+    "maxSeconds": 16,
+    "banner": "T",
+    "pool": "action",
+    "ord": 14,
+    "overlay": {
+     "side": "L",
+     "text": "We buy and sell surfboards of all kinds, from beginner soft-tops to more advanced hard boards",
+     "sub": "We buy and sell wetsuits and fins too",
+     "v": "up",
+     "sm": true
+    }
+   }
+  },
+  {
+   "originalIndex": 173,
+   "item": {
+    "type": "video",
+    "src": "clips/corporate-disc-golf-01-oside-v2.mp4",
+    "maxSeconds": 16,
+    "pool": "corporate",
+    "ord": 1,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 174,
+   "item": {
+    "type": "video",
+    "src": "clips/corporate-soccer-01-oside-v2.mp4",
+    "maxSeconds": 16,
+    "pool": "corporate",
+    "ord": 2,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 175,
+   "item": {
+    "type": "video",
+    "src": "clips/corporate-golf-02-oside-v2.mp4",
+    "maxSeconds": 16,
+    "pool": "corporate",
+    "ord": 3,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 176,
+   "item": {
+    "type": "video",
+    "src": "clips/corporate-fitness-01-oside-v2.mp4",
+    "maxSeconds": 16,
+    "pool": "corporate",
+    "ord": 4,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 177,
+   "item": {
+    "type": "video",
+    "src": "clips/corporate-baseball-softball-01-oside-v2.mp4",
+    "maxSeconds": 16,
+    "pool": "corporate",
+    "ord": 5,
+    "fresh": {
+     "baked": true
+    }
+   }
+  },
+  {
+   "originalIndex": 178,
+   "item": {
+    "type": "video",
+    "src": "clips/corporate-disc-golf-02-oside-v2.mp4",
+    "maxSeconds": 16,
+    "pool": "corporate",
+    "ord": 6,
+    "fresh": {
+     "baked": true
+    }
+   }
+  }
+ ]
+}
