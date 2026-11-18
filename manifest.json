@@ -1110,6 +1110,12 @@
   },
   {
    "type": "image",
+   "src": "slides/498-cash-bodyboards-wide.jpg",
+   "seconds": 20,
+   "full": "slides/498-cash-bodyboards-wide.jpg"
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
