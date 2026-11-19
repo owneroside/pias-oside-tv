@@ -95,6 +95,48 @@
    "end": "2026-12-06",
    "seconds": 15,
    "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/lastchance-01-EndingSoon-TV-1920x1080.jpg",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/lastchance-02-LastChanceWeekend-TV-1920x1080.jpg",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/lastchance-03-StillOnThisWeekend-TV-1920x1080.jpg",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/lastchance-04-LastChance-EndsSunday-TV-1920x1080.jpg",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/lastchance-05-BringAFriend-TV-1920x1080.jpg",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/lastchance-06-FillTheCart-TV-1920x1080.jpg",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
   }
  ],
  "datedEvery": 7,
