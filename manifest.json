@@ -11,6 +11,83 @@
    "start": "2026-12-07",
    "end": "2027-01-01",
    "seconds": 15
+  },
+  {
+   "src": "slides/dated/bf-2026/01-LaunchType-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/02-ItsOnThisAfternoon-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/03-ComeInToday-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/04-ShopSmall-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/05-PickAnyTwoSaturday-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/06-WholeStore-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/07-MixAndMatch-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/08-NoLimitToday-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/09-TakeItHomeToday-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/10-BringAFriend-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/11-FillTheCart-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
   }
  ],
  "datedEvery": 7,
