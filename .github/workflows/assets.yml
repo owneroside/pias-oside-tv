@@ -15,12 +15,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/build-assets.py
       - run: |
-          git diff --quiet -- assets.json && { echo "assets.json already current"; exit 0; }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets.json
-          git commit -m "assets.json: refresh hashes"
-          for n in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done
+          for n in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 tools/build-assets.py
+            git diff --quiet -- assets.json && { echo "assets.json already current"; exit 0; }
+            git add assets.json && git commit -qm "assets.json: refresh hashes"
+            git push origin HEAD:main && exit 0
+            sleep 10
+          done
           exit 1
