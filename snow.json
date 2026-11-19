@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-19T15:15:42.426906-08:00",
-  "updatedLabel": "3:15 PM PT",
-  "sourceUpdated": "2026-11-19T14:02:01-08:00",
-  "sourceUpdatedLabel": "2:02 PM PT",
+  "updated": "2026-11-19T15:31:15.132609-08:00",
+  "updatedLabel": "3:31 PM PT",
+  "sourceUpdated": "2026-11-19T15:18:25-08:00",
+  "sourceUpdatedLabel": "3:18 PM PT",
   "resorts": [
     {
       "id": "bear",
@@ -84,11 +84,11 @@
       "officialStatus": "Closed",
       "opens": "Nov 28",
       "liftsOpen": 0,
-      "liftsTotal": null,
+      "liftsTotal": 12,
       "runsOpen": 0,
-      "runsTotal": null,
-      "snow24h": null,
-      "snow48h": null,
+      "runsTotal": 49,
+      "snow24h": 3,
+      "snow48h": 3,
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
@@ -102,6 +102,8 @@
         "east": "Closed",
         "yeti": "Closed"
       },
+      "snow24hSource": "open-meteo",
+      "snow48hSource": "open-meteo",
       "statusLabel": "CLOSED"
     },
     {
@@ -120,11 +122,11 @@
       "snow7d": null,
       "baseIn": 25,
       "baseRange": "25 - 35",
-      "tempF": 21,
+      "tempF": 20,
       "tempSource": "resort",
       "conditions": "Powder",
       "source": "mtnpowder",
-      "sourceUpdated": "2026-11-19T14:02:01-08:00",
+      "sourceUpdated": "2026-11-19T15:18:25-08:00",
       "statusLabel": "LIMITED"
     }
   ],

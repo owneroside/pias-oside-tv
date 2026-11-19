@@ -5,12 +5,16 @@ Sources (fetched here, not in the browser, so CORS is not required):
   - Alterra MtnPowder feed (https://mtnpowder.com/feed/): Bear Mountain,
     Snow Summit, Snow Valley, Mammoth Mountain — official open/closed,
     lift and run counts, 24h/48h snow, base depth, and station temp.
-  - Mountain High official snow report page (mthigh.com) — status, lifts,
-    runs, base/top depth, 7-day new snow, official temp, opening date.
+  - Mountain High official snow report page (mthigh.com) — status, lifts
+    open, runs open, base/top depth, 7-day new snow, official temp, opening
+    date. Lift total from the official Mountain Stats page ("Lifts: 12 Total",
+    fallback 12). Run total from named runs on the official interactive
+    trail map (fallback 49).
   - Open-Meteo (https://api.open-meteo.com) — current temperature at the
-    resort coordinates, used only when the official station temp is missing
-    or disagrees with the model by more than 15°F (SoCal stations currently
-    report mid-60s while the written report and Open-Meteo are mid-30s).
+    resort coordinates, used when the official station temp is missing or
+    disagrees with the model by more than 15°F; and 24h/48h snowfall (cm,
+    converted to inches) when a resort does not publish those fields
+    (Mountain High only publishes 7-day new snow).
 
 Does not invent numbers. A field is omitted (null) when the source does not
 provide it. 0 is a real value (no snow, no lifts) and is kept.
@@ -73,10 +77,17 @@ OPEN_METEO = (
     'https://api.open-meteo.com/v1/forecast'
     '?latitude={lats}&longitude={lons}'
     '&current=temperature_2m'
+    '&hourly=snowfall'
+    '&past_days=2'
     '&temperature_unit=fahrenheit'
     '&timezone=America%2FLos_Angeles'
     '&forecast_days=1'
 )
+MHIGH_STATS_URL = 'https://www.mthigh.com/site/trails-and-conditions/other/mountain-stats.html'
+MHIGH_MAP_URL = 'https://www.mthigh.com/site/mountain/mountain-info/interactive-trailmap.html'
+# Fallbacks from official pages if a fetch fails (verified Nov 19, 2026)
+MH_LIFTS_FALLBACK = 12  # "Lifts: 12 Total" on official Mountain Stats
+MH_RUNS_FALLBACK = 49   # named runs on the official interactive trail map
 
 
 def now_pt():
@@ -334,10 +345,10 @@ def parse_mthigh(html_text):
         'officialStatus': official,
         'opens': opens,
         'liftsOpen': lifts_open,
-        'liftsTotal': None,  # page does not publish a total
+        'liftsTotal': None,  # filled from official stats/trail map in main()
         'runsOpen': runs_open,
         'runsTotal': None,
-        'snow24h': None,  # page only publishes 7-day new snow
+        'snow24h': None,  # official page only has 7-day; Open-Meteo fills 24/48
         'snow48h': None,
         'snow7d': to_num(val('New Snow (7 Days)')),
         'baseIn': to_num(val('Base Depth')),
@@ -355,6 +366,42 @@ def parse_mthigh(html_text):
     }
 
 
+def _hourly_snow_inches(item):
+    """Sum Open-Meteo hourly snowfall (cm) over the last 24h and 48h, as inches."""
+    hourly = item.get('hourly') or {}
+    times = hourly.get('time') or []
+    snow = hourly.get('snowfall') or []
+    if not times or not snow:
+        return None, None
+    try:
+        from zoneinfo import ZoneInfo
+        now = datetime.datetime.now(ZoneInfo('America/Los_Angeles')).replace(
+            minute=0, second=0, microsecond=0)
+    except Exception:
+        now = now_pt().replace(minute=0, second=0, microsecond=0)
+    s24 = s48 = 0.0
+    for ts, cm in zip(times, snow):
+        try:
+            dt = datetime.datetime.fromisoformat(ts)
+            if dt.tzinfo is None:
+                try:
+                    from zoneinfo import ZoneInfo
+                    dt = dt.replace(tzinfo=ZoneInfo('America/Los_Angeles'))
+                except Exception:
+                    dt = dt.replace(tzinfo=TZ)
+        except Exception:
+            continue
+        hrs = (now - dt).total_seconds() / 3600
+        val = float(cm or 0)
+        if 0 < hrs <= 24:
+            s24 += val
+        if 0 < hrs <= 48:
+            s48 += val
+    def inch(cm):
+        return int(round(cm / 2.54))
+    return inch(s24), inch(s48)
+
+
 def fetch_open_meteo(specs):
     lats = ','.join(str(s['lat']) for s in specs)
     lons = ','.join(str(s['lon']) for s in specs)
@@ -364,10 +411,42 @@ def fetch_open_meteo(specs):
     out = {}
     for spec, item in zip(specs, items):
         cur = item.get('current') or {}
-        t = to_num(cur.get('temperature_2m'))
-        if t is not None:
-            out[spec['id']] = t
+        temp = to_num(cur.get('temperature_2m'))
+        s24, s48 = _hourly_snow_inches(item)
+        out[spec['id']] = {'temp': temp, 'snow24h': s24, 'snow48h': s48}
     return out
+
+
+def apply_model_snow(resort, om):
+    """Fill missing 24h/48h snow from Open-Meteo. Does not override official values (including 0)."""
+    if not om:
+        return
+    if resort.get('snow24h') is None and om.get('snow24h') is not None:
+        resort['snow24h'] = om['snow24h']
+        resort['snow24hSource'] = 'open-meteo'
+    if resort.get('snow48h') is None and om.get('snow48h') is not None:
+        resort['snow48h'] = om['snow48h']
+        resort['snow48hSource'] = 'open-meteo'
+
+
+def fetch_mthigh_totals():
+    """Official lift total from Mountain Stats; run total from the trail map."""
+    lifts, runs = MH_LIFTS_FALLBACK, MH_RUNS_FALLBACK
+    try:
+        page = fetch(MHIGH_STATS_URL, timeout=30)
+        m = re.search(r'Lifts:\s*(\d+)\s*Total', page, re.I)
+        if m:
+            lifts = int(m.group(1))
+    except Exception as e:
+        print('WARN mthigh stats failed:', e, file=sys.stderr)
+    try:
+        page = fetch(MHIGH_MAP_URL, timeout=30)
+        ids = set(re.findall(r'id="(runs_x5F_[^"]+)"', page))
+        if 20 <= len(ids) <= 120:
+            runs = len(ids)
+    except Exception as e:
+        print('WARN mthigh trail map failed:', e, file=sys.stderr)
+    return lifts, runs
 
 
 def _deg(v):
@@ -413,7 +492,7 @@ def canonical(resorts):
     """Comparable snapshot, ignoring fetch timestamps."""
     keys = (
         'id', 'status', 'opens', 'liftsOpen', 'liftsTotal', 'runsOpen', 'runsTotal',
-        'snow24h', 'snow48h', 'snow7d', 'baseIn', 'tempF', 'tempSource', 'conditions'
+        'snow24h', 'snow48h', 'snow24hSource', 'snow48hSource', 'snow7d', 'baseIn', 'tempF', 'tempSource', 'conditions'
     )
     out = []
     for r in resorts:
@@ -445,17 +524,28 @@ def main():
         errors.append(f'open-meteo: {e}')
         print('WARN open-meteo failed:', e, file=sys.stderr)
 
+    mh_lifts, mh_runs = MH_LIFTS_FALLBACK, MH_RUNS_FALLBACK
+    try:
+        mh_lifts, mh_runs = fetch_mthigh_totals()
+    except Exception as e:
+        errors.append(f'mthigh totals: {e}')
+        print('WARN mthigh totals failed:', e, file=sys.stderr)
+
     resorts = []
     for spec in RESORTS:
         parsed = None
         if spec['id'] == 'mthigh':
             parsed = mh
+            if parsed:
+                parsed['liftsTotal'] = mh_lifts
+                parsed['runsTotal'] = mh_runs
         elif spec['feed_name'] and spec['feed_name'] in feed:
             parsed = parse_feed_resort(spec, feed[spec['feed_name']])
         elif spec['feed_name']:
             errors.append(f'mtnpowder: missing {spec["feed_name"]}')
         if parsed:
-            apply_temps(parsed, om.get(spec['id']))
+            apply_temps(parsed, (om.get(spec['id']) or {}).get('temp'))
+            apply_model_snow(parsed, om.get(spec['id']) or {})
             parsed['statusLabel'] = label_status(parsed['status'])
         else:
             parsed = merge_missing(None, prev_by_id(prev, spec['id']))

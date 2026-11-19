@@ -6,7 +6,7 @@
 // are deleted only after the swap. A failed or partial download never touches the active set; the next sync resumes.
 const BLOBS='pias-tv-blobs',META='pias-tv-meta',SCOPE=self.registration.scope,METAK=SCOPE+'__meta/active',BASE=new URL(SCOPE).pathname;
 const SHELL=['index.html','logo-white.png','logo.png','logo-oside.png','tex.jpg','fonts/Poppins-Bold.ttf','fonts/Poppins-Medium.ttf'];
-for(let n=1;n<=16;n++)SHELL.push('wx-bg/bg'+n+'.jpg');
+for(let n=1;n<=16;n++)SHELL.push('wx-bg/bg'+n+'.jpg');SHELL.push('sn-bg/mammoth-cornice.jpg');
 const T_POLL=8000,T_MAN=20000,T_IMG=60000,T_VID=180000,BUDGET=600e6,CONC=3,isV=p=>/\.(mp4|webm|mov)$/i.test(p);
 const NET=new Set(['version.txt','assets.json','sw.js','snow.json']);
 let act,running=null;const failN={}; // a file that fails 3 syncs in a row is left out so it cannot block every other update

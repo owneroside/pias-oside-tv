@@ -232,31 +232,35 @@ body.vid:not(.fv) #vlogo.on.cBR{bottom:2vh;right:1.8vw;left:auto;top:auto}
 body.vid:not(.fv) #vlogo.on.cBL{bottom:2vh;left:1.8vw;right:auto;top:auto}
 body.vid.fv #vlogo{display:none!important}</style><style>/* videos: no return policy. one corner logo; sport line stays in #ov. slides keep #policy. */
 body.vid #policy,body.vid #cards,body.vid #vbar,body.vid #side{display:none!important;visibility:hidden!important;transition:none!important}
-</style><style>/* live snow report (Nov 19, 2026): full-screen, snow palette, conditions only */
-#sn{display:none;position:fixed;inset:0;z-index:8;box-sizing:border-box;padding:3vh 2.8vw 2.2vh;flex-direction:column;background:radial-gradient(120vw 80vh at 8% -8%,rgba(90,160,200,.22),transparent 55%),radial-gradient(90vw 70vh at 110% 120%,rgba(14,40,72,.65),transparent 55%),linear-gradient(165deg,#071428 0%,#0b1f3a 42%,#16345c 100%);color:#eef6ff;font-family:FP,Arial,sans-serif}
+</style><style>/* live snow report (Nov 19, 2026): full-bleed Mammoth photo, frosted rows, icy accents */
+#sn{display:none;position:fixed;inset:0;z-index:8;box-sizing:border-box;padding:3vh 2.8vw 2.2vh;flex-direction:column;color:#eef6ff;font-family:FP,Arial,sans-serif;background:#071428 url(sn-bg/mammoth-cornice.jpg) center/cover no-repeat}
+#sn:before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;background:linear-gradient(180deg,rgba(4,18,40,.62) 0%,rgba(6,24,52,.38) 26%,rgba(6,22,48,.55) 70%,rgba(4,16,36,.72) 100%)}
+#sn>*{position:relative;z-index:1}
 body.S #sn{display:flex}
 body.S #wx,body.X #sn{display:none!important}
 body.S:not(.vid) #side,body.S:not(.vid) #cards,body.S:not(.vid) #buy,body.S:not(.vid) #logo,body.S:not(.vid) #policy,body.S:not(.vid) #wide,body.S:not(.vid) #stage,body.S:not(.vid) #ov,body.S:not(.vid) #vbar,body.S:not(.vid) #fcap,body.S:not(.vid) #flogo,body.S:not(.vid) #vlogo{display:none!important}
 #sn .sn-top{display:flex;align-items:center;gap:1.8vw;flex:0 0 auto;margin-bottom:2vh}
 #sn .sn-logo{height:11vh;width:auto;display:block;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
 #sn .sn-titles{flex:1;min-width:0}
-#sn .sn-kicker{font-weight:500;font-size:2.1vh;letter-spacing:.32vh;color:#9fd0e8;text-transform:uppercase}
-#sn .sn-title{font-weight:700;font-size:5.2vh;line-height:1.02;color:#fff;letter-spacing:.1vh}
-#sn .sn-updated{font-weight:500;font-size:2.3vh;color:#c5d8ea;white-space:nowrap;text-align:right;line-height:1.2}
+#sn .sn-kicker{font-weight:500;font-size:2.1vh;letter-spacing:.32vh;color:#7ee7ff;text-transform:uppercase;text-shadow:0 .2vh .6vh rgba(0,20,40,.55)}
+#sn .sn-title{font-weight:700;font-size:5.2vh;line-height:1.02;color:#fff;letter-spacing:.1vh;text-shadow:0 .3vh .8vh rgba(0,16,36,.7)}
+#sn .sn-updated{font-weight:500;font-size:2.3vh;color:#d7f6ff;white-space:nowrap;text-align:right;line-height:1.2;text-shadow:0 .2vh .6vh rgba(0,16,36,.7)}
 #sn .sn-table{flex:1;display:flex;flex-direction:column;min-height:0;gap:1.15vh}
 #sn .sn-head,#sn .sn-row{display:grid;grid-template-columns:1.75fr .95fr .9fr .9fr .7fr .7fr .7fr .7fr;gap:1vw;align-items:center}
-#sn .sn-head{flex:0 0 auto;padding:0 1.4vw .7vh;color:#9fb6cc;font-size:1.8vh;font-weight:700;letter-spacing:.16vh;text-transform:uppercase;border-bottom:.18vh solid rgba(218,239,255,.22)}
-#sn .sn-row{flex:1 1 0;min-height:0;background:linear-gradient(90deg,rgba(44,77,118,.58),rgba(11,31,58,.72));border:1px solid rgba(218,239,255,.16);border-radius:1.15vh;padding:0 1.4vw;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
-#sn .sn-name{font-weight:700;font-size:3.3vh;color:#fff;line-height:1.05}
-#sn .sn-region{display:block;font-weight:500;font-size:1.65vh;color:#9fd0e8;margin-top:.25vh}
+#sn .sn-head{flex:0 0 auto;padding:0 1.4vw .7vh;color:#9be7ff;font-size:1.8vh;font-weight:700;letter-spacing:.16vh;text-transform:uppercase;border-bottom:.18vh solid rgba(126,231,255,.35);text-shadow:0 .2vh .5vh rgba(0,16,36,.6)}
+#sn .sn-row{flex:1 1 0;min-height:0;background:rgba(8,28,58,.58);border:1px solid rgba(170,230,255,.34);border-radius:1.15vh;padding:0 1.4vw;box-shadow:0 .5vh 1.6vh rgba(0,16,36,.28),inset 0 0 0 1px rgba(255,255,255,.08);backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25)}
+#sn .sn-name{font-weight:700;font-size:3.3vh;color:#fff;line-height:1.05;text-shadow:0 .2vh .5vh rgba(0,16,36,.55)}
+#sn .sn-region{display:block;font-weight:500;font-size:1.65vh;color:#9fe8ff;margin-top:.25vh}
 #sn .sn-pill{display:inline-block;font-weight:700;font-size:2.2vh;letter-spacing:.12vh;border-radius:.7vh;padding:.45vh .75vw;line-height:1}
-#sn .sn-pill.open{background:#1e7a4a;color:#e8fff3}
-#sn .sn-pill.limited{background:#c49212;color:#fff8e0}
-#sn .sn-pill.closed{background:#3a4d66;color:#d5e2ef}
+#sn .sn-pill.open{background:#14b56a;color:#e9fff4}
+#sn .sn-pill.limited{background:#f0a020;color:#fff8e6}
+#sn .sn-pill.closed{background:#b44755;color:#ffe8eb}
 #sn .sn-opens{display:block;font-weight:500;font-size:1.7vh;color:#daefff;margin-top:.4vh}
 #sn .sn-metric{font-weight:700;font-size:3.15vh;color:#fff;line-height:1;white-space:nowrap}
-#sn .sn-metric small{font-weight:500;font-size:1.75vh;color:#9fb6cc}
-#sn .sn-foot{flex:0 0 auto;margin-top:1.5vh;font-weight:500;font-size:1.55vh;color:#8aa3bb}
+#sn .sn-metric small{font-weight:500;font-size:1.75vh;color:#9fe8ff}
+#sn .sn-hi{color:#7ef6ff;text-shadow:0 0 .7vh rgba(80,230,255,.55)}
+#sn .sn-foot{flex:0 0 auto;margin-top:1.5vh;padding-right:38vw;font-weight:500;font-size:1.55vh;color:#c5e8f5;text-shadow:0 .2vh .5vh rgba(0,16,36,.7)}
+#sn .sn-cr{position:absolute;right:1.4vw;bottom:1.1vh;z-index:2;max-width:40vw;font-size:1.3vh;font-weight:500;color:#fff;background:rgba(0,0,0,.4);padding:.35vh .7vw;border-radius:.6vh;line-height:1.25;overflow-wrap:anywhere}
 </style></head><body class="L"><div id="vlogo"><img src="logo-white.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
 <div id="wx"></div><div id="sn"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo-white.png" alt="Play It Again Sports Oceanside"></div><div id="cards"><div class="card c1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></svg><div class="tx"><div class="ch">WE BUY USED</div><div class="cs">Cash or trade</div></div></div>
@@ -329,7 +333,7 @@ async function snFetch(){const save=d=>{try{localStorage.setItem(SNK,JSON.string
  return cur}
 function snEsc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function snCount(o,t){if(o==null&&t==null)return '';if(t==null)return `<span class="sn-metric">${snEsc(o)}</span>`;return `<span class="sn-metric">${snEsc(o)}<small> / ${snEsc(t)}</small></span>`}
-function snIn(v,tag){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';return `<span class="sn-metric">${n}"${tag?`<small> ${snEsc(tag)}</small>`:''}</span>`}
+function snIn(v,src,hiSnow){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';const hi=(hiSnow&&n>0)?' sn-hi':'';const star=src==='open-meteo'?'<small>*</small>':'';return `<span class="sn-metric${hi}">${n}"${star}</span>`}
 function snTemp(v){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';return `<span class="sn-metric">${n}°</span>`}
 function snHTML(){let d=null;try{d=JSON.parse(localStorage.getItem(SNK)||'null')}catch(e){d=null}
  if(!d||!Array.isArray(d.resorts)||!d.resorts.length)return null;
@@ -338,10 +342,10 @@ function snHTML(){let d=null;try{d=JSON.parse(localStorage.getItem(SNK)||'null')
   const st=(r.status||'closed');const pill=r.statusLabel||st.toUpperCase();
   const opens=(st==='closed'&&r.opens)?`<span class="sn-opens">Opens ${snEsc(r.opens)}</span>`:'';
   const region=r.region?`<span class="sn-region">${snEsc(r.region)}</span>`:'';
-  let s24=snIn(r.snow24h),s48=snIn(r.snow48h);
+  let s24=snIn(r.snow24h,r.snow24hSource,true),s48=snIn(r.snow48h,r.snow48hSource,true);
   return `<div class="sn-row"><div><div class="sn-name">${snEsc(r.name)}</div>${region}</div><div><span class="sn-pill ${snEsc(st)}">${snEsc(pill)}</span>${opens}</div><div>${snCount(r.liftsOpen,r.liftsTotal)}</div><div>${snCount(r.runsOpen,r.runsTotal)}</div><div>${s24}</div><div>${s48}</div><div>${snIn(r.baseIn)}</div><div>${snTemp(r.tempF)}</div></div>`
  }).join('');
- return `<div class="sn-top"><img class="sn-logo" src="logo-white.png" alt="Play It Again Sports Oceanside"><div class="sn-titles"><div class="sn-kicker">SoCal + Mammoth</div><div class="sn-title">Mountain Snow Report</div></div><div class="sn-updated">${stamp?`Updated ${snEsc(stamp)}`:''}</div></div><div class="sn-table"><div class="sn-head"><div>Resort</div><div>Status</div><div>Lifts</div><div>Runs</div><div>24h</div><div>48h</div><div>Base</div><div>Temp</div></div>${rows}</div><div class="sn-foot">Official resort reports · Open-Meteo temps when a station is off</div>`}
+ return `<div class="sn-top"><img class="sn-logo" src="logo-white.png" alt="Play It Again Sports Oceanside"><div class="sn-titles"><div class="sn-kicker">SoCal + Mammoth</div><div class="sn-title">Mountain Snow Report</div></div><div class="sn-updated">${stamp?`Updated ${snEsc(stamp)}`:''}</div></div><div class="sn-table"><div class="sn-head"><div>Resort</div><div>Status</div><div>Lifts</div><div>Runs</div><div>24h</div><div>48h</div><div>Base</div><div>Temp</div></div>${rows}</div><div class="sn-foot">Official resort reports · Open-Meteo temps when a station is off${d.resorts.some(x=>x.snow24hSource==='open-meteo'||x.snow48hSource==='open-meteo')?' · * 24h/48h at Mountain High from the Open-Meteo model':''}</div><div class="sn-cr">Photo: “Top of Cornice Bowl ski run” by Sean Lynch, public domain</div>`}
 snFetch();setInterval(snFetch,15*60000);
 function trySnow(){if(Date.now()-lastSn<SNI)return false;const h=snHTML();if(!h)return false;lastSn=Date.now();lastLive='snow';
  const apply=()=>{snEl.innerHTML=h;document.body.classList.remove('L','R','W','X','fr');document.body.classList.add('S');st.style.visibility=wd.style.visibility=''};
