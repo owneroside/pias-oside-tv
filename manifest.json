@@ -1011,6 +1011,15 @@
   },
   {
    "type": "image",
+   "src": "slides/500-sell-paradym-ai-smoke-driver-wide.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210509"
+   ],
+   "full": "slides/500-sell-paradym-ai-smoke-driver-wide.jpg"
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
