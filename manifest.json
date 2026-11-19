@@ -145,14 +145,6 @@
  "items": [
   {
    "type": "image",
-   "src": "slides/03-taylormade-flextech.jpg",
-   "seconds": 20,
-   "sku": [
-    "S000202192"
-   ]
-  },
-  {
-   "type": "image",
    "src": "slides/04-reviews-1100.jpg",
    "seconds": 20
   },
