@@ -88,6 +88,13 @@
    "end": "2026-12-06",
    "seconds": 15,
    "every": 3
+  },
+  {
+   "src": "slides/dated/bf-2026/12-CleanOutTheGarage-TV-1920x1080.jpg",
+   "start": "2026-11-27",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "every": 3
   }
  ],
  "datedEvery": 7,
