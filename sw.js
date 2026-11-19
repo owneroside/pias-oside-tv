@@ -8,7 +8,7 @@ const BLOBS='pias-tv-blobs',META='pias-tv-meta',SCOPE=self.registration.scope,ME
 const SHELL=['index.html','logo-white.png','logo.png','logo-oside.png','tex.jpg','fonts/Poppins-Bold.ttf','fonts/Poppins-Medium.ttf'];
 for(let n=1;n<=16;n++)SHELL.push('wx-bg/bg'+n+'.jpg');
 const T_POLL=8000,T_MAN=20000,T_IMG=60000,T_VID=180000,BUDGET=600e6,CONC=3,isV=p=>/\.(mp4|webm|mov)$/i.test(p);
-const NET=new Set(['version.txt','assets.json','sw.js']);
+const NET=new Set(['version.txt','assets.json','sw.js','snow.json']);
 let act,running=null;const failN={}; // a file that fails 3 syncs in a row is left out so it cannot block every other update
 const bkey=(p,h)=>SCOPE+p+'?h='+h;
 const pathOf=u=>{let p=u.pathname.slice(BASE.length);try{p=decodeURIComponent(p)}catch(e){}return p===''?'index.html':p};

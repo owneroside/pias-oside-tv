@@ -190,7 +190,7 @@ body.R #wx .wc{left:auto;right:3vw}
 body.R #wx .cr{right:auto;left:1vw}
 body.X.fr #wx .wc{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2)}
 </style><style>/* fresh full-bleed videos (2026-11-02) */
-body.vid.fv.fbk #fcap,body.vid.fv.fbk #flogo,body.vid.fv.fbk #side,body.vid.fv.fbk #policy,body.vid.fv.fbk #logo,body.vid.fv.fbk #buy,body.vid.fv.fbk #cards,body.vid.fv.fbk #ov,body.vid.fv.fbk #vlogo,body.vid.fv.fbk #vbar,body.vid.fv.fbk #stage,body.vid.fv.fbk #wide,body.vid.fv.fbk #wx{display:none!important}body.vid.fv.fbk #vid{object-fit:contain!important;background:#000!important}
+body.vid.fv.fbk #fcap,body.vid.fv.fbk #flogo,body.vid.fv.fbk #side,body.vid.fv.fbk #policy,body.vid.fv.fbk #logo,body.vid.fv.fbk #buy,body.vid.fv.fbk #cards,body.vid.fv.fbk #ov,body.vid.fv.fbk #vlogo,body.vid.fv.fbk #vbar,body.vid.fv.fbk #stage,body.vid.fv.fbk #wide,body.vid.fv.fbk #wx,body.vid.fv.fbk #sn{display:none!important}body.vid.fv.fbk #vid{object-fit:contain!important;background:#000!important}
 @font-face{font-family:FP;src:url(fonts/Poppins-Bold.ttf);font-weight:700}@font-face{font-family:FP;src:url(fonts/Poppins-Medium.ttf);font-weight:500}
 #fcap,#flogo{display:none}
 body.vid.fv #vid{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;object-fit:cover!important;z-index:9000!important;margin:0!important;border-radius:0!important;transform:none!important}
@@ -232,9 +232,34 @@ body.vid:not(.fv) #vlogo.on.cBR{bottom:2vh;right:1.8vw;left:auto;top:auto}
 body.vid:not(.fv) #vlogo.on.cBL{bottom:2vh;left:1.8vw;right:auto;top:auto}
 body.vid.fv #vlogo{display:none!important}</style><style>/* videos: no return policy. one corner logo; sport line stays in #ov. slides keep #policy. */
 body.vid #policy,body.vid #cards,body.vid #vbar,body.vid #side{display:none!important;visibility:hidden!important;transition:none!important}
+</style><style>/* live snow report (Nov 19, 2026): full-screen, snow palette, conditions only */
+#sn{display:none;position:fixed;inset:0;z-index:8;box-sizing:border-box;padding:3vh 2.8vw 2.2vh;flex-direction:column;background:radial-gradient(120vw 80vh at 8% -8%,rgba(90,160,200,.22),transparent 55%),radial-gradient(90vw 70vh at 110% 120%,rgba(14,40,72,.65),transparent 55%),linear-gradient(165deg,#071428 0%,#0b1f3a 42%,#16345c 100%);color:#eef6ff;font-family:FP,Arial,sans-serif}
+body.S #sn{display:flex}
+body.S #wx,body.X #sn{display:none!important}
+body.S:not(.vid) #side,body.S:not(.vid) #cards,body.S:not(.vid) #buy,body.S:not(.vid) #logo,body.S:not(.vid) #policy,body.S:not(.vid) #wide,body.S:not(.vid) #stage,body.S:not(.vid) #ov,body.S:not(.vid) #vbar,body.S:not(.vid) #fcap,body.S:not(.vid) #flogo,body.S:not(.vid) #vlogo{display:none!important}
+#sn .sn-top{display:flex;align-items:center;gap:1.8vw;flex:0 0 auto;margin-bottom:2vh}
+#sn .sn-logo{height:11vh;width:auto;display:block;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
+#sn .sn-titles{flex:1;min-width:0}
+#sn .sn-kicker{font-weight:500;font-size:2.1vh;letter-spacing:.32vh;color:#9fd0e8;text-transform:uppercase}
+#sn .sn-title{font-weight:700;font-size:5.2vh;line-height:1.02;color:#fff;letter-spacing:.1vh}
+#sn .sn-updated{font-weight:500;font-size:2.3vh;color:#c5d8ea;white-space:nowrap;text-align:right;line-height:1.2}
+#sn .sn-table{flex:1;display:flex;flex-direction:column;min-height:0;gap:1.15vh}
+#sn .sn-head,#sn .sn-row{display:grid;grid-template-columns:1.75fr .95fr .9fr .9fr .7fr .7fr .7fr .7fr;gap:1vw;align-items:center}
+#sn .sn-head{flex:0 0 auto;padding:0 1.4vw .7vh;color:#9fb6cc;font-size:1.8vh;font-weight:700;letter-spacing:.16vh;text-transform:uppercase;border-bottom:.18vh solid rgba(218,239,255,.22)}
+#sn .sn-row{flex:1 1 0;min-height:0;background:linear-gradient(90deg,rgba(44,77,118,.58),rgba(11,31,58,.72));border:1px solid rgba(218,239,255,.16);border-radius:1.15vh;padding:0 1.4vw;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+#sn .sn-name{font-weight:700;font-size:3.3vh;color:#fff;line-height:1.05}
+#sn .sn-region{display:block;font-weight:500;font-size:1.65vh;color:#9fd0e8;margin-top:.25vh}
+#sn .sn-pill{display:inline-block;font-weight:700;font-size:2.2vh;letter-spacing:.12vh;border-radius:.7vh;padding:.45vh .75vw;line-height:1}
+#sn .sn-pill.open{background:#1e7a4a;color:#e8fff3}
+#sn .sn-pill.limited{background:#c49212;color:#fff8e0}
+#sn .sn-pill.closed{background:#3a4d66;color:#d5e2ef}
+#sn .sn-opens{display:block;font-weight:500;font-size:1.7vh;color:#daefff;margin-top:.4vh}
+#sn .sn-metric{font-weight:700;font-size:3.15vh;color:#fff;line-height:1;white-space:nowrap}
+#sn .sn-metric small{font-weight:500;font-size:1.75vh;color:#9fb6cc}
+#sn .sn-foot{flex:0 0 auto;margin-top:1.5vh;font-weight:500;font-size:1.55vh;color:#8aa3bb}
 </style></head><body class="L"><div id="vlogo"><img src="logo-white.png" alt=""></div>
 <div id="bg"></div><div id="stage"><img id="img" alt=""></div>
-<div id="wx"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo-white.png" alt="Play It Again Sports Oceanside"></div><div id="cards"><div class="card c1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></svg><div class="tx"><div class="ch">WE BUY USED</div><div class="cs">Cash or trade</div></div></div>
+<div id="wx"></div><div id="sn"></div><div id="wide"><img id="wimg" alt=""></div><div id="side"><div id="logo"><img src="logo-white.png" alt="Play It Again Sports Oceanside"></div><div id="cards"><div class="card c1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></svg><div class="tx"><div class="ch">WE BUY USED</div><div class="cs">Cash or trade</div></div></div>
 <div class="card c2"><div class="pt">RETURN POLICY</div><div class="row"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18l-2.5-1.6L14 21l-2-1.6L10 21l-2.5-1.6L5 21z"/><path d="M8.5 8h7M8.5 11.5h7M8.5 15h4"/></svg><div class="tx"><div class="ch">NEW ITEMS:</div><ul class="cl"><li>Returns accepted within 14 days of purchase</li><li>Must be in original packaging, in original condition, with all parts included</li><li>Original sales receipt required</li><li>Returns may be subject to a restocking fee of up to 15%</li></ul></div></div><div class="row"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.4"/><path d="M10 16l6-6"/></svg><div class="tx"><div class="ch">ALL SALES FINAL:</div><ul class="cl"><li>Used, marked down, special orders, services and rentals</li><li>Used items may be purchased back at a reduced value based on condition, demand, and inventory needs</li><li>All rentals are final. No refunds.</li></ul></div></div></div></div><div id="policy"><b class="pt">RETURN POLICY</b><div class="ps"><div class="ph">NEW ITEMS</div><div class="pl"><span>Returns accepted within 14 days of purchase</span><span>Must be in original packaging, in original condition, with all parts included</span><span>Original sales receipt required</span><span>Returns may be subject to a restocking fee of up to 15%</span></div></div><div class="pd"></div><div class="ps"><div class="ph">ALL SALES FINAL</div><div class="pl"><span>Used, marked down, special orders, services and rentals</span><span>Used items may be purchased back at a reduced value based on condition, demand, and inventory needs</span><span>All rentals are final. No refunds.</span></div></div></div></div><div id="buy"><div class="b1">WE BUY USED</div><div class="b2">SPORTS GEAR</div><div class="b3">Bring it in for cash or trade!</div></div></div>
 <div id="vbar"><b style="color:#ffd400">NEW ITEMS:</b> Returns accepted within 14 days of purchase • Must be in original packaging, in original condition, with all parts included • Original sales receipt required • Returns may be subject to a restocking fee of up to 15% &nbsp;|&nbsp; <b style="color:#ffd400">ALL SALES FINAL:</b> Used, marked down, special orders and services • Used items may be purchased back at a reduced value based on condition, demand, and inventory needs • All rentals are final. No refunds</div>
 <div id="fcap"><div class="h"></div><div class="s"></div></div><img id="flogo" src="logo-white.png" alt=""><div id="ov"></div><video id="vid" muted playsinline preload="auto"></video>
@@ -296,15 +321,46 @@ function wxHTML(){const d=JSON.parse(localStorage.getItem(WXK)||'{}'),n=Date.now
  const dir=['N','NE','E','SE','S','SW','W','NW'][Math.round(a.wd/45)%8],s=d.surf&&n-d.surf.at<6*3600e3?d.surf.h:null,r=Math.round;
  const cr='%%CR%%';return `<img class="wlogo" src="logo-white.png" alt="Play It Again Sports Oceanside"><div class="wc"><div class="wh">OCEANSIDE NOW</div><div class="wm"><span class="ic">${ic}</span><span class="t">${r(a.t)}°</span><span class="c">${cn}</span></div><div class="wr"><span>Wind <b>${r(a.ws)} mph ${dir}</b></span><span>Water <b>${r(w.t)}°F</b></span></div></div>${cr?`<div class="cr">${cr}</div>`:''}`}
 wxFetch();setInterval(wxFetch,15*60000);
+const SNK='pias-snow',SNI=180000;let lastSn=Date.now()-SNI+90000,lastLive='wx';const snEl=document.getElementById('sn');
+const liveEls=()=>[st,sd,wd,wxEl,snEl].filter(Boolean);
+async function snFetch(){const save=d=>{try{localStorage.setItem(SNK,JSON.stringify(d))}catch(e){}};
+ let cur=null;try{cur=JSON.parse(localStorage.getItem(SNK)||'null')}catch(e){cur=null}
+ try{const r=await fetch('snow.json?'+Date.now(),{cache:'no-store'});if(r.ok){const j=await r.json();if(j&&j.resorts&&j.resorts.length){j._at=Date.now();save(j);return j}}}catch(e){}
+ return cur}
+function snEsc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function snCount(o,t){if(o==null&&t==null)return '';if(t==null)return `<span class="sn-metric">${snEsc(o)}</span>`;return `<span class="sn-metric">${snEsc(o)}<small> / ${snEsc(t)}</small></span>`}
+function snIn(v,tag){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';return `<span class="sn-metric">${n}"${tag?`<small> ${snEsc(tag)}</small>`:''}</span>`}
+function snTemp(v){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';return `<span class="sn-metric">${n}°</span>`}
+function snHTML(){let d=null;try{d=JSON.parse(localStorage.getItem(SNK)||'null')}catch(e){d=null}
+ if(!d||!Array.isArray(d.resorts)||!d.resorts.length)return null;
+ const stamp=d.updatedLabel||d.sourceUpdatedLabel||'';
+ const rows=d.resorts.map(r=>{
+  const st=(r.status||'closed');const pill=r.statusLabel||st.toUpperCase();
+  const opens=(st==='closed'&&r.opens)?`<span class="sn-opens">Opens ${snEsc(r.opens)}</span>`:'';
+  const region=r.region?`<span class="sn-region">${snEsc(r.region)}</span>`:'';
+  let s24=snIn(r.snow24h),s48=snIn(r.snow48h);
+  return `<div class="sn-row"><div><div class="sn-name">${snEsc(r.name)}</div>${region}</div><div><span class="sn-pill ${snEsc(st)}">${snEsc(pill)}</span>${opens}</div><div>${snCount(r.liftsOpen,r.liftsTotal)}</div><div>${snCount(r.runsOpen,r.runsTotal)}</div><div>${s24}</div><div>${s48}</div><div>${snIn(r.baseIn)}</div><div>${snTemp(r.tempF)}</div></div>`
+ }).join('');
+ return `<div class="sn-top"><img class="sn-logo" src="logo-white.png" alt="Play It Again Sports Oceanside"><div class="sn-titles"><div class="sn-kicker">SoCal + Mammoth</div><div class="sn-title">Mountain Snow Report</div></div><div class="sn-updated">${stamp?`Updated ${snEsc(stamp)}`:''}</div></div><div class="sn-table"><div class="sn-head"><div>Resort</div><div>Status</div><div>Lifts</div><div>Runs</div><div>24h</div><div>48h</div><div>Base</div><div>Temp</div></div>${rows}</div><div class="sn-foot">Official resort reports · Open-Meteo temps when a station is off</div>`}
+snFetch();setInterval(snFetch,15*60000);
+function trySnow(){if(Date.now()-lastSn<SNI)return false;const h=snHTML();if(!h)return false;lastSn=Date.now();lastLive='snow';
+ const apply=()=>{snEl.innerHTML=h;document.body.classList.remove('L','R','W','X','fr');document.body.classList.add('S');st.style.visibility=wd.style.visibility=''};
+ if(fromVid){apply();requestAnimationFrame(()=>{cornerWatch(false);bTm.forEach(clearTimeout);bTm=[];document.body.classList.remove('vid','bh','bT','bB','bL','bR');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load();hideHol()});fromVid=false}
+ else{for(const e of liveEls())e.style.opacity=0;setTimeout(()=>{apply();requestAnimationFrame(()=>requestAnimationFrame(()=>{hideHol();for(const e of liveEls())e.style.opacity=1}))},600)}
+ clearTimeout(t);t=setTimeout(next,20000);return true}
+function tryLive(){const wxDue=Date.now()-lastWx>=WXI,snDue=Date.now()-lastSn>=SNI;if(!wxDue&&!snDue)return false;
+ const order=(wxDue&&snDue)?(lastLive==='wx'?[trySnow,tryWx]:[tryWx,trySnow]):(snDue?[trySnow,tryWx]:[tryWx,trySnow]);
+ for(const fn of order){if(fn())return true}return false}
+
 const WXF='wx-bg/bg3.jpg',wxImg={};function wxPre(u){if(!wxImg[u]){const im=new Image();im.onerror=()=>{delete wxImg[u]};im.src=u;wxImg[u]=im}return wxImg[u]}
 function wxOk(u){const im=wxImg[u];return !!(im&&im.complete&&im.naturalWidth>0)}
 function wxPick(){const c=WXB[wxN%WXB.length];if(wxOk(c[0]))return c;const f=WXB.find(b=>b[0]===WXF);if(wxOk(WXF))return f;return WXB.find(b=>wxOk(b[0]))||null}
 wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);
-function tryWx(){if(Date.now()-lastWx<WXI)return false;let h=wxHTML();if(!h)return false;const pk=wxPick();if(!pk){wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);return false}lastWx=Date.now();
+function tryWx(){if(Date.now()-lastWx<WXI)return false;let h=wxHTML();if(!h)return false;const pk=wxPick();if(!pk){wxPre(WXF);wxPre(WXB[wxN%WXB.length][0]);return false}lastWx=Date.now();lastLive='wx';
  h=h.replace(/<div class="cr">%%CR%%<\/div>/,pk[1]?`<div class="cr">${pk[1]}</div>`:'');wxPre(WXB[(wxN+1)%WXB.length][0]);
- side=side==='L'?'R':'L';const L=side,bg=pk[0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W');document.body.classList.add(L,'X');st.style.visibility=wd.style.visibility='';document.body.classList.toggle('fr',wxN%2==1)};
+ side=side==='L'?'R':'L';const L=side,bg=pk[0],apply=()=>{wxEl.innerHTML=h;wxEl.style.backgroundImage=`linear-gradient(180deg,rgba(0,20,45,.10),rgba(0,20,45,0) 40%,rgba(0,20,45,.12)),url(${bg})`;localStorage.setItem('pias-wxn',++wxN);document.body.classList.remove('L','R','W','S');document.body.classList.add(L,'X');st.style.visibility=wd.style.visibility='';document.body.classList.toggle('fr',wxN%2==1)};
  if(fromVid){apply();requestAnimationFrame(()=>{cornerWatch(false);bTm.forEach(clearTimeout);bTm=[];document.body.classList.remove('vid','bh','bT','bB','bL','bR');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load();hideHol()});fromVid=false}
- else{for(const e of [st,sd,wd,wxEl])e.style.opacity=0;setTimeout(()=>{apply();requestAnimationFrame(()=>requestAnimationFrame(()=>{hideHol();for(const e of [st,sd,wd,wxEl])e.style.opacity=1}))},600)}
+ else{for(const e of liveEls())e.style.opacity=0;setTimeout(()=>{apply();requestAnimationFrame(()=>requestAnimationFrame(()=>{hideHol();for(const e of liveEls())e.style.opacity=1}))},600)}
  clearTimeout(t);t=setTimeout(next,15000);return true}
 function freshOn(f){const B=document.body.classList,c=document.getElementById('fcap');c.classList.remove('on');if(!f){B.remove('fv','fbk');return}B.toggle('fbk',!!f.baked);
  B.add('fv');const h=c.querySelector('.h'),s=c.querySelector('.s');if(f.baked){c.className='';document.getElementById('flogo').className='';h.textContent='';s.textContent='';return}c.className=f.capSize+' '+f.cap;document.getElementById('flogo').className=f.logo;h.textContent=f.caption;s.textContent=f.sub||'';
@@ -320,22 +376,22 @@ function activeDated(){if(!M||!M.dated)return[];const d=ptDay();return M.dated.f
 function hideHol(){document.getElementById('hol').style.display='none'}
 function endVid(){if(!fromVid&&!document.body.classList.contains('vid'))return;cornerWatch(false);bTm.forEach(clearTimeout);bTm=[];document.body.classList.remove('vid','bh','bT','bB','bL','bR','fv','fbk');vid.onended=vid.onerror=null;try{vid.pause()}catch(e){}vid.style.display='none';showOv(null);document.getElementById('fcap').classList.remove('on');vid.removeAttribute('src');vid.load();fromVid=false}
 let fails=0;let gen=0;async function next(){clearTimeout(t);t=null;const g=++gen;const stale=()=>g!==gen;const H=document.getElementById('hol');
- const A=activeDated(),ev=A.filter(x=>x.every>0).map(x=>+x.every);if(A.length&&++holN>(ev.length?Math.min(...ev):(M.datedEvery||7))){holN=0;const it=A[holI++%A.length];try{const u=await getBlob(it.src);if(H.style.display==='block')throw 0;H.firstChild.src=u;await dec(H.firstChild);if(stale())return;endVid();H.style.display='block';fails=0;clearTimeout(t);t=setTimeout(next,(it.seconds||15)*1000);return}catch(e){}}if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryWx())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
+ const A=activeDated(),ev=A.filter(x=>x.every>0).map(x=>+x.every);if(A.length&&++holN>(ev.length?Math.min(...ev):(M.datedEvery||7))){holN=0;const it=A[holI++%A.length];try{const u=await getBlob(it.src);if(H.style.display==='block')throw 0;H.firstChild.src=u;await dec(H.firstChild);if(stale())return;endVid();H.style.display='block';fails=0;clearTimeout(t);t=setTimeout(next,(it.seconds||15)*1000);return}catch(e){}}if(M&&!(M.items[i]&&M.items[i].type==='video')&&tryLive())return;if(!M){t=setTimeout(async()=>{await load();next()},5000);return}
  if(i>=M.items.length){i=0;await load();if(stale())return}
  const it=M.items[i++];savePos();if(it.full){try{const u=await getBlob(it.full);if(stale())return;H.firstChild.src=u;await dec(H.firstChild);if(stale())return;endVid();H.style.display='block';fails=0;clearTimeout(t);t=setTimeout(next,(it.seconds||15)*1000);return}catch(e){if(!stale())t=setTimeout(next,++fails>8?5000:300);return}}let u;try{u=await getBlob(it.src)}catch(e){if(!stale())t=setTimeout(next,++fails>8?5000:300);return}if(stale())return;
  if(it.type==='video'){vid.muted=true;vid.src=u;let d=false;
   try{await tmo(vid.play(),15000)}catch(e){if(stale())return;try{vid.pause()}catch(_){}t=setTimeout(next,100);return}if(stale())return;
-  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));freshOn(it.fresh);const baked=!!(it.fresh&&it.fresh.baked);showOv(it.fresh?null:it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),baked?[]:it.bAt);placeCorner(it);cornerWatch(!baked);document.body.classList.remove('X');vid.style.display='block';fromVid=true;st.style.visibility=wd.style.visibility='hidden';requestAnimationFrame(hideHol);
+  document.body.classList.remove('bT','bB','bL','bR');document.body.classList.add('vid','b'+(it.banner||'B'));freshOn(it.fresh);const baked=!!(it.fresh&&it.fresh.baked);showOv(it.fresh?null:it.overlay);bannerCycle(Math.min(it.maxSeconds||16,isFinite(vid.duration)&&vid.duration>0?vid.duration:99),baked?[]:it.bAt);placeCorner(it);cornerWatch(!baked);document.body.classList.remove('X','S');vid.style.display='block';fromVid=true;st.style.visibility=wd.style.visibility='hidden';requestAnimationFrame(hideHol);
   const done=()=>{if(d||stale())return;d=true;vid.onended=vid.onerror=null;clearTimeout(t);t=null;bTm.forEach(clearTimeout);bTm=[];cornerWatch(false);vid.pause();const k=abs(it.src);setTimeout(()=>{URL.revokeObjectURL(u);if(blobs[k]===u)delete blobs[k]},3000);next()};
   vid.onended=done;vid.onerror=done;t=setTimeout(done,(it.maxSeconds||16)*1000);peek()}
  else{let L;if(it.wide&&(svcN++%2===1)){L='W';try{u=await getBlob(it.wide)}catch(e){L=null}if(stale())return}if(!L){side=side==='L'?'R':'L';L=side}
   const n=new Image();n.src=u;await dec(n);if(stale())return;
   /* wide (landscape) slides, incl. the 1920x860 service wides, play alone full frame: no 3-up cards, no logo/policy strip over their own baked footer */
   if(L==='W'||n.naturalWidth>n.naturalHeight*1.2){H.firstChild.src=u;await dec(H.firstChild);if(stale())return;endVid();H.style.display='block';fails=0;peek();clearTimeout(t);t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000);return}
-  const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W','X');document.body.classList.add(L);st.style.visibility=wd.style.visibility=''};
+  const tgt=L==='W'?wimg:img;const apply=()=>{document.body.classList.remove('L','R','W','X','S');document.body.classList.add(L);st.style.visibility=wd.style.visibility=''};
   fails=0;if(fromVid){tgt.src=u;await dec(tgt);if(stale())return;apply();
    requestAnimationFrame(()=>{cornerWatch(false);bTm.forEach(clearTimeout);bTm=[];document.body.classList.remove('vid','bh','bT','bB','bL','bR');vid.style.display='none';showOv(null);vid.removeAttribute('src');vid.load();hideHol()});fromVid=false}
-  else{const fw=document.body.classList.contains('X'),F=fw?[st,sd,wd,wxEl]:[st,sd,wd];for(const e of F)e.style.opacity=0;
+  else{const fw=document.body.classList.contains('X')||document.body.classList.contains('S'),F=fw?liveEls():[st,sd,wd];for(const e of F)e.style.opacity=0;
    await new Promise(r=>setTimeout(r,600));if(stale())return;tgt.src=u;await dec(tgt);if(stale())return;
    apply();await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));if(stale())return;hideHol();for(const e of F)e.style.opacity=1}
   peek();clearTimeout(t);t=setTimeout(next,(it.seconds||M.defaultSeconds||20)*1000)}}
@@ -344,7 +400,7 @@ function savePos(){try{localStorage.setItem('pias-pos',JSON.stringify({d:dayKey(
 function resumePos(){try{const p=JSON.parse(localStorage.getItem('pias-pos')||'null');if(M&&p&&p.d===dayKey()&&p.i>0)i=p.i%M.items.length}catch(e){}}
 async function resetIfAsked(){const q=new URLSearchParams(location.search).get('reset');if(!q||localStorage.getItem('pias-reset')===q)return;localStorage.setItem('pias-reset',q);
  try{if(self.caches)for(const k of await caches.keys())await caches.delete(k)}catch(e){}try{if(navigator.serviceWorker)for(const r of await navigator.serviceWorker.getRegistrations())await r.unregister()}catch(e){}localStorage.removeItem('pias-pos');location.reload();await new Promise(()=>{})}
-if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));const pu=WXB[wxN%WXB.length][0];wxPre(pu);wxFetch().then(()=>new Promise(r=>{const k=()=>wxOk(pu)||wxOk(WXF)?r():setTimeout(k,100);k()})).then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else resetIfAsked().then(load).then(()=>{resumePos();next()});setTimeout(()=>location.reload(),6*3600*1000);
+if(location.hash.startsWith('#snow')){snFetch().then(j=>{if(!j)return;try{localStorage.setItem(SNK,JSON.stringify(j))}catch(e){}lastSn=0;trySnow();clearTimeout(t);t=null})}else if(location.hash.startsWith('#wx')){lastWx=0;if(location.hash[3])wxN=parseInt(location.hash.slice(3));const pu=WXB[wxN%WXB.length][0];wxPre(pu);wxFetch().then(()=>new Promise(r=>{const k=()=>wxOk(pu)||wxOk(WXF)?r():setTimeout(k,100);k()})).then(()=>{tryWx()})}else if(location.hash.startsWith('#t=')){const[a,b]=location.hash.slice(3).split(',');document.body.className=a;(a==='W'?wimg:img).src=b}else resetIfAsked().then(load).then(()=>{resumePos();next()});setTimeout(()=>location.reload(),6*3600*1000);
 let V=null,wantReload=false;const busy=()=>document.body.classList.contains('vid');
 async function chkVer(){try{const t=(await (await fetch('version.txt?'+Date.now(),{cache:'no-store'})).text()).trim();if(!/^\d+$/.test(t))return;if(V===null){V=t;mVer(t)}else if(t!==V)wantReload=true}catch(e){}}
 async function chkMan(){if(!M||!mSig)return;try{const r=await fetch('manifest.json?'+Date.now(),{cache:'no-store'});if(!r.ok)return;const j=await r.json();if(j.items&&j.items.length&&sigOf(j)!==mSig)wantReload=true}catch(e){}}
@@ -367,15 +423,15 @@ function fitPolicy(){const p=document.getElementById('policy');if(!p||document.b
  let lo=.5,hi=3;for(let k=0;k<18;k++){const m=(lo+hi)/2;p.style.setProperty('--pf',m);(ch()<=H*.97&&p.scrollWidth<=p.clientWidth)?lo=m:hi=m}p.style.setProperty('--pf',lo)}
 addEventListener('resize',fitPolicy);addEventListener('load',fitPolicy);if(document.fonts)document.fonts.ready.then(fitPolicy);
 new MutationObserver(()=>requestAnimationFrame(fitPolicy)).observe(document.body,{attributes:true,attributeFilter:['class']});fitPolicy();
-</script><div id="hol" style="position:fixed;inset:0;z-index:99999;background:#000;display:none"><img style="width:100%;height:100%;object-fit:contain"></div><style>/* weather owns the screen: #buy/#logo/#policy sit outside #side in the DOM, so hide every non-weather layer explicitly */body.X:not(.vid) #side,body.X:not(.vid) #cards,body.X:not(.vid) #buy,body.X:not(.vid) #logo,body.X:not(.vid) #policy,body.X:not(.vid) #wide,body.X:not(.vid) #stage,body.X:not(.vid) #ov,body.X:not(.vid) #vbar,body.X:not(.vid) #fcap,body.X:not(.vid) #flogo,body.X:not(.vid) #vlogo{display:none!important}</style><style>/* wide service slides: #policy sits outside #side in the DOM, so pin the return-policy strip under the wide image explicitly */body.W:not(.vid):not(.X) #policy{position:fixed;left:0;right:0;bottom:0;top:auto;height:var(--policy-strip-h);box-sizing:border-box;margin:0;z-index:5}body.W:not(.vid):not(.X) #policy .pl{font-size:2.15vh!important;line-height:1.22!important}body.W:not(.vid):not(.X) #policy .ph{font-size:2.3vh!important}body.W:not(.vid):not(.X) #policy b.pt{width:9vw}body.W:not(.vid):not(.X) #policy{column-gap:2vw;padding:1vh 2.5vw}</style><style>/* wide slides: strip covers the image's empty bottom margin; bulleted policy */
-body.W:not(.vid):not(.X) #policy{height:calc(var(--policy-strip-h) + 2.8vh)!important;grid-template-columns:auto 1.3fr auto 1fr!important;align-items:center!important;padding:1.2vh 2.6vw!important;column-gap:2vw!important}
-body.W:not(.vid):not(.X) #policy .pd{height:18vh!important}
-body.W:not(.vid):not(.X) #policy b.pt{width:9vw!important;font-size:3.4vh!important}
-body.W:not(.vid):not(.X) #policy .ph{font-size:2.6vh!important;margin-bottom:.5vh!important}
-body.W:not(.vid):not(.X) #policy .pl{font-size:2.36vh!important;line-height:1.22!important}
-body.W:not(.vid):not(.X) #policy .pl span{display:list-item;list-style:disc;margin-left:2.4vh;margin-bottom:.2vh}
-body.W:not(.vid):not(.X) #policy .pl span+span:before{content:none}
-body.W:not(.vid):not(.X) #policy .pl span::marker{color:#ff5a5f}
+</script><div id="hol" style="position:fixed;inset:0;z-index:99999;background:#000;display:none"><img style="width:100%;height:100%;object-fit:contain"></div><style>/* weather owns the screen: #buy/#logo/#policy sit outside #side in the DOM, so hide every non-weather layer explicitly */body.X:not(.vid) #side,body.X:not(.vid) #cards,body.X:not(.vid) #buy,body.X:not(.vid) #logo,body.X:not(.vid) #policy,body.X:not(.vid) #wide,body.X:not(.vid) #stage,body.X:not(.vid) #ov,body.X:not(.vid) #vbar,body.X:not(.vid) #fcap,body.X:not(.vid) #flogo,body.X:not(.vid) #vlogo{display:none!important}</style><style>/* wide service slides: #policy sits outside #side in the DOM, so pin the return-policy strip under the wide image explicitly */body.W:not(.vid):not(.X):not(.S) #policy{position:fixed;left:0;right:0;bottom:0;top:auto;height:var(--policy-strip-h);box-sizing:border-box;margin:0;z-index:5}body.W:not(.vid):not(.X):not(.S) #policy .pl{font-size:2.15vh!important;line-height:1.22!important}body.W:not(.vid):not(.X):not(.S) #policy .ph{font-size:2.3vh!important}body.W:not(.vid):not(.X):not(.S) #policy b.pt{width:9vw}body.W:not(.vid):not(.X):not(.S) #policy{column-gap:2vw;padding:1vh 2.5vw}</style><style>/* wide slides: strip covers the image's empty bottom margin; bulleted policy */
+body.W:not(.vid):not(.X):not(.S) #policy{height:calc(var(--policy-strip-h) + 2.8vh)!important;grid-template-columns:auto 1.3fr auto 1fr!important;align-items:center!important;padding:1.2vh 2.6vw!important;column-gap:2vw!important}
+body.W:not(.vid):not(.X):not(.S) #policy .pd{height:18vh!important}
+body.W:not(.vid):not(.X):not(.S) #policy b.pt{width:9vw!important;font-size:3.4vh!important}
+body.W:not(.vid):not(.X):not(.S) #policy .ph{font-size:2.6vh!important;margin-bottom:.5vh!important}
+body.W:not(.vid):not(.X):not(.S) #policy .pl{font-size:2.36vh!important;line-height:1.22!important}
+body.W:not(.vid):not(.X):not(.S) #policy .pl span{display:list-item;list-style:disc;margin-left:2.4vh;margin-bottom:.2vh}
+body.W:not(.vid):not(.X):not(.S) #policy .pl span+span:before{content:none}
+body.W:not(.vid):not(.X):not(.S) #policy .pl span::marker{color:#ff5a5f}
 </style><style>/* clear logo: thin edge shadow only */#logo img,#vlogo img,#ov .ol,#wx .wlogo,body.vid.fv #flogo{filter:drop-shadow(0 0 2px rgba(0,0,0,.6))!important}</style><style>/* video return panel uses the existing policy sentences; the box grows to them */
 body.vid #cards{display:none!important}
 body.vid #policy{display:grid!important;visibility:visible!important;height:auto!important;max-height:none!important;overflow:visible!important;min-width:0}
