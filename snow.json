@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-19T21:43:09.450211-08:00",
-  "updatedLabel": "9:43 PM PT",
+  "updated": "2026-11-19T23:20:41.399586-08:00",
+  "updatedLabel": "11:20 PM PT",
   "sourceUpdated": "2026-11-19T15:18:25-08:00",
   "sourceUpdatedLabel": "3:18 PM PT",
   "resorts": [
@@ -138,12 +138,12 @@
       "snow7d": null,
       "baseIn": 25,
       "baseRange": "25 - 35",
-      "tempF": 18,
+      "tempF": 17,
       "tempSource": "resort",
       "conditions": "Powder",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T15:18:25-08:00",
-      "snow72h": 11,
+      "snow72h": 12,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": "Thu",
       "forecastLabel": "Snow Thu",
