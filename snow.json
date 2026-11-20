@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-20T02:06:26.778984-08:00",
-  "updatedLabel": "2:06 AM PT",
+  "updated": "2026-11-20T03:10:35.315247-08:00",
+  "updatedLabel": "3:10 AM PT",
   "sourceUpdated": "2026-11-19T15:18:25-08:00",
   "sourceUpdatedLabel": "3:18 PM PT",
   "resorts": [
@@ -85,7 +85,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
+      "forecastLabel": "Partly cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -138,7 +138,7 @@
       "snow7d": null,
       "baseIn": 25,
       "baseRange": "25 - 35",
-      "tempF": 17,
+      "tempF": 15,
       "tempSource": "resort",
       "conditions": "Powder",
       "source": "mtnpowder",
