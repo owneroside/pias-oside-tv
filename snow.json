@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-19T20:37:38.559588-08:00",
-  "updatedLabel": "8:37 PM PT",
+  "updated": "2026-11-19T21:43:09.450211-08:00",
+  "updatedLabel": "9:43 PM PT",
   "sourceUpdated": "2026-11-19T15:18:25-08:00",
   "sourceUpdatedLabel": "3:18 PM PT",
   "resorts": [
@@ -20,11 +20,16 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 64,
-      "tempSource": "resort",
+      "tempF": 31,
+      "tempSource": "open-meteo",
       "conditions": "Wet Snow",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T12:56:20-08:00",
+      "tempOfficialF": 64,
+      "snow72h": 1,
+      "snow72hSource": "open-meteo",
+      "snow72hPeakDay": "Thu",
+      "forecastLabel": "Snow Thu",
       "statusLabel": "CLOSED"
     },
     {
@@ -43,11 +48,16 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 65,
-      "tempSource": "resort",
+      "tempF": 29,
+      "tempSource": "open-meteo",
       "conditions": "Wet Snow",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T12:56:10-08:00",
+      "tempOfficialF": 65,
+      "snow72h": 1,
+      "snow72hSource": "open-meteo",
+      "snow72hPeakDay": "Thu",
+      "forecastLabel": "Snow Thu",
       "statusLabel": "CLOSED"
     },
     {
@@ -66,11 +76,16 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 65,
-      "tempSource": "resort",
+      "tempF": 30,
+      "tempSource": "open-meteo",
       "conditions": "Wet Snow",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T12:56:00-08:00",
+      "tempOfficialF": 65,
+      "snow72h": 4,
+      "snow72hSource": "open-meteo",
+      "snow72hPeakDay": "Thu",
+      "forecastLabel": "Snow Thu",
       "statusLabel": "CLOSED"
     },
     {
@@ -84,8 +99,8 @@
       "liftsTotal": 12,
       "runsOpen": 0,
       "runsTotal": 49,
-      "snow24h": null,
-      "snow48h": null,
+      "snow24h": 3,
+      "snow48h": 3,
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
@@ -99,6 +114,12 @@
         "east": "Closed",
         "yeti": "Closed"
       },
+      "snow24hSource": "open-meteo",
+      "snow48hSource": "open-meteo",
+      "snow72h": 3,
+      "snow72hSource": "open-meteo",
+      "snow72hPeakDay": "Thu",
+      "forecastLabel": "Snow Thu",
       "statusLabel": "CLOSED"
     },
     {
@@ -122,10 +143,12 @@
       "conditions": "Powder",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T15:18:25-08:00",
+      "snow72h": 11,
+      "snow72hSource": "open-meteo",
+      "snow72hPeakDay": "Thu",
+      "forecastLabel": "Snow Thu",
       "statusLabel": "LIMITED"
     }
   ],
-  "errors": [
-    "open-meteo: <urlopen error _ssl.c:1063: The handshake operation timed out>"
-  ]
+  "errors": []
 }
