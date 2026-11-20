@@ -1027,6 +1027,50 @@
   },
   {
    "type": "image",
+   "src": "slides/502-item-S000210600.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210600"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/503-item-S000210601.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210601"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/504-item-S000210602.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210602"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/505-item-S000210599.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210599"
+   ]
+  },
+  {
+   "type": "image",
+   "src": "slides/506-sell-new-taylormade-arrivals.jpg",
+   "seconds": 20,
+   "sku": [
+    "S000210600",
+    "S000210601",
+    "S000210602",
+    "S000210599"
+   ],
+   "full": "slides/506-sell-new-taylormade-arrivals.jpg"
+  },
+  {
+   "type": "image",
    "src": "slides/462-signup-fivestars-v6.jpg",
    "seconds": 20
   },
