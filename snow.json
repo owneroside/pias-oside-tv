@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-19T23:20:41.399586-08:00",
-  "updatedLabel": "11:20 PM PT",
+  "updated": "2026-11-20T00:42:20.317127-08:00",
+  "updatedLabel": "12:42 AM PT",
   "sourceUpdated": "2026-11-19T15:18:25-08:00",
   "sourceUpdatedLabel": "3:18 PM PT",
   "resorts": [
@@ -26,10 +26,10 @@
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T12:56:20-08:00",
       "tempOfficialF": 64,
-      "snow72h": 1,
+      "snow72h": 0,
       "snow72hSource": "open-meteo",
-      "snow72hPeakDay": "Thu",
-      "forecastLabel": "Snow Thu",
+      "snow72hPeakDay": null,
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -54,10 +54,10 @@
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T12:56:10-08:00",
       "tempOfficialF": 65,
-      "snow72h": 1,
+      "snow72h": 0,
       "snow72hSource": "open-meteo",
-      "snow72hPeakDay": "Thu",
-      "forecastLabel": "Snow Thu",
+      "snow72hPeakDay": null,
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -82,10 +82,10 @@
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T12:56:00-08:00",
       "tempOfficialF": 65,
-      "snow72h": 4,
+      "snow72h": 0,
       "snow72hSource": "open-meteo",
-      "snow72hPeakDay": "Thu",
-      "forecastLabel": "Snow Thu",
+      "snow72hPeakDay": null,
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -104,7 +104,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 32,
+      "tempF": 29,
       "tempSource": "resort",
       "conditions": null,
       "source": "mthigh",
@@ -116,10 +116,10 @@
       },
       "snow24hSource": "open-meteo",
       "snow48hSource": "open-meteo",
-      "snow72h": 3,
+      "snow72h": 0,
       "snow72hSource": "open-meteo",
-      "snow72hPeakDay": "Thu",
-      "forecastLabel": "Snow Thu",
+      "snow72hPeakDay": null,
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -143,10 +143,10 @@
       "conditions": "Powder",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-19T15:18:25-08:00",
-      "snow72h": 12,
+      "snow72h": 2,
       "snow72hSource": "open-meteo",
-      "snow72hPeakDay": "Thu",
-      "forecastLabel": "Snow Thu",
+      "snow72hPeakDay": "Sun",
+      "forecastLabel": "Snow Sun",
       "statusLabel": "LIMITED"
     }
   ],
