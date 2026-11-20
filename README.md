@@ -12,3 +12,5 @@ last good set. Workflow is unchanged: edit manifest/slides, merge, bump version.
 assets.json on every push to main (or run `python3 tools/build-assets.py`). Status: bottom-left `m<min> v<ver> c<MB>`;
 console logs `[pias-tv] sync ...`. Browsers without service workers (Samsung TV browser) behave as before.
 Clips: Pexels (free license) ids 6573535 golf, 31955074 basketball, 6859162 skate, 12628499 surf.
+
+Live snow report (`#snow`): one slide covering Bear Mountain, Snow Summit, Snow Valley, Mountain High, and Mammoth. A GitHub Action runs `tools/fetch-snow.py` every 30 minutes and writes `snow.json` when conditions change (no version.txt bump). The player fetches `snow.json` network-first with a localStorage fallback so the last-known numbers stay on screen if the network drops.

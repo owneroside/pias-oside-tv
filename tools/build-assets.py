@@ -10,7 +10,7 @@ def h(p):
 files = {}
 for top in ['index.html', 'manifest.json', 'logo-white.png', 'logo.png', 'logo-oside.png', 'tex.jpg']:
     if os.path.exists(os.path.join(R, top)): files[top] = h(top)
-for d in ['slides', 'clips', 'wx-bg', 'fonts']:
+for d in ['slides', 'clips', 'wx-bg', 'sn-bg', 'sn-logos', 'fonts']:
     for root, _, fs in os.walk(os.path.join(R, d)):
         for f in fs:
             p = os.path.relpath(os.path.join(root, f), R).replace(os.sep, '/')
