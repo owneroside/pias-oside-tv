@@ -12,9 +12,11 @@ Sources (fetched here, not in the browser, so CORS is not required):
     trail map (fallback 49).
   - Open-Meteo (https://api.open-meteo.com) — current temperature at the
     resort coordinates, used when the official station temp is missing or
-    disagrees with the model by more than 15°F; and 24h/48h snowfall (cm,
+    disagrees with the model by more than 15°F; 24h/48h snowfall (cm,
     converted to inches) when a resort does not publish those fields
-    (Mountain High only publishes 7-day new snow).
+    (Mountain High only publishes 7-day new snow); and a 3-day expected
+    snowfall forecast (daily snowfall_sum, today plus the next 2 days)
+    plus a short forecast label from the weather code.
 
 Does not invent numbers. A field is omitted (null) when the source does not
 provide it. 0 is a real value (no snow, no lifts) and is kept.
@@ -76,12 +78,13 @@ MHIGH_URL = 'https://www.mthigh.com/site/trails-and-conditions/conditions/snow-a
 OPEN_METEO = (
     'https://api.open-meteo.com/v1/forecast'
     '?latitude={lats}&longitude={lons}'
-    '&current=temperature_2m'
+    '&current=temperature_2m,weather_code'
     '&hourly=snowfall'
+    '&daily=snowfall_sum,weather_code'
     '&past_days=2'
+    '&forecast_days=4'
     '&temperature_unit=fahrenheit'
     '&timezone=America%2FLos_Angeles'
-    '&forecast_days=1'
 )
 MHIGH_STATS_URL = 'https://www.mthigh.com/site/trails-and-conditions/other/mountain-stats.html'
 MHIGH_MAP_URL = 'https://www.mthigh.com/site/mountain/mountain-info/interactive-trailmap.html'
@@ -402,6 +405,84 @@ def _hourly_snow_inches(item):
     return inch(s24), inch(s48)
 
 
+WEEKDAYS = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+
+
+def _weather_label(code):
+    """Short on-slide forecast word from an Open-Meteo / WMO weather code."""
+    if code is None or code == '':
+        return None
+    try:
+        c = int(code)
+    except (TypeError, ValueError):
+        return None
+    if c <= 1:
+        return 'Sunny'
+    if c == 2:
+        return 'Partly cloudy'
+    if c == 3:
+        return 'Cloudy'
+    if c in (45, 48):
+        return 'Fog'
+    if 51 <= c <= 57:
+        return 'Drizzle'
+    if 61 <= c <= 67 or 80 <= c <= 82:
+        return 'Rain'
+    if 71 <= c <= 77 or 85 <= c <= 86:
+        return 'Snow'
+    if 95 <= c <= 99:
+        return 'Storms'
+    return 'Cloudy'
+
+
+def _inch_cm(cm):
+    return int(round(float(cm or 0) / 2.54))
+
+
+def _forecast_from_daily(item):
+    """Expected snow for today plus the next 2 days, and a short forecast label.
+
+    Uses Open-Meteo daily snowfall_sum (cm, converted to whole inches) and
+    weather_code. Returns None if the daily block is missing. 0 is a real value.
+    """
+    daily = item.get('daily') or {}
+    times = daily.get('time') or []
+    snow = daily.get('snowfall_sum') or []
+    codes = daily.get('weather_code') or []
+    if not times or not snow:
+        return None
+    try:
+        from zoneinfo import ZoneInfo
+        today = datetime.datetime.now(ZoneInfo('America/Los_Angeles')).date()
+    except Exception:
+        today = now_pt().date()
+    days = []
+    for i, ts in enumerate(times):
+        try:
+            d = datetime.date.fromisoformat(str(ts)[:10])
+        except Exception:
+            continue
+        if d < today:
+            continue
+        cm = snow[i] if i < len(snow) else None
+        inches = _inch_cm(cm) if cm is not None else 0
+        code = codes[i] if i < len(codes) else None
+        days.append({'date': d, 'inches': inches, 'code': code})
+    next3 = days[:3]
+    if not next3:
+        return None
+    total = sum(d['inches'] for d in next3)
+    peak = max(next3, key=lambda d: d['inches'])
+    peak_day = WEEKDAYS[peak['date'].weekday()] if peak['inches'] > 0 else None
+    if peak_day:
+        label = f'Snow {peak_day}'
+    else:
+        label = _weather_label(next3[0]['code'])
+        if label is None:
+            label = _weather_label((item.get('current') or {}).get('weather_code'))
+    return {'snow72h': total, 'snow72hPeakDay': peak_day, 'forecastLabel': label}
+
+
 def fetch_open_meteo(specs):
     lats = ','.join(str(s['lat']) for s in specs)
     lons = ','.join(str(s['lon']) for s in specs)
@@ -413,7 +494,15 @@ def fetch_open_meteo(specs):
         cur = item.get('current') or {}
         temp = to_num(cur.get('temperature_2m'))
         s24, s48 = _hourly_snow_inches(item)
-        out[spec['id']] = {'temp': temp, 'snow24h': s24, 'snow48h': s48}
+        fc = _forecast_from_daily(item) or {}
+        out[spec['id']] = {
+            'temp': temp,
+            'snow24h': s24,
+            'snow48h': s48,
+            'snow72h': fc.get('snow72h'),
+            'snow72hPeakDay': fc.get('snow72hPeakDay'),
+            'forecastLabel': fc.get('forecastLabel'),
+        }
     return out
 
 
@@ -427,6 +516,18 @@ def apply_model_snow(resort, om):
     if resort.get('snow48h') is None and om.get('snow48h') is not None:
         resort['snow48h'] = om['snow48h']
         resort['snow48hSource'] = 'open-meteo'
+
+
+def apply_forecast(resort, om):
+    """Attach 3-day expected snow and a short forecast label. New fields only."""
+    if not om:
+        return
+    if om.get('snow72h') is not None:
+        resort['snow72h'] = om['snow72h']
+        resort['snow72hSource'] = 'open-meteo'
+        resort['snow72hPeakDay'] = om.get('snow72hPeakDay')
+    if om.get('forecastLabel'):
+        resort['forecastLabel'] = om['forecastLabel']
 
 
 def fetch_mthigh_totals():
@@ -492,7 +593,9 @@ def canonical(resorts):
     """Comparable snapshot, ignoring fetch timestamps."""
     keys = (
         'id', 'status', 'opens', 'liftsOpen', 'liftsTotal', 'runsOpen', 'runsTotal',
-        'snow24h', 'snow48h', 'snow24hSource', 'snow48hSource', 'snow7d', 'baseIn', 'tempF', 'tempSource', 'conditions'
+        'snow24h', 'snow48h', 'snow24hSource', 'snow48hSource', 'snow7d', 'baseIn',
+        'tempF', 'tempSource', 'conditions',
+        'snow72h', 'snow72hPeakDay', 'snow72hSource', 'forecastLabel'
     )
     out = []
     for r in resorts:
@@ -546,6 +649,7 @@ def main():
         if parsed:
             apply_temps(parsed, (om.get(spec['id']) or {}).get('temp'))
             apply_model_snow(parsed, om.get(spec['id']) or {})
+            apply_forecast(parsed, om.get(spec['id']) or {})
             parsed['statusLabel'] = label_status(parsed['status'])
         else:
             parsed = merge_missing(None, prev_by_id(prev, spec['id']))
@@ -585,6 +689,7 @@ def main():
                 f"lifts={r.get('liftsOpen')}/{r.get('liftsTotal')} "
                 f"runs={r.get('runsOpen')}/{r.get('runsTotal')} "
                 f"24h={r.get('snow24h')} 48h={r.get('snow48h')} 7d={r.get('snow7d')} "
+                f"72h={r.get('snow72h')} peak={r.get('snow72hPeakDay')} fc={r.get('forecastLabel')} "
                 f"base={r.get('baseIn')} temp={r.get('tempF')}({r.get('tempSource')}) "
                 f"opens={r.get('opens')}"
             )
@@ -602,6 +707,7 @@ def main():
             f"lifts={r.get('liftsOpen')}/{r.get('liftsTotal')} "
             f"runs={r.get('runsOpen')}/{r.get('runsTotal')} "
             f"24h={r.get('snow24h')} 48h={r.get('snow48h')} 7d={r.get('snow7d')} "
+            f"72h={r.get('snow72h')} peak={r.get('snow72hPeakDay')} fc={r.get('forecastLabel')} "
             f"base={r.get('baseIn')} temp={r.get('tempF')}({r.get('tempSource')}) "
             f"opens={r.get('opens')}"
         )
