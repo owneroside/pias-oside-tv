@@ -1,6 +1,12 @@
 {
  "dated": [
   {
+   "src": "slides/dated/PIAS_Oceanside_TurkeyTrot_2026_TV_1920x1080.jpg",
+   "start": "2026-11-19",
+   "end": "2026-11-26",
+   "seconds": 15
+  },
+  {
    "src": "slides/dated/PIAS_HolidayHours_Thanksgiving_BlackFriday_2026_3up_TV_1920x1080.png",
    "start": "2026-11-02",
    "end": "2026-11-27",
