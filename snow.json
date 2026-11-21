@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-21T02:52:08.534297-08:00",
-  "updatedLabel": "2:52 AM PT",
+  "updated": "2026-11-21T03:49:11.956976-08:00",
+  "updatedLabel": "3:49 AM PT",
   "sourceUpdated": "2026-11-20T15:42:50-08:00",
   "sourceUpdatedLabel": "3:42 PM PT",
   "resorts": [
@@ -48,7 +48,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 25,
+      "tempF": 26,
       "tempSource": "open-meteo",
       "conditions": "Machine Made",
       "source": "mtnpowder",
@@ -138,7 +138,7 @@
       "snow7d": null,
       "baseIn": 33,
       "baseRange": "33 - 42",
-      "tempF": 14,
+      "tempF": 18,
       "tempSource": "resort",
       "conditions": "Powder",
       "source": "mtnpowder",
