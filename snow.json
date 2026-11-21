@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-21T12:45:30.710390-08:00",
-  "updatedLabel": "12:45 PM PT",
-  "sourceUpdated": "2026-11-21T11:02:38-08:00",
-  "sourceUpdatedLabel": "11:02 AM PT",
+  "updated": "2026-11-21T13:44:07.592568-08:00",
+  "updatedLabel": "1:44 PM PT",
+  "sourceUpdated": "2026-11-21T13:39:48-08:00",
+  "sourceUpdatedLabel": "1:39 PM PT",
   "resorts": [
     {
       "id": "bear",
@@ -20,16 +20,11 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 46,
-      "tempSource": "open-meteo",
+      "tempF": 64,
+      "tempSource": "resort",
       "conditions": "Machine Made",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-21T07:58:50-08:00",
-      "tempOfficialF": 64,
-      "snow72h": 0,
-      "snow72hSource": "open-meteo",
-      "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -48,16 +43,11 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 42,
-      "tempSource": "open-meteo",
+      "tempF": 65,
+      "tempSource": "resort",
       "conditions": "Machine Made",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-21T07:57:53-08:00",
-      "tempOfficialF": 65,
-      "snow72h": 0,
-      "snow72hSource": "open-meteo",
-      "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -76,16 +66,11 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 42,
-      "tempSource": "open-meteo",
+      "tempF": 65,
+      "tempSource": "resort",
       "conditions": "Machine Made",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-21T07:57:23-08:00",
-      "tempOfficialF": 65,
-      "snow72h": 0,
-      "snow72hSource": "open-meteo",
-      "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -99,8 +84,8 @@
       "liftsTotal": 12,
       "runsOpen": 0,
       "runsTotal": 49,
-      "snow24h": 0,
-      "snow48h": 1,
+      "snow24h": null,
+      "snow48h": null,
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
@@ -114,12 +99,6 @@
         "east": "Closed",
         "yeti": "Closed"
       },
-      "snow24hSource": "open-meteo",
-      "snow48hSource": "open-meteo",
-      "snow72h": 0,
-      "snow72hSource": "open-meteo",
-      "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -131,7 +110,7 @@
       "opens": null,
       "liftsOpen": 16,
       "liftsTotal": 25,
-      "runsOpen": 113,
+      "runsOpen": 117,
       "runsTotal": 181,
       "snow24h": 0,
       "snow48h": 7,
@@ -142,13 +121,11 @@
       "tempSource": "resort",
       "conditions": "Machine Groomed Packed Powder",
       "source": "mtnpowder",
-      "sourceUpdated": "2026-11-21T11:02:38-08:00",
-      "snow72h": 1,
-      "snow72hSource": "open-meteo",
-      "snow72hPeakDay": "Sun",
-      "forecastLabel": "Snow Sun",
+      "sourceUpdated": "2026-11-21T13:39:48-08:00",
       "statusLabel": "LIMITED"
     }
   ],
-  "errors": []
+  "errors": [
+    "open-meteo: HTTP Error 429: Too Many Requests"
+  ]
 }
