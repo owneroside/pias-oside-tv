@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-21T13:44:07.592568-08:00",
-  "updatedLabel": "1:44 PM PT",
-  "sourceUpdated": "2026-11-21T13:39:48-08:00",
-  "sourceUpdatedLabel": "1:39 PM PT",
+  "updated": "2026-11-21T14:45:24.930619-08:00",
+  "updatedLabel": "2:45 PM PT",
+  "sourceUpdated": "2026-11-21T14:36:33-08:00",
+  "sourceUpdatedLabel": "2:36 PM PT",
   "resorts": [
     {
       "id": "bear",
@@ -89,7 +89,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 44,
+      "tempF": 40,
       "tempSource": "resort",
       "conditions": null,
       "source": "mthigh",
@@ -117,11 +117,11 @@
       "snow7d": null,
       "baseIn": 33,
       "baseRange": "33 - 42",
-      "tempF": 33,
+      "tempF": 29,
       "tempSource": "resort",
       "conditions": "Machine Groomed Packed Powder",
       "source": "mtnpowder",
-      "sourceUpdated": "2026-11-21T13:39:48-08:00",
+      "sourceUpdated": "2026-11-21T14:36:33-08:00",
       "statusLabel": "LIMITED"
     }
   ],
