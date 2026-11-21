@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-20T23:53:38.269859-08:00",
-  "updatedLabel": "11:53 PM PT",
+  "updated": "2026-11-21T00:53:43.233686-08:00",
+  "updatedLabel": "12:53 AM PT",
   "sourceUpdated": "2026-11-20T15:42:50-08:00",
   "sourceUpdatedLabel": "3:42 PM PT",
   "resorts": [
@@ -20,7 +20,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 26,
+      "tempF": 24,
       "tempSource": "open-meteo",
       "conditions": "Machine Made",
       "source": "mtnpowder",
@@ -29,7 +29,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Fog",
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -48,7 +48,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 28,
+      "tempF": 27,
       "tempSource": "open-meteo",
       "conditions": "Machine Made",
       "source": "mtnpowder",
@@ -57,7 +57,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Fog",
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -76,7 +76,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 30,
+      "tempF": 31,
       "tempSource": "open-meteo",
       "conditions": "Machine Made",
       "source": "mtnpowder",
@@ -85,7 +85,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Fog",
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -104,7 +104,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 27,
+      "tempF": 28,
       "tempSource": "resort",
       "conditions": null,
       "source": "mthigh",
@@ -119,7 +119,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Fog",
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -138,12 +138,12 @@
       "snow7d": null,
       "baseIn": 33,
       "baseRange": "33 - 42",
-      "tempF": 14,
+      "tempF": 13,
       "tempSource": "resort",
       "conditions": "Powder",
       "source": "mtnpowder",
       "sourceUpdated": "2026-11-20T15:42:50-08:00",
-      "snow72h": 2,
+      "snow72h": 3,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": "Sun",
       "forecastLabel": "Snow Sun",
