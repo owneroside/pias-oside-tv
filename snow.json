@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-21T18:31:51.993309-08:00",
-  "updatedLabel": "6:31 PM PT",
+  "updated": "2026-11-21T19:27:33.902241-08:00",
+  "updatedLabel": "7:27 PM PT",
   "sourceUpdated": "2026-11-21T14:44:38-08:00",
   "sourceUpdatedLabel": "2:44 PM PT",
   "resorts": [
@@ -76,7 +76,7 @@
       "snow7d": 0,
       "baseIn": 0,
       "baseRange": null,
-      "tempF": 36,
+      "tempF": 35,
       "tempSource": "open-meteo",
       "conditions": "Machine Made",
       "source": "mtnpowder",
