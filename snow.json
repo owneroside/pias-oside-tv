@@ -1,8 +1,8 @@
 {
-  "updated": "2026-11-25T21:26:06.810191-08:00",
-  "updatedLabel": "9:26 PM PT",
-  "sourceUpdated": "2026-11-25T19:31:00-08:00",
-  "sourceUpdatedLabel": "7:31 PM PT",
+  "updated": "2026-11-26T07:45:07.680317-08:00",
+  "updatedLabel": "7:45 AM PT",
+  "sourceUpdated": "2026-11-26T06:43:38-08:00",
+  "sourceUpdatedLabel": "6:43 AM PT",
   "resorts": [
     {
       "id": "bear",
@@ -20,7 +20,7 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": "12 - 18",
-      "tempF": 39,
+      "tempF": 47,
       "tempSource": "resort",
       "conditions": "Machine Groomed",
       "source": "mtnpowder",
@@ -28,7 +28,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
+      "forecastLabel": "Sunny",
       "statusLabel": "OPEN"
     },
     {
@@ -47,7 +47,7 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": "12 - 18",
-      "tempF": 35,
+      "tempF": 37,
       "tempSource": "resort",
       "conditions": "Machine Groomed",
       "source": "mtnpowder",
@@ -55,7 +55,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
+      "forecastLabel": "Sunny",
       "statusLabel": "OPEN"
     },
     {
@@ -82,7 +82,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Cloudy",
+      "forecastLabel": "Partly cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -101,11 +101,11 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": null,
-      "tempF": 36,
+      "tempF": 39,
       "tempSource": "resort",
       "conditions": null,
       "source": "mthigh",
-      "sourceUpdated": "2026-11-25T18:45:00-08:00",
+      "sourceUpdated": "2026-11-26T05:37:00-08:00",
       "areas": {
         "west": null,
         "east": "Closed",
@@ -135,11 +135,11 @@
       "snow7d": null,
       "baseIn": 33,
       "baseRange": "33 - 42",
-      "tempF": 28,
+      "tempF": 39,
       "tempSource": "resort",
       "conditions": "Machine Groomed Packed Powder",
       "source": "mtnpowder",
-      "sourceUpdated": "2026-11-25T06:43:09-08:00",
+      "sourceUpdated": "2026-11-26T06:43:38-08:00",
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
