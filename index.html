@@ -252,10 +252,32 @@ body.S #wx,body.X #sn{display:none!important}
 #sn .sn-updated{font-weight:500;font-size:1.85vh;color:#fff;white-space:nowrap;text-align:right;line-height:1.25;text-shadow:0 .2vh .6vh rgba(8,24,48,.55)}
 #sn .sn-cr{display:none}
 
-/* SoCal: four equal frost cards */
+/* SoCal: four equal frost cards (kept as the base; #sn.socal overrides below) */
 #sn .sn-grid{flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:0.94vw;min-height:0;align-items:end;align-content:end}
 #sn .sn-card{height:38.89vh;box-sizing:border-box;background:rgba(255,255,255,.89);border-radius:1.85vh;box-shadow:0 .7vh 2.2vh rgba(8,22,40,.22);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:2.2vh 1.1vw 1.6vh;backdrop-filter:blur(18px) saturate(1.1);-webkit-backdrop-filter:blur(18px) saturate(1.1)}
 #sn .sn-card-logo{height:11vh;width:auto;max-width:86%;object-fit:contain;display:block;margin:0 auto 1.4vh}
+
+/* SoCal richer report (Nov 27, 2026): five compact horizontal rows.
+   Mammoth is unchanged. Rows sit at the bottom so the sunny peaks stay visible.
+   Status pill colors stay the shared .open / .limited / .closed rules. */
+#sn.socal .sn-grid{flex:0 0 auto;margin-top:auto;height:58vh;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(5,minmax(0,1fr));gap:1vh;align-items:stretch;align-content:stretch}
+#sn.socal .sn-card{height:auto;min-height:0;width:100%;display:grid;grid-template-columns:9.8vw 17.4vw minmax(0,1.05fr) minmax(0,1.05fr) minmax(0,1.3fr) minmax(0,1.05fr) minmax(0,.9fr);align-items:center;column-gap:.75vw;padding:0.55vh 1.1vw;overflow:visible}
+#sn.socal .sn-id{display:flex;align-items:center;justify-content:center;min-width:0;height:100%;padding:0 .2vw}
+#sn.socal .sn-card-logo{height:8.8vh;width:auto;max-width:100%;max-height:88%;object-fit:contain;display:block;margin:0 auto}
+#sn.socal .sn-card-wordmark{font-weight:700;font-size:3vh;line-height:1;letter-spacing:.06vh;color:#123044;text-align:center;text-transform:uppercase}
+#sn.socal .sn-status{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:.28vh;min-width:0;padding-right:.25vw}
+#sn.socal .sn-pill{margin-bottom:0;font-size:2.1vh;padding:.45vh .55vw}
+#sn.socal .sn-opens{font-weight:700;font-size:1.95vh;color:#123044;line-height:1.15;text-align:left;margin:0;white-space:nowrap}
+#sn.socal .sn-sub{font-weight:500;font-size:1.6vh;color:#284054;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+#sn.socal .sn-sub.sn-stale{font-weight:700;letter-spacing:.04vh;text-transform:uppercase;color:#5a6a7a;font-size:1.4vh}
+#sn.socal .sn-metric{display:flex;flex-direction:column;align-items:center;justify-content:center;color:#123044;line-height:1;min-width:0;height:100%}
+#sn.socal .sn-metric .sn-val{font-weight:700;font-size:4.55vh;letter-spacing:-.05vh;white-space:nowrap;line-height:1.12}
+#sn.socal .sn-metric small{font-weight:500;font-size:1.55vh;color:#284054;letter-spacing:.1vh;text-transform:uppercase;margin-top:.25vh;line-height:1.15}
+#sn.socal .sn-metric.sn-metric-na .sn-val{font-size:3vh;font-weight:500;color:#7a8794;line-height:1.12}
+#sn.socal .sn-metric-note{display:block;font-weight:500;font-size:1.35vh;color:#284054;margin-top:.15vh;line-height:1.15;white-space:nowrap;letter-spacing:.04vh;text-transform:none}
+#sn.socal .sn-metric-pair{flex-direction:row;align-items:center;justify-content:center;gap:.7vw}
+#sn.socal .sn-pair-col{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0}
+#sn.socal .sn-metric-pair .sn-val{font-size:3.7vh}
 #sn .sn-pill{display:inline-block;font-weight:700;font-size:1.9vh;letter-spacing:.12vh;border-radius:.7vh;padding:.4vh .7vw;line-height:1;margin-bottom:1vh}
 #sn .sn-pill.open{background:#1f9a55;color:#fff}
 #sn .sn-pill.limited{background:#e89a1a;color:#3e2404}
@@ -375,7 +397,7 @@ function snEsc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;'
 function snCount(o,t){if(o==null&&t==null)return '';if(t==null)return `<span class="sn-metric">${snEsc(o)}</span>`;return `<span class="sn-metric">${snEsc(o)}<small> / ${snEsc(t)}</small></span>`}
 function snIn(v,src,hiSnow){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';const hi=(hiSnow&&n>0)?' sn-hi':'';const star=src==='open-meteo'?'<small>*</small>':'';return `<span class="sn-metric${hi}">${n}"${star}</span>`}
 function snTemp(v){if(v==null||v==='')return '';const n=Math.round(+v);if(!isFinite(n))return '';return `<span class="sn-metric">${n}°</span>`}
-const SN_SOCAL = ['Bear Mountain', 'Snow Summit', 'Snow Valley', 'Mountain High'];
+const SN_SOCAL = ['Bear Mountain', 'Snow Summit', 'Snow Valley', 'Mountain High', 'Mt. Baldy'];
 const SN_LOGO = {
   'Bear Mountain': 'sn-logos/bear-mountain-dark.svg',
   'Snow Summit': 'sn-logos/snow-summit-dark.svg',
@@ -396,6 +418,57 @@ function snOpensLabel(r){
 function snMetric(val, label, ico){
   if (val == null || val === '') return '';
   return `<div class="sn-metric"><span class="sn-ico ${ico}"></span><span class="sn-val">${val}</span><small>${label}</small></div>`;
+}
+
+
+function snSocalIdentity(r){
+  const logo = SN_LOGO[r.name];
+  if (logo) return `<div class="sn-id"><img class="sn-card-logo" src="${logo}" alt="${snEsc(r.name)}"></div>`;
+  return `<div class="sn-id"><div class="sn-card-wordmark">${snEsc(r.name)}</div></div>`;
+}
+
+function snSocalMetric(val, label, opt){
+  opt = opt || {};
+  if (val == null || val === '') {
+    return `<div class="sn-metric sn-metric-na"><span class="sn-val">n/a</span><small>${snEsc(label)}</small></div>`;
+  }
+  const noteH = opt.note ? `<span class="sn-metric-note">${snEsc(opt.note)}</span>` : '';
+  if (opt.secondVal != null && opt.secondVal !== '') {
+    return `<div class="sn-metric sn-metric-pair"><div class="sn-pair-col"><span class="sn-val">${snEsc(val)}</span><small>${snEsc(label)}</small></div><div class="sn-pair-col"><span class="sn-val">${snEsc(opt.secondVal)}</span><small>${snEsc(opt.secondLabel)}</small></div></div>`;
+  }
+  return `<div class="sn-metric"><span class="sn-val">${snEsc(val)}</span><small>${snEsc(label)}</small>${noteH}</div>`;
+}
+
+function snSocalCard(r){
+  const st = (r.status || 'closed');
+  const pill = r.statusLabel || st.toUpperCase();
+  const opens = snOpensLabel(r);
+  const cond = (r.conditions && String(r.conditions).trim()) ? String(r.conditions).trim() : '';
+  const hours = (r.hoursLabel && String(r.hoursLabel).trim()) ? String(r.hoursLabel).trim() : '';
+  const stale = !!r.reportStale;
+  const subs = `${opens ? `<div class="sn-opens">${snEsc(opens)}</div>` : ''}${cond ? `<div class="sn-sub">${snEsc(cond)}</div>` : ''}${hours ? `<div class="sn-sub">${snEsc(hours)}</div>` : ''}${stale ? `<div class="sn-sub sn-stale">Last official report</div>` : ''}`;
+
+  // Prefer official *Label strings. 0 is a real value and is shown.
+  // Null is n/a so the column stays aligned. OPEN + 0 lifts is not styled as closed.
+  const runs = (r.runsLabel != null && r.runsLabel !== '') ? r.runsLabel : null;
+  const lifts = (r.liftsLabel != null && r.liftsLabel !== '') ? r.liftsLabel : null;
+  const scenic = (r.liftsScenic != null && +r.liftsScenic > 0) ? `${Math.round(+r.liftsScenic)} scenic` : '';
+  let base = null, top = null;
+  if (r.baseRange != null && String(r.baseRange).trim() !== '') base = r.baseRange;
+  else if (r.baseLabel != null && r.baseLabel !== '') base = r.baseLabel;
+  if (!r.baseRange && r.topLabel) top = r.topLabel;
+  const snow24 = (r.snow24hLabel != null && r.snow24hLabel !== '') ? r.snow24hLabel : null;
+  const snow48 = (r.snow48hLabel != null && r.snow48hLabel !== '' && r.snow48hLabel !== snow24) ? r.snow48hLabel : null;
+  const temp = (r.tempF != null && r.tempF !== '') ? `${Math.round(+r.tempF)}°` : null;
+
+  const metrics =
+    snSocalMetric(runs, 'RUNS') +
+    snSocalMetric(lifts, 'LIFTS', {note: scenic}) +
+    snSocalMetric(base, 'BASE', {secondVal: top, secondLabel: top ? 'TOP' : ''}) +
+    snSocalMetric(snow24, 'NEW SNOW', {secondVal: snow48, secondLabel: snow48 ? '48H' : ''}) +
+    snSocalMetric(temp, 'TEMP');
+
+  return `<div class="sn-card">${snSocalIdentity(r)}<div class="sn-status"><span class="sn-pill ${snEsc(st)}">${snEsc(pill)}</span>${subs}</div>${metrics}</div>`;
 }
 
 function snHTML(which){
@@ -423,18 +496,7 @@ function snHTML(which){
 <div class="sn-bar">${snow ? snMetric(snow, 'NEW SNOW', 'snow') : ''}${base ? snMetric(base, 'BASE', 'base') : ''}${temp ? snMetric(temp, 'TEMP', 'temp') : ''}${lifts ? snMetric(lifts, 'LIFT OPEN', 'lift') : ''}</div><div class="sn-wax">SNOWBOARD &amp; SKI TUNE-UPS AND WAX DONE HERE</div>`;
   }
 
-  const cards = want.map(r => {
-    const st = (r.status || 'closed');
-    const pill = r.statusLabel || st.toUpperCase();
-    const opens = snOpensLabel(r);
-    // When closed, do not paint a wall of 0/0 lifts, 0" base, 0" snow.
-    // 0 is still a real value in snow.json; this is display only.
-    const snow = (r.snow24h != null && +r.snow24h > 0) ? `${Math.round(+r.snow24h)}"` : null;
-    const temp = (r.tempF != null && r.tempF !== '') ? `${Math.round(+r.tempF)}°` : null;
-    const metrics = `${snow ? snMetric(snow, 'NEW SNOW', 'snow') : ''}${temp ? snMetric(temp, 'TEMP', 'temp') : ''}`;
-    const logo = SN_LOGO[r.name] || '';
-    return `<div class="sn-card"><img class="sn-card-logo" src="${logo}" alt="${snEsc(r.name)}"><span class="sn-pill ${snEsc(st)}">${snEsc(pill)}</span>${opens ? `<div class="sn-opens">${snEsc(opens)}</div>` : ''}<div class="sn-metrics">${metrics}</div></div>`;
-  }).join('');
+  const cards = want.map(r => snSocalCard(r)).join('');
 
   return `<div class="sn-top"><img class="sn-logo" src="logo-white.png" alt="Play It Again Sports Oceanside"><div class="sn-titles"><div class="sn-kicker">Live Snow Report</div><div class="sn-title">Southern California</div></div><div class="sn-updated">${stamp ? `Updated ${snEsc(stamp)}` : ''}</div></div>
 <div class="sn-grid">${cards}</div><div class="sn-wax">SNOWBOARD &amp; SKI TUNE-UPS AND WAX DONE HERE</div>`;
