@@ -19,6 +19,20 @@
    "seconds": 15
   },
   {
+   "src": "slides/dated/bf-2026/bf-tv-basic-1920x1080-v2.png",
+   "start": "2026-11-27",
+   "end": "2026-11-29",
+   "seconds": 15,
+   "everyOther": true
+  },
+  {
+   "src": "slides/dated/bf-2026/bf-tv-basic-still-going-1920x1080.png",
+   "start": "2026-11-30",
+   "end": "2026-12-06",
+   "seconds": 15,
+   "everyOther": true
+  },
+  {
    "src": "slides/dated/bf-2026/01-LaunchType-TV-1920x1080.jpg",
    "start": "2026-11-27",
    "end": "2026-12-06",
