@@ -230,13 +230,54 @@ def opening_from_text(text):
     return None
 
 
+_MONTHS = {
+    'jan': 1, 'january': 1, 'feb': 2, 'february': 2, 'mar': 3, 'march': 3,
+    'apr': 4, 'april': 4, 'may': 5, 'jun': 6, 'june': 6, 'jul': 7, 'july': 7,
+    'aug': 8, 'august': 8, 'sep': 9, 'sept': 9, 'september': 9,
+    'oct': 10, 'october': 10, 'nov': 11, 'november': 11, 'dec': 12, 'december': 12,
+}
+
+
+def parse_opens_date(opens, today=None):
+    """Parse 'Nov 27' / 'November 27, 2026' to a date. TBD/unparseable → None."""
+    if not opens:
+        return None
+    s = str(opens).strip()
+    if re.match(r'^tbd$', s, re.I):
+        return None
+    m = re.match(r'^([A-Za-z]{3,9})\.?\s+(\d{1,2})(?:,?\s*(\d{4}))?$', s)
+    if not m:
+        return None
+    mon = _MONTHS.get(m.group(1).lower())
+    if not mon:
+        return None
+    today = today or now_pt().date()
+    year = int(m.group(3)) if m.group(3) else today.year
+    try:
+        return datetime.date(year, mon, int(m.group(2)))
+    except ValueError:
+        return None
+
+
+def opens_is_future(opens, today=None):
+    """True if the opening date is after today. TBD/unparseable counts as
+    still pre-opening (not 'today or earlier')."""
+    today = today or now_pt().date()
+    d = parse_opens_date(opens, today=today)
+    if d is None:
+        return bool(opens)
+    return d > today
+
+
 def status_of(official_status, lifts_open, runs_open, opens):
     """Map official status + lift/run counts to open / limited / closed.
 
-    MtnPowder sometimes flags a SoCal resort as "Open" before opening day
-    (0 lifts, report says opening day has not been determined). Treat that
-    as closed and surface the opening date. A resort with lifts or runs
-    spinning is open, or limited if the official flag is Closed.
+    Prefer the official operating flag. A resort is OPEN if that flag is
+    Open, or if lifts or runs are already spinning. MtnPowder sometimes
+    flags a SoCal resort as "Open" before opening day (0 lifts, TBD or a
+    future date). Only a future/TBD opening date may force CLOSED in that
+    case. An opening date of today or earlier does not force CLOSED.
+    Spinning lifts/runs with an official Closed flag stay LIMITED.
     """
     lo = lifts_open or 0
     ro = runs_open or 0
@@ -246,12 +287,12 @@ def status_of(official_status, lifts_open, runs_open, opens):
         return 'limited'
     if spinning:
         return 'open'
-    # No lifts/runs: if they haven't announced opening (or have a future date), closed
-    if opens:
+    # Nothing spinning yet. Follow the official flag unless the mountain
+    # has not reached its announced opening date (or the date is TBD).
+    if opens_is_future(opens):
         return 'closed'
     if flag == 'open':
-        # Officially "open" but nothing spinning (weather hold, night, etc.)
-        return 'closed' if official_status and lo == 0 and ro == 0 else 'open'
+        return 'open'
     if flag in ('closed', 'temporarily closed', 'on hold'):
         return 'closed'
     if flag:
