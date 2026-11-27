@@ -4,19 +4,25 @@
 Sources (fetched here, not in the browser, so CORS is not required):
   - Alterra MtnPowder feed (https://mtnpowder.com/feed/): Bear Mountain,
     Snow Summit, Snow Valley, Mammoth Mountain — official open/closed,
-    lift and run counts, 24h/48h snow, base depth, and station temp.
+    lift and run counts, 24h/48h snow, base and summit depth, and station
+    temp. This is the official Big Bear / Mammoth feed; OnTheSnow is not
+    used (it was wrong on 2026-11-27 vs official counts).
   - Mountain High official snow report page (mthigh.com) — status, lifts
-    open, runs open, base/top depth, 7-day new snow, official temp, opening
-    date. Lift total from the official Mountain Stats page ("Lifts: 12 Total",
-    fallback 12). Run total from named runs on the official interactive
-    trail map (fallback 49).
+    open, runs open, groomed trails, base/top depth, official 24h/48h/7-day
+    new snow, official temp, area hours, opening date. Lift total from the
+    official Mountain Stats page ("Lifts: 12 Total", fallback 12). Run total
+    from named runs on the official interactive trail map (fallback 49).
+  - Mt. Baldy official tickets API (tickets.mtbaldyresort.com/api/status
+    and /api/mountain/weather) — chair status, run status, hours, live
+    station temp. Lift total 4 and run total 26 from the official trail
+    map / mountain stats page. Base depth and 24h snow are recorded only
+    when the resort publishes them (they may be null).
   - Open-Meteo (https://api.open-meteo.com) — current temperature at the
     resort coordinates, used when the official station temp is missing or
     disagrees with the model by more than 15°F; 24h/48h snowfall (cm,
-    converted to inches) when a resort does not publish those fields
-    (Mountain High only publishes 7-day new snow); and a 3-day expected
-    snowfall forecast (daily snowfall_sum, today plus the next 2 days)
-    plus a short forecast label from the weather code.
+    converted to inches) only when a resort does not publish those fields;
+    and a 3-day expected snowfall forecast (daily snowfall_sum, today plus
+    the next 2 days) plus a short forecast label from the weather code.
 
 Does not invent numbers. A field is omitted (null) when the source does not
 provide it. 0 is a real value (no snow, no lifts) and is kept.
@@ -71,6 +77,13 @@ RESORTS = [
         'feed_name': 'Mammoth Mountain',
         'lat': 37.6513, 'lon': -119.0393,
     },
+    {
+        'id': 'baldy',
+        'name': 'Mt. Baldy',
+        'region': 'Angeles National Forest',
+        'feed_name': None,
+        'lat': 34.2791, 'lon': -117.6576,
+    },
 ]
 
 MTNPOWDER = 'https://mtnpowder.com/feed/'
@@ -91,6 +104,11 @@ MHIGH_MAP_URL = 'https://www.mthigh.com/site/mountain/mountain-info/interactive-
 # Fallbacks from official pages if a fetch fails (verified Nov 19, 2026)
 MH_LIFTS_FALLBACK = 12  # "Lifts: 12 Total" on official Mountain Stats
 MH_RUNS_FALLBACK = 49   # named runs on the official interactive trail map
+BALDY_STATUS_URL = 'https://tickets.mtbaldyresort.com/api/status'
+BALDY_WEATHER_URL = 'https://tickets.mtbaldyresort.com/api/mountain/weather'
+# Official trail map / mountain stats: "Four chairs, 26 runs" (verified Nov 27, 2026)
+BALDY_LIFTS_FALLBACK = 4
+BALDY_RUNS_FALLBACK = 26
 
 
 def now_pt():
@@ -131,6 +149,8 @@ def parse_dt(s):
     if not s or s == '--':
         return None
     s = s.strip()
+    if s.endswith('Z'):
+        s = s[:-1] + '+00:00'
     for fmt in (
         '%Y-%m-%dT%H:%M:%S%z',
         '%Y-%m-%dT%H:%M:%S',
@@ -200,6 +220,13 @@ def opening_from_text(text):
     m = re.search(r'opens?\s+on\s+([A-Z][a-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?', text, re.I)
     if m:
         return f'{m.group(1)[:3]} {int(m.group(2))}'
+    # "Opening Day at Snow Valley is set for this Friday, November 27"
+    m = re.search(
+        r'opening day\b.{0,160}?\b(January|February|March|April|May|June|July|'
+        r'August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?',
+        text, re.I)
+    if m:
+        return f'{m.group(1).title()[:3]} {int(m.group(2))}'
     return None
 
 
@@ -286,6 +313,7 @@ def parse_feed_resort(spec, raw):
         'snow48h': to_num(ba.get('Last48HoursIn')),
         'snow7d': to_num(ba.get('Last7DaysIn')),
         'baseIn': to_num(ba.get('BaseIn')),
+        'topIn': to_num((sr.get('SummitArea') or {}).get('BaseIn')),
         'baseRange': None if sr.get('SnowBaseRangeIn') in (None, '--', '') else str(sr.get('SnowBaseRangeIn')),
         'tempF': official_temp,
         'tempSource': 'resort' if official_temp is not None else None,
@@ -295,27 +323,51 @@ def parse_feed_resort(spec, raw):
     }
 
 
+def _area_is_open(value):
+    """West/East/Yeti may be 'Open', 'Closed', or hours like '9:00 AM - 10:00 PM'."""
+    s = (value or '').strip().lower()
+    if not s or s in ('closed', 'close', '--', '-'):
+        return False
+    if s == 'open' or re.search(r'\d\s*(am|pm)', s, re.I):
+        return True
+    return False
+
+
+def _labelbox_inches(html_text):
+    """Official LabelBox snowfall figures (24/48/7-day) from the full report page."""
+    out = {}
+    for m in re.finditer(
+            r'class="t-digit-lg">\s*([^<]+).*?class="LabelBox-title">\s*([^<]+?)\s*</h3>',
+            html_text, re.I | re.S):
+        title = re.sub(r'\s+', ' ', html.unescape(m.group(2))).strip().lower()
+        out[title] = to_num(m.group(1))
+    return out
+
+
 def parse_mthigh(html_text):
-    rows = dict(re.findall(
-        r'class="mh-Conditions-label"[^>]*>\s*([^<]+?)\s*</span>\s*'
-        r'<span class="mh-Conditions-value"[^>]*>\s*([^<]+?)\s*</span>',
-        html_text))
+    rows = {}
+    for lab, raw in re.findall(
+            r'class="mh-Conditions-label"[^>]*>\s*([^<]+?)\s*</span>\s*'
+            r'<span class="mh-Conditions-value"[^>]*>(.*?)</span>',
+            html_text, re.S):
+        key = html.unescape(lab).strip().rstrip(':')
+        rows[key] = strip_html(raw)
     def val(*labels):
         for lab, v in rows.items():
-            key = html.unescape(lab).strip().rstrip(':').lower()
+            key = lab.strip().rstrip(':').lower()
             for want in labels:
                 if key == want.lower():
-                    return html.unescape(v).strip()
+                    return v
         return None
 
     text = strip_html(html_text)
     opens = opening_from_text(text)
     lifts_open = to_num(val('Open Lifts'))
     runs_open = to_num(val('Open Trails'))
-    west = (val('WEST') or '').lower()
-    east = (val('EAST') or '').lower()
-    yeti = (val('YETI') or '').lower()
-    area_open = any(s == 'open' for s in (west, east, yeti))
+    west = val('WEST')
+    east = val('EAST')
+    yeti = val('YETI')
+    area_open = any(_area_is_open(s) for s in (west, east, yeti))
     official = 'Open' if area_open or (lifts_open or 0) > 0 else 'Closed'
     status = status_of(official, lifts_open, runs_open, opens)
     if status in ('open', 'limited'):
@@ -340,6 +392,18 @@ def parse_mthigh(html_text):
         updated_iso = None
 
     temp = to_num(val('Current Temp'))
+    boxes = _labelbox_inches(html_text)
+    snow24h = boxes.get('24 hour snowfall')
+    snow48h = boxes.get('48 hour snowfall')
+    snow7d = to_num(val('New Snow (7 Days)'))
+    if snow7d is None:
+        snow7d = boxes.get('7 day snowfall')
+    # Hours label: the open area's posted hours, if any
+    hours = None
+    for area_name, area_val in (('West', west), ('East', east), ('Yeti', yeti)):
+        if area_val and _area_is_open(area_val) and re.search(r'\d', area_val or ''):
+            hours = f'{area_name} {area_val}'
+            break
     return {
         'id': 'mthigh',
         'name': 'Mountain High',
@@ -351,20 +415,23 @@ def parse_mthigh(html_text):
         'liftsTotal': None,  # filled from official stats/trail map in main()
         'runsOpen': runs_open,
         'runsTotal': None,
-        'snow24h': None,  # official page only has 7-day; Open-Meteo fills 24/48
-        'snow48h': None,
-        'snow7d': to_num(val('New Snow (7 Days)')),
+        'groomedOpen': to_num(val('Groomed Trails')),
+        'snow24h': snow24h,
+        'snow48h': snow48h,
+        'snow7d': snow7d,
         'baseIn': to_num(val('Base Depth')),
+        'topIn': to_num(val('Top Depth')),
         'baseRange': None,
         'tempF': temp,
         'tempSource': 'resort' if temp is not None else None,
         'conditions': None,
+        'hoursLabel': hours,
         'source': 'mthigh',
         'sourceUpdated': updated_iso or updated,
         'areas': {
-            'west': val('WEST'),
-            'east': val('EAST'),
-            'yeti': val('YETI'),
+            'west': west,
+            'east': east,
+            'yeti': yeti,
         },
     }
 
@@ -483,6 +550,119 @@ def _forecast_from_daily(item):
     return {'snow72h': total, 'snow72hPeakDay': peak_day, 'forecastLabel': label}
 
 
+BALDY_OPEN_RUN = {'open', 'groomed', 'ungroomed', 'grooming', 'packed'}
+
+
+def parse_baldy(status_doc, weather_doc=None):
+    """Build a resort record from the official Mt. Baldy tickets API."""
+    report = (status_doc or {}).get('report') or {}
+    chairs = report.get('chairs') or {}
+    lifts_open = 0
+    lifts_scenic = 0
+    for info in chairs.values():
+        st = str((info or {}).get('status') or '').strip().lower()
+        if st == 'open':
+            lifts_open += 1
+        elif st == 'scenic':
+            lifts_scenic += 1
+    lifts_total = BALDY_LIFTS_FALLBACK
+    catalog = status_doc.get('chairs') or []
+    if isinstance(catalog, list) and 3 <= len(catalog) <= 8:
+        lifts_total = len(catalog)
+
+    runs_open = 0
+    for run in status_doc.get('runs') or []:
+        if run.get('never'):
+            continue
+        st = str(run.get('status') or '').strip().lower()
+        if st in BALDY_OPEN_RUN:
+            runs_open += 1
+
+    wx = weather_doc or (status_doc.get('weather') or {})
+    temp = to_num(wx.get('temp'))
+    src_up = parse_dt(report.get('at') or report.get('clientTime'))
+    hours = None
+    today = ((status_doc.get('openHours') or {}).get('today') or {})
+    if today.get('label'):
+        hours = today.get('label') if today.get('open') else 'Closed'
+    elif today.get('open') is False:
+        hours = 'Closed'
+
+    opens = None
+    official = 'Open' if (lifts_open > 0 or runs_open > 0 or today.get('open')) else 'Closed'
+    status = status_of(official, lifts_open, runs_open, opens)
+
+    report_stale = False
+    if src_up:
+        try:
+            age_h = (now_pt() - src_up).total_seconds() / 3600
+            report_stale = age_h > 18
+        except Exception:
+            report_stale = False
+
+    surface = report.get('surface')
+    return {
+        'id': 'baldy',
+        'name': 'Mt. Baldy',
+        'region': 'Angeles National Forest',
+        'status': status,
+        'officialStatus': official,
+        'opens': opens,
+        'liftsOpen': lifts_open,
+        'liftsScenic': lifts_scenic,
+        'liftsTotal': lifts_total,
+        'runsOpen': runs_open,
+        'runsTotal': BALDY_RUNS_FALLBACK,
+        'snow24h': to_num(report.get('newSnow')),
+        'snow48h': None,  # official API does not publish 48h snow
+        'snow7d': None,
+        'baseIn': to_num(report.get('base')),
+        'topIn': None,
+        'baseRange': None,
+        'tempF': temp,
+        'tempSource': 'resort' if temp is not None else None,
+        'conditions': None if surface in (None, '', '--') else surface,
+        'hoursLabel': hours,
+        'source': 'baldy',
+        'sourceUpdated': iso(src_up) if src_up else report.get('at'),
+        'reportStale': report_stale,
+        'roads': report.get('roads') or None,
+    }
+
+
+def add_display_fields(resort):
+    """Slide-ready label strings. Missing values stay null (not invented)."""
+    def count_label(opened, total):
+        if opened is None and total is None:
+            return None
+        if opened is None:
+            return None
+        if total is None:
+            return str(int(opened)) if float(opened) == int(opened) else str(opened)
+        try:
+            return f'{int(opened)} / {int(total)}'
+        except (TypeError, ValueError):
+            return f'{opened} / {total}'
+
+    def inch_label(v):
+        if v is None or v == '':
+            return None
+        try:
+            return f'{int(round(float(v)))}"'
+        except (TypeError, ValueError):
+            return None
+
+    resort['liftsLabel'] = count_label(resort.get('liftsOpen'), resort.get('liftsTotal'))
+    resort['runsLabel'] = count_label(resort.get('runsOpen'), resort.get('runsTotal'))
+    resort['baseLabel'] = inch_label(resort.get('baseIn'))
+    resort['topLabel'] = inch_label(resort.get('topIn'))
+    resort['snow24hLabel'] = inch_label(resort.get('snow24h'))
+    resort['snow48hLabel'] = inch_label(resort.get('snow48h'))
+    if not resort.get('hoursLabel'):
+        resort['hoursLabel'] = None
+    return resort
+
+
 def fetch_open_meteo(specs):
     lats = ','.join(str(s['lat']) for s in specs)
     lons = ','.join(str(s['lon']) for s in specs)
@@ -592,10 +772,13 @@ def merge_missing(new, old):
 def canonical(resorts):
     """Comparable snapshot, ignoring fetch timestamps."""
     keys = (
-        'id', 'status', 'opens', 'liftsOpen', 'liftsTotal', 'runsOpen', 'runsTotal',
-        'snow24h', 'snow48h', 'snow24hSource', 'snow48hSource', 'snow7d', 'baseIn',
-        'tempF', 'tempSource', 'conditions',
-        'snow72h', 'snow72hPeakDay', 'snow72hSource', 'forecastLabel'
+        'id', 'status', 'opens', 'liftsOpen', 'liftsTotal', 'liftsScenic',
+        'runsOpen', 'runsTotal', 'groomedOpen',
+        'snow24h', 'snow48h', 'snow24hSource', 'snow48hSource', 'snow7d',
+        'baseIn', 'topIn',
+        'tempF', 'tempSource', 'conditions', 'hoursLabel',
+        'snow72h', 'snow72hPeakDay', 'snow72hSource', 'forecastLabel',
+        'liftsLabel', 'runsLabel', 'baseLabel', 'topLabel', 'snow24hLabel', 'snow48hLabel',
     )
     out = []
     for r in resorts:
@@ -634,6 +817,19 @@ def main():
         errors.append(f'mthigh totals: {e}')
         print('WARN mthigh totals failed:', e, file=sys.stderr)
 
+    baldy = None
+    try:
+        baldy_status = json.loads(fetch(BALDY_STATUS_URL, timeout=30))
+        baldy_wx = None
+        try:
+            baldy_wx = json.loads(fetch(BALDY_WEATHER_URL, timeout=20))
+        except Exception as e:
+            print('WARN baldy weather failed:', e, file=sys.stderr)
+        baldy = parse_baldy(baldy_status, baldy_wx)
+    except Exception as e:
+        errors.append(f'baldy: {e}')
+        print('WARN baldy failed:', e, file=sys.stderr)
+
     resorts = []
     for spec in RESORTS:
         parsed = None
@@ -642,15 +838,21 @@ def main():
             if parsed:
                 parsed['liftsTotal'] = mh_lifts
                 parsed['runsTotal'] = mh_runs
+        elif spec['id'] == 'baldy':
+            parsed = baldy
         elif spec['feed_name'] and spec['feed_name'] in feed:
             parsed = parse_feed_resort(spec, feed[spec['feed_name']])
         elif spec['feed_name']:
             errors.append(f'mtnpowder: missing {spec["feed_name"]}')
         if parsed:
             apply_temps(parsed, (om.get(spec['id']) or {}).get('temp'))
-            apply_model_snow(parsed, om.get(spec['id']) or {})
+            # Baldy publishes newSnow/base as null when unmeasured; do not
+            # invent 0" from the weather model in that case.
+            if spec['id'] != 'baldy':
+                apply_model_snow(parsed, om.get(spec['id']) or {})
             apply_forecast(parsed, om.get(spec['id']) or {})
             parsed['statusLabel'] = label_status(parsed['status'])
+            add_display_fields(parsed)
         else:
             parsed = merge_missing(None, prev_by_id(prev, spec['id']))
             if parsed:
@@ -690,8 +892,8 @@ def main():
                 f"runs={r.get('runsOpen')}/{r.get('runsTotal')} "
                 f"24h={r.get('snow24h')} 48h={r.get('snow48h')} 7d={r.get('snow7d')} "
                 f"72h={r.get('snow72h')} peak={r.get('snow72hPeakDay')} fc={r.get('forecastLabel')} "
-                f"base={r.get('baseIn')} temp={r.get('tempF')}({r.get('tempSource')}) "
-                f"opens={r.get('opens')}"
+                f"base={r.get('baseIn')} top={r.get('topIn')} temp={r.get('tempF')}({r.get('tempSource')}) "
+                f"hours={r.get('hoursLabel')} opens={r.get('opens')}"
             )
         print('DATA_UNCHANGED')
         return 0
@@ -708,8 +910,8 @@ def main():
             f"runs={r.get('runsOpen')}/{r.get('runsTotal')} "
             f"24h={r.get('snow24h')} 48h={r.get('snow48h')} 7d={r.get('snow7d')} "
             f"72h={r.get('snow72h')} peak={r.get('snow72hPeakDay')} fc={r.get('forecastLabel')} "
-            f"base={r.get('baseIn')} temp={r.get('tempF')}({r.get('tempSource')}) "
-            f"opens={r.get('opens')}"
+            f"base={r.get('baseIn')} top={r.get('topIn')} temp={r.get('tempF')}({r.get('tempSource')}) "
+            f"hours={r.get('hoursLabel')} opens={r.get('opens')}"
         )
     print('DATA_CHANGED')
     return 0
