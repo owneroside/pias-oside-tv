@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-26T16:32:24.294272-08:00",
-  "updatedLabel": "4:32 PM PT",
+  "updated": "2026-11-27T01:02:05.648594-08:00",
+  "updatedLabel": "1:02 AM PT",
   "sourceUpdated": "2026-11-26T09:16:25-08:00",
   "sourceUpdatedLabel": "9:16 AM PT",
   "resorts": [
@@ -20,7 +20,7 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": "12 - 18",
-      "tempF": 49,
+      "tempF": 47,
       "tempSource": "resort",
       "conditions": "Machine Groomed",
       "source": "mtnpowder",
@@ -28,7 +28,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Sunny",
+      "forecastLabel": "Cloudy",
       "statusLabel": "OPEN"
     },
     {
@@ -47,7 +47,7 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": "12 - 18",
-      "tempF": 52,
+      "tempF": 40,
       "tempSource": "resort",
       "conditions": "Machine Groomed",
       "source": "mtnpowder",
@@ -55,7 +55,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Sunny",
+      "forecastLabel": "Cloudy",
       "statusLabel": "OPEN"
     },
     {
@@ -74,7 +74,7 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": "12 - 18",
-      "tempF": 59,
+      "tempF": 39,
       "tempSource": "resort",
       "conditions": "Machine Groomed",
       "source": "mtnpowder",
@@ -82,7 +82,7 @@
       "snow72h": 0,
       "snow72hSource": "open-meteo",
       "snow72hPeakDay": null,
-      "forecastLabel": "Sunny",
+      "forecastLabel": "Cloudy",
       "statusLabel": "CLOSED"
     },
     {
@@ -101,7 +101,7 @@
       "snow7d": 0,
       "baseIn": 12,
       "baseRange": null,
-      "tempF": 56,
+      "tempF": 48,
       "tempSource": "resort",
       "conditions": null,
       "source": "mthigh",
@@ -126,7 +126,7 @@
       "status": "limited",
       "officialStatus": "Closed",
       "opens": null,
-      "liftsOpen": 1,
+      "liftsOpen": 0,
       "liftsTotal": 25,
       "runsOpen": 131,
       "runsTotal": 181,
@@ -135,7 +135,7 @@
       "snow7d": null,
       "baseIn": 33,
       "baseRange": "33 - 42",
-      "tempF": 49,
+      "tempF": 50,
       "tempSource": "resort",
       "conditions": "Machine Groomed Packed Powder",
       "source": "mtnpowder",
