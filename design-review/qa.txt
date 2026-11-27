@@ -1,0 +1,153 @@
+QA — Register TV Southern California snow report card
+Date: Friday, Nov 27, 2026, America/Los_Angeles
+File: /workspace/pias-oside-tv-snow-rich/index.html (SoCal card only)
+Renders: design-review/before.png, after.png, before-after.png,
+         variant-null-closed.png (all inspected at 1920x1080, plus
+         close crops of each after row, the header, and the wax banner)
+Standards: /workspace/design-bot/DESIGN-STANDARDS.md
+Preview: index.html#snow   (Mammoth check: #snow-mammoth, unchanged)
+
+This is a live register-TV information slide, not a social sell post,
+Cash for ___ graphic, meme, or video. Product-photo, price, SKU,
+caption, carousel, and social-footer rules are marked N/A.
+
+================================================================
+Section 1 — pass/fail (applicable rules only)
+================================================================
+
+A. The look
+1. Designed branded graphic, never a plain photo. PASS
+   Header (white PIAS Oceanside logo, "Live Snow Report / Southern
+   California", updated stamp), five frost-white resort rows, and the
+   existing wax banner sit on the approved sunny SoCal photo.
+2. Carmel Mountain cutout / house sell-post look. N/A
+   This is the live snow report, not a product post. Kept the approved
+   v6 snow-report materials (frost cards, status pills, sunny photo,
+   wax banner) and extended them to a 5-row data layout.
+3. Cash for ___ look. N/A
+4. Backgrounds are energetic, not dark or dreary. PASS
+   Same bright alpine photo as the approved SoCal slide. No navy wash
+   (Dustin rejected a navy snow report as too dark). Type is dark ink
+   on frost-white rows. The peaks stay visible above the rows.
+5. Vary color theme from post to post. N/A (not a social post in a sequence)
+6. Must not look pieced together. PASS
+   Continuous photo, identical row chrome, no cut edges or white tiles.
+7. No empty white space. PASS
+   No white bars, no black bars, no blurred fill. The open sky/peaks
+   between the header and the rows are the photo, not leftover margin.
+   Five resorts fill the lower 58vh.
+8. Messaging / signup posts. N/A
+
+B. Product photo
+9–10. Product size / thumbnails. N/A
+11. Photos are bright and good quality. PASS
+    Existing licensed sunny resort photo; no new photography added.
+12. Nothing important is cut off. PASS
+    Playwright clip check at 1920x1080: 0 clipped nodes on the live
+    card and on the null/closed variant. Close crops confirm logos,
+    pills, "Opens Nov 27", hours, "Last official report", "1 scenic",
+    BASE/TOP pairs, 24H/48H pairs, n/a values, temps, and the wax
+    banner are fully inside their rows. Cards end at y=984; wax starts
+    at y=996. Safe of the top UI and the bottom banner.
+13. Text does not cover the product / focus. PASS
+    Rows sit in the lower half; the mountain peaks and header stay clear.
+14–16. Product angle / quantity / source. N/A
+17. No fake or AI-generated product imagery. PASS
+    No AI images. Existing resort logos and typographic "MT. BALDY"
+    wordmark only (no official Baldy logo is in the repo).
+
+C. Price and product facts
+18–24. WAS/NOW, SKU, .91, ranges. N/A
+20 / 25. Every number matches a verified source; wording accurate. PASS
+    Live values come from this branch's snow.json *Label strings
+    (runsLabel, liftsLabel, baseRange or baseLabel, topLabel,
+    snow24hLabel, snow48hLabel, statusLabel, hoursLabel, conditions).
+    Temp uses the existing rounded tempF + ° (there is no tempLabel).
+    0 is shown when published (0" new snow, 0 / 7 and 0 / 11 lifts
+    on OPEN resorts — not styled as closed). Null becomes n/a in the
+    aligned metric columns, or the subline is omitted (conditions,
+    hours, opens). No invented depths, counts, or hours.
+    Scenic note uses the published liftsScenic count only ("1 scenic").
+
+D. Branding and type
+26. PIAS Oceanside logo on every graphic, including TV. PASS
+    White logo in the existing header, drop-shadowed on the sky.
+27. Logo treatment (one white-letter logo, shadow on light/sky). PASS
+28–32. Social footer, handle size, website in caption. N/A
+33. playitagainsportsoside.com / no street address on in-store TV. PASS
+    No street address. No extra URL baked in. Reserve/site links N/A.
+34–35. Caption / link in caption. N/A (not a social post)
+36. TV copy of social posts. N/A
+37–38. File names / fix at source. N/A as social exports; source is index.html.
+
+Rule 39–42 (carousels, reels, style variety). N/A
+Rule 43. No Winmark wording. PASS
+    Searched the SoCal card, wax banner art text, logos, and header:
+    the word Winmark does not appear.
+Rule 44. No return policies on video. N/A (not a video)
+    The snow slide continues to hide #policy while body.S is active.
+
+================================================================
+Snow-report contract checks (SNOW-FIELDS-FOR-DESIGN.md)
+================================================================
+
+- Status pill, same colors as every resort: PASS
+  (green OPEN, amber LIMITED, slate CLOSED — not red)
+- Opening date only if closed: PASS (Snow Valley "Opens Nov 27")
+- Runs open/total via runsLabel: PASS
+- Lifts open/total via liftsLabel: PASS
+- Base prefers baseRange when present ("12 - 18"), else baseLabel: PASS
+- Top shown when there is room and no range (Mountain High 12" + 24"): PASS
+- 24h snow via snow24hLabel, including 0": PASS
+- 48h only when it differs (omitted on today's live data; proven on the
+  variant with 5" / 8"): PASS
+- Temp: PASS
+- Conditions and hours when present: PASS
+- Null → n/a or omit, never invent: PASS (Baldy base/new snow n/a;
+  variant covers a fully closed resort with n/a columns)
+- OPEN + 0 lifts is not styled as closed: PASS
+- Wax banner kept, verbatim: PASS
+- No on-screen data credits: PASS (sn-cr remains display:none;
+  no source names). "Last official report" is a stale-data warning
+  for Baldy reportStale, not a credit.
+- Mt. Baldy included as a fifth SoCal resort: PASS, five rows stay
+  legible at TV distance. June Mountain and other non-SoCal resorts
+  are not on this slide.
+- Mammoth not modified: PASS (see mammoth-suggestion.txt)
+
+================================================================
+Section 2 self-review
+================================================================
+
+Would this stop a customer across the store? Yes — large high-contrast
+numbers (4.55vh, pair values 3.7vh) on bright white rows, status pills
+readable, logos intact. Five resorts fit without crowding after the
+pair-layout fix (an earlier stacked BASE/TOP and 24H/48H clip was
+caught on first inspect and corrected before this QA).
+
+Defects found and fixed during review:
+1. First pass stacked BASE+TOP and 24H+48H vertically, which clipped
+   inside the 117px rows. Reworked to a side-by-side pair.
+2. First pass had an unused grid column and smaller type under icons.
+   Dropped SoCal metric icons so the numbers could go larger, and
+   collapsed the grid to seven aligned columns.
+
+Remaining notes / data gaps (not defects in the art):
+- No official Mt. Baldy logo is in sn-logos/. The row uses a
+  typographic "MT. BALDY" wordmark. A licensed dark logo can be
+  dropped in as sn-logos/mt-baldy-dark.svg and added to SN_LOGO later.
+- Baldy live data: base, top, 24h, 48h, and conditions are null.
+  reportStale is true; liftsScenic is 1. Shown as n/a, "Last official
+  report", and "1 scenic".
+- hoursLabel is only published for Mountain High and Mt. Baldy.
+- forecastLabel / snow72h / groomedOpen are not on the card (not in
+  the required SoCal metric list; forecast is unofficial Open-Meteo).
+- baseRange strings do not include an inch mark ("12 - 18"); they are
+  shown exactly as published, under the label BASE.
+- Snow Valley's officialStatus in snow.json is "Open" while our mapped
+  statusLabel is CLOSED with opens "Nov 27". The card uses our mapped
+  status, per the contract.
+- Nothing was pushed, deployed, or messaged. version.txt was not bumped.
+
+Result: PASS for the SoCal card redesign. Ready for Dustin's
+before/after review. Do not go live until he approves.

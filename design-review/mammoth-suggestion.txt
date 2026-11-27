@@ -1,0 +1,36 @@
+Mammoth slide — suggested follow-up (not in this change)
+========================================================
+
+This branch only redesigns the Southern California card. The Mammoth /
+Eastern Sierra slide was left alone, and a 1920x1080 render at
+#snow-mammoth confirms it still looks like the approved v6 hero.
+
+What Mammoth shows today (live values from this branch's snow.json):
+- Status pill + conditions pill: LIMITED, MACHINE GROOMED PACKED POWDER
+- BASE 33" (from baseIn, not baseRange/baseLabel)
+- TEMP 44°
+- LIFT OPEN 0  — the open count only, label "LIFT OPEN" (singular)
+- NEW SNOW is omitted because snow24h is 0 (the old "show only if > 0" rule)
+
+What it does not show, even though snow.json has it:
+- runsLabel "131 / 181" (131 trails open of 181)
+- liftsLabel "0 / 25" (0 chairs of 25 — honest before first chair;
+  official overnight status is Closed, which we map to LIMITED)
+- baseRange "33 - 42" or topLabel "42\""
+- snow24hLabel "0\"" (a real zero, now shown on the SoCal card)
+
+Suggestion, if Dustin wants a second change later:
+1. Add a RUNS metric that uses runsLabel exactly ("131 / 181"), so the
+   bar can say how many trails are open "of total".
+2. Switch the lifts metric from the bare liftsOpen integer to liftsLabel
+   ("0 / 25") and retitle it LIFTS, so "of total" is visible. Keep the
+   same ink color — 0 lifts with LIMITED/OPEN must not be styled as a
+   closed mountain.
+3. Optional, to match SoCal: show snow24hLabel even when it is 0";
+   prefer baseRange when present (33 - 42) or show top alongside base.
+   The current 4-up bar often has an empty slot when new snow is 0
+   (today it is a 3-up bar), so runs + "of total" would also fill that
+   gap without crowding.
+
+Do not ship this with the SoCal redesign; it is a separate one-change
+pass if approved.
